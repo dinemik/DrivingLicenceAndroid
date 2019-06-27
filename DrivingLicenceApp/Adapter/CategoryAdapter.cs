@@ -1,33 +1,27 @@
-﻿using System;
+﻿using DrivingLicenceAndroidPCL.Interface.Json;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Support.V7.Widget;
-using Android.Views;
-using Android.Widget;
-using DrivingLicenceAndroidPCL.Interface.Json;
-using DrivingLicenceApp.Class;
 using DrivingLicenceApp.Holder;
+using Android.Views;
+using System.Linq;
+using System;
 
 namespace DrivingLicenceApp.Adapter
 {
     public class CategoryAdapter : RecyclerView.Adapter
     {
-        private List<ITopic> Categories { get; set; }
+        private List<ITopic> CategoriesAll { get; set; }
+        private List<ITopic> CategoriesChecked { get; set; }
+
         private Action<object, EventArgs> UnChecked { get; set; } = null;
 
         private bool Checked { get; set; }
 
-        public override int ItemCount => Categories.Count;
+        public override int ItemCount => CategoriesAll.Count;
 
         public CategoryAdapter(IEnumerable<ITopic> categories, Action<object, EventArgs> unChecked, bool check)
         {
-            Categories = categories.ToList();
+            CategoriesAll = categories.ToList();
             UnChecked = unChecked;
             Checked = check;
         }
@@ -35,13 +29,15 @@ namespace DrivingLicenceApp.Adapter
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             var vh = holder as CategoryHolder;
-            vh.Category.Checked = Checked;
-            vh.Category.Text = Categories[position].Name;
+
             vh.Category.Click += (s, e) => UnChecked.Invoke(s, e);
+            vh.Category.Text = CategoriesAll[position].Name;
+            vh.Category.Checked = Checked;
+
+            vh.QuestionsCount.Text = $"{CategoriesAll[position]?.Tickets?.Count} შეკითხვების რაოდენობა კატეგორიაში";
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType) =>
             new CategoryHolder(LayoutInflater.From(parent.Context).Inflate(Resource.Layout.category_Item, parent, false));
-
     }
 }

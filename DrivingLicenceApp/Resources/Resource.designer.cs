@@ -26,1438 +26,6 @@ namespace DrivingLicenceApp
 		
 		public static void UpdateIdValues()
 		{
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_fade_in = global::DrivingLicenceApp.Resource.Animation.abc_fade_in;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_fade_out = global::DrivingLicenceApp.Resource.Animation.abc_fade_out;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_grow_fade_in_from_bottom = global::DrivingLicenceApp.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_popup_enter = global::DrivingLicenceApp.Resource.Animation.abc_popup_enter;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_popup_exit = global::DrivingLicenceApp.Resource.Animation.abc_popup_exit;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_shrink_fade_out_from_bottom = global::DrivingLicenceApp.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_slide_in_bottom = global::DrivingLicenceApp.Resource.Animation.abc_slide_in_bottom;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_slide_in_top = global::DrivingLicenceApp.Resource.Animation.abc_slide_in_top;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_slide_out_bottom = global::DrivingLicenceApp.Resource.Animation.abc_slide_out_bottom;
-			global::DrivingLicenceAndroidPCL.Resource.Animation.abc_slide_out_top = global::DrivingLicenceApp.Resource.Animation.abc_slide_out_top;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarDivider = global::DrivingLicenceApp.Resource.Attribute.actionBarDivider;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarItemBackground = global::DrivingLicenceApp.Resource.Attribute.actionBarItemBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarPopupTheme = global::DrivingLicenceApp.Resource.Attribute.actionBarPopupTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarSize = global::DrivingLicenceApp.Resource.Attribute.actionBarSize;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarSplitStyle = global::DrivingLicenceApp.Resource.Attribute.actionBarSplitStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarStyle = global::DrivingLicenceApp.Resource.Attribute.actionBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarTabBarStyle = global::DrivingLicenceApp.Resource.Attribute.actionBarTabBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarTabStyle = global::DrivingLicenceApp.Resource.Attribute.actionBarTabStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarTabTextStyle = global::DrivingLicenceApp.Resource.Attribute.actionBarTabTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarTheme = global::DrivingLicenceApp.Resource.Attribute.actionBarTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionBarWidgetTheme = global::DrivingLicenceApp.Resource.Attribute.actionBarWidgetTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionButtonStyle = global::DrivingLicenceApp.Resource.Attribute.actionButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionDropDownStyle = global::DrivingLicenceApp.Resource.Attribute.actionDropDownStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionLayout = global::DrivingLicenceApp.Resource.Attribute.actionLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionMenuTextAppearance = global::DrivingLicenceApp.Resource.Attribute.actionMenuTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionMenuTextColor = global::DrivingLicenceApp.Resource.Attribute.actionMenuTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeBackground = global::DrivingLicenceApp.Resource.Attribute.actionModeBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeCloseButtonStyle = global::DrivingLicenceApp.Resource.Attribute.actionModeCloseButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeCloseDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModeCloseDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeCopyDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModeCopyDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeCutDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModeCutDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeFindDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModeFindDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModePasteDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModePasteDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModePopupWindowStyle = global::DrivingLicenceApp.Resource.Attribute.actionModePopupWindowStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeSelectAllDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModeSelectAllDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeShareDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModeShareDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeSplitBackground = global::DrivingLicenceApp.Resource.Attribute.actionModeSplitBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeStyle = global::DrivingLicenceApp.Resource.Attribute.actionModeStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionModeWebSearchDrawable = global::DrivingLicenceApp.Resource.Attribute.actionModeWebSearchDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionOverflowButtonStyle = global::DrivingLicenceApp.Resource.Attribute.actionOverflowButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionOverflowMenuStyle = global::DrivingLicenceApp.Resource.Attribute.actionOverflowMenuStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionProviderClass = global::DrivingLicenceApp.Resource.Attribute.actionProviderClass;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.actionViewClass = global::DrivingLicenceApp.Resource.Attribute.actionViewClass;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.activityChooserViewStyle = global::DrivingLicenceApp.Resource.Attribute.activityChooserViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.alertDialogButtonGroupStyle = global::DrivingLicenceApp.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.alertDialogCenterButtons = global::DrivingLicenceApp.Resource.Attribute.alertDialogCenterButtons;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.alertDialogStyle = global::DrivingLicenceApp.Resource.Attribute.alertDialogStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.alertDialogTheme = global::DrivingLicenceApp.Resource.Attribute.alertDialogTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.allowStacking = global::DrivingLicenceApp.Resource.Attribute.allowStacking;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.alpha = global::DrivingLicenceApp.Resource.Attribute.alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.arrowHeadLength = global::DrivingLicenceApp.Resource.Attribute.arrowHeadLength;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.arrowShaftLength = global::DrivingLicenceApp.Resource.Attribute.arrowShaftLength;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.autoCompleteTextViewStyle = global::DrivingLicenceApp.Resource.Attribute.autoCompleteTextViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.background = global::DrivingLicenceApp.Resource.Attribute.background;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.backgroundSplit = global::DrivingLicenceApp.Resource.Attribute.backgroundSplit;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.backgroundStacked = global::DrivingLicenceApp.Resource.Attribute.backgroundStacked;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.backgroundTint = global::DrivingLicenceApp.Resource.Attribute.backgroundTint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.backgroundTintMode = global::DrivingLicenceApp.Resource.Attribute.backgroundTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.barLength = global::DrivingLicenceApp.Resource.Attribute.barLength;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.borderlessButtonStyle = global::DrivingLicenceApp.Resource.Attribute.borderlessButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonBarButtonStyle = global::DrivingLicenceApp.Resource.Attribute.buttonBarButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonBarNegativeButtonStyle = global::DrivingLicenceApp.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonBarNeutralButtonStyle = global::DrivingLicenceApp.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonBarPositiveButtonStyle = global::DrivingLicenceApp.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonBarStyle = global::DrivingLicenceApp.Resource.Attribute.buttonBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonGravity = global::DrivingLicenceApp.Resource.Attribute.buttonGravity;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonPanelSideLayout = global::DrivingLicenceApp.Resource.Attribute.buttonPanelSideLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonStyle = global::DrivingLicenceApp.Resource.Attribute.buttonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonStyleSmall = global::DrivingLicenceApp.Resource.Attribute.buttonStyleSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonTint = global::DrivingLicenceApp.Resource.Attribute.buttonTint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.buttonTintMode = global::DrivingLicenceApp.Resource.Attribute.buttonTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.checkboxStyle = global::DrivingLicenceApp.Resource.Attribute.checkboxStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.checkedTextViewStyle = global::DrivingLicenceApp.Resource.Attribute.checkedTextViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.closeIcon = global::DrivingLicenceApp.Resource.Attribute.closeIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.closeItemLayout = global::DrivingLicenceApp.Resource.Attribute.closeItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.collapseContentDescription = global::DrivingLicenceApp.Resource.Attribute.collapseContentDescription;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.collapseIcon = global::DrivingLicenceApp.Resource.Attribute.collapseIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.color = global::DrivingLicenceApp.Resource.Attribute.color;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorAccent = global::DrivingLicenceApp.Resource.Attribute.colorAccent;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorBackgroundFloating = global::DrivingLicenceApp.Resource.Attribute.colorBackgroundFloating;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorButtonNormal = global::DrivingLicenceApp.Resource.Attribute.colorButtonNormal;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorControlActivated = global::DrivingLicenceApp.Resource.Attribute.colorControlActivated;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorControlHighlight = global::DrivingLicenceApp.Resource.Attribute.colorControlHighlight;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorControlNormal = global::DrivingLicenceApp.Resource.Attribute.colorControlNormal;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorPrimary = global::DrivingLicenceApp.Resource.Attribute.colorPrimary;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorPrimaryDark = global::DrivingLicenceApp.Resource.Attribute.colorPrimaryDark;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.colorSwitchThumbNormal = global::DrivingLicenceApp.Resource.Attribute.colorSwitchThumbNormal;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.commitIcon = global::DrivingLicenceApp.Resource.Attribute.commitIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.contentInsetEnd = global::DrivingLicenceApp.Resource.Attribute.contentInsetEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.contentInsetEndWithActions = global::DrivingLicenceApp.Resource.Attribute.contentInsetEndWithActions;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.contentInsetLeft = global::DrivingLicenceApp.Resource.Attribute.contentInsetLeft;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.contentInsetRight = global::DrivingLicenceApp.Resource.Attribute.contentInsetRight;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.contentInsetStart = global::DrivingLicenceApp.Resource.Attribute.contentInsetStart;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.contentInsetStartWithNavigation = global::DrivingLicenceApp.Resource.Attribute.contentInsetStartWithNavigation;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.controlBackground = global::DrivingLicenceApp.Resource.Attribute.controlBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.customNavigationLayout = global::DrivingLicenceApp.Resource.Attribute.customNavigationLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.defaultQueryHint = global::DrivingLicenceApp.Resource.Attribute.defaultQueryHint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.dialogPreferredPadding = global::DrivingLicenceApp.Resource.Attribute.dialogPreferredPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.dialogTheme = global::DrivingLicenceApp.Resource.Attribute.dialogTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.displayOptions = global::DrivingLicenceApp.Resource.Attribute.displayOptions;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.divider = global::DrivingLicenceApp.Resource.Attribute.divider;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.dividerHorizontal = global::DrivingLicenceApp.Resource.Attribute.dividerHorizontal;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.dividerPadding = global::DrivingLicenceApp.Resource.Attribute.dividerPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.dividerVertical = global::DrivingLicenceApp.Resource.Attribute.dividerVertical;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.drawableSize = global::DrivingLicenceApp.Resource.Attribute.drawableSize;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.drawerArrowStyle = global::DrivingLicenceApp.Resource.Attribute.drawerArrowStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.dropDownListViewStyle = global::DrivingLicenceApp.Resource.Attribute.dropDownListViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.dropdownListPreferredItemHeight = global::DrivingLicenceApp.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.editTextBackground = global::DrivingLicenceApp.Resource.Attribute.editTextBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.editTextColor = global::DrivingLicenceApp.Resource.Attribute.editTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.editTextStyle = global::DrivingLicenceApp.Resource.Attribute.editTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.elevation = global::DrivingLicenceApp.Resource.Attribute.elevation;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.expandActivityOverflowButtonDrawable = global::DrivingLicenceApp.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.gapBetweenBars = global::DrivingLicenceApp.Resource.Attribute.gapBetweenBars;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.goIcon = global::DrivingLicenceApp.Resource.Attribute.goIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.height = global::DrivingLicenceApp.Resource.Attribute.height;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.hideOnContentScroll = global::DrivingLicenceApp.Resource.Attribute.hideOnContentScroll;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.homeAsUpIndicator = global::DrivingLicenceApp.Resource.Attribute.homeAsUpIndicator;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.homeLayout = global::DrivingLicenceApp.Resource.Attribute.homeLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.icon = global::DrivingLicenceApp.Resource.Attribute.icon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.iconifiedByDefault = global::DrivingLicenceApp.Resource.Attribute.iconifiedByDefault;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.imageButtonStyle = global::DrivingLicenceApp.Resource.Attribute.imageButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.indeterminateProgressStyle = global::DrivingLicenceApp.Resource.Attribute.indeterminateProgressStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.initialActivityCount = global::DrivingLicenceApp.Resource.Attribute.initialActivityCount;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.isLightTheme = global::DrivingLicenceApp.Resource.Attribute.isLightTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.itemPadding = global::DrivingLicenceApp.Resource.Attribute.itemPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.layout = global::DrivingLicenceApp.Resource.Attribute.layout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listChoiceBackgroundIndicator = global::DrivingLicenceApp.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listDividerAlertDialog = global::DrivingLicenceApp.Resource.Attribute.listDividerAlertDialog;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listItemLayout = global::DrivingLicenceApp.Resource.Attribute.listItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listLayout = global::DrivingLicenceApp.Resource.Attribute.listLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listMenuViewStyle = global::DrivingLicenceApp.Resource.Attribute.listMenuViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listPopupWindowStyle = global::DrivingLicenceApp.Resource.Attribute.listPopupWindowStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listPreferredItemHeight = global::DrivingLicenceApp.Resource.Attribute.listPreferredItemHeight;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listPreferredItemHeightLarge = global::DrivingLicenceApp.Resource.Attribute.listPreferredItemHeightLarge;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listPreferredItemHeightSmall = global::DrivingLicenceApp.Resource.Attribute.listPreferredItemHeightSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listPreferredItemPaddingLeft = global::DrivingLicenceApp.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.listPreferredItemPaddingRight = global::DrivingLicenceApp.Resource.Attribute.listPreferredItemPaddingRight;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.logo = global::DrivingLicenceApp.Resource.Attribute.logo;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.logoDescription = global::DrivingLicenceApp.Resource.Attribute.logoDescription;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.maxButtonHeight = global::DrivingLicenceApp.Resource.Attribute.maxButtonHeight;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.measureWithLargestChild = global::DrivingLicenceApp.Resource.Attribute.measureWithLargestChild;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.multiChoiceItemLayout = global::DrivingLicenceApp.Resource.Attribute.multiChoiceItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.navigationContentDescription = global::DrivingLicenceApp.Resource.Attribute.navigationContentDescription;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.navigationIcon = global::DrivingLicenceApp.Resource.Attribute.navigationIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.navigationMode = global::DrivingLicenceApp.Resource.Attribute.navigationMode;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.overlapAnchor = global::DrivingLicenceApp.Resource.Attribute.overlapAnchor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.paddingBottomNoButtons = global::DrivingLicenceApp.Resource.Attribute.paddingBottomNoButtons;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.paddingEnd = global::DrivingLicenceApp.Resource.Attribute.paddingEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.paddingStart = global::DrivingLicenceApp.Resource.Attribute.paddingStart;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.paddingTopNoTitle = global::DrivingLicenceApp.Resource.Attribute.paddingTopNoTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.panelBackground = global::DrivingLicenceApp.Resource.Attribute.panelBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.panelMenuListTheme = global::DrivingLicenceApp.Resource.Attribute.panelMenuListTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.panelMenuListWidth = global::DrivingLicenceApp.Resource.Attribute.panelMenuListWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.popupMenuStyle = global::DrivingLicenceApp.Resource.Attribute.popupMenuStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.popupTheme = global::DrivingLicenceApp.Resource.Attribute.popupTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.popupWindowStyle = global::DrivingLicenceApp.Resource.Attribute.popupWindowStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.preserveIconSpacing = global::DrivingLicenceApp.Resource.Attribute.preserveIconSpacing;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.progressBarPadding = global::DrivingLicenceApp.Resource.Attribute.progressBarPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.progressBarStyle = global::DrivingLicenceApp.Resource.Attribute.progressBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.queryBackground = global::DrivingLicenceApp.Resource.Attribute.queryBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.queryHint = global::DrivingLicenceApp.Resource.Attribute.queryHint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.radioButtonStyle = global::DrivingLicenceApp.Resource.Attribute.radioButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.ratingBarStyle = global::DrivingLicenceApp.Resource.Attribute.ratingBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.ratingBarStyleIndicator = global::DrivingLicenceApp.Resource.Attribute.ratingBarStyleIndicator;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.ratingBarStyleSmall = global::DrivingLicenceApp.Resource.Attribute.ratingBarStyleSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.searchHintIcon = global::DrivingLicenceApp.Resource.Attribute.searchHintIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.searchIcon = global::DrivingLicenceApp.Resource.Attribute.searchIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.searchViewStyle = global::DrivingLicenceApp.Resource.Attribute.searchViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.seekBarStyle = global::DrivingLicenceApp.Resource.Attribute.seekBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.selectableItemBackground = global::DrivingLicenceApp.Resource.Attribute.selectableItemBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.selectableItemBackgroundBorderless = global::DrivingLicenceApp.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.showAsAction = global::DrivingLicenceApp.Resource.Attribute.showAsAction;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.showDividers = global::DrivingLicenceApp.Resource.Attribute.showDividers;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.showText = global::DrivingLicenceApp.Resource.Attribute.showText;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.showTitle = global::DrivingLicenceApp.Resource.Attribute.showTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.singleChoiceItemLayout = global::DrivingLicenceApp.Resource.Attribute.singleChoiceItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.spinBars = global::DrivingLicenceApp.Resource.Attribute.spinBars;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.spinnerDropDownItemStyle = global::DrivingLicenceApp.Resource.Attribute.spinnerDropDownItemStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.spinnerStyle = global::DrivingLicenceApp.Resource.Attribute.spinnerStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.splitTrack = global::DrivingLicenceApp.Resource.Attribute.splitTrack;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.srcCompat = global::DrivingLicenceApp.Resource.Attribute.srcCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.state_above_anchor = global::DrivingLicenceApp.Resource.Attribute.state_above_anchor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.subMenuArrow = global::DrivingLicenceApp.Resource.Attribute.subMenuArrow;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.submitBackground = global::DrivingLicenceApp.Resource.Attribute.submitBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.subtitle = global::DrivingLicenceApp.Resource.Attribute.subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.subtitleTextAppearance = global::DrivingLicenceApp.Resource.Attribute.subtitleTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.subtitleTextColor = global::DrivingLicenceApp.Resource.Attribute.subtitleTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.subtitleTextStyle = global::DrivingLicenceApp.Resource.Attribute.subtitleTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.suggestionRowLayout = global::DrivingLicenceApp.Resource.Attribute.suggestionRowLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.switchMinWidth = global::DrivingLicenceApp.Resource.Attribute.switchMinWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.switchPadding = global::DrivingLicenceApp.Resource.Attribute.switchPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.switchStyle = global::DrivingLicenceApp.Resource.Attribute.switchStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.switchTextAppearance = global::DrivingLicenceApp.Resource.Attribute.switchTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAllCaps = global::DrivingLicenceApp.Resource.Attribute.textAllCaps;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearanceLargePopupMenu = global::DrivingLicenceApp.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearanceListItem = global::DrivingLicenceApp.Resource.Attribute.textAppearanceListItem;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearanceListItemSecondary = global::DrivingLicenceApp.Resource.Attribute.textAppearanceListItemSecondary;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearanceListItemSmall = global::DrivingLicenceApp.Resource.Attribute.textAppearanceListItemSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearancePopupMenuHeader = global::DrivingLicenceApp.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearanceSearchResultSubtitle = global::DrivingLicenceApp.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearanceSearchResultTitle = global::DrivingLicenceApp.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textAppearanceSmallPopupMenu = global::DrivingLicenceApp.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textColorAlertDialogListItem = global::DrivingLicenceApp.Resource.Attribute.textColorAlertDialogListItem;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.textColorSearchUrl = global::DrivingLicenceApp.Resource.Attribute.textColorSearchUrl;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.theme = global::DrivingLicenceApp.Resource.Attribute.theme;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.thickness = global::DrivingLicenceApp.Resource.Attribute.thickness;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.thumbTextPadding = global::DrivingLicenceApp.Resource.Attribute.thumbTextPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.thumbTint = global::DrivingLicenceApp.Resource.Attribute.thumbTint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.thumbTintMode = global::DrivingLicenceApp.Resource.Attribute.thumbTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.tickMark = global::DrivingLicenceApp.Resource.Attribute.tickMark;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.tickMarkTint = global::DrivingLicenceApp.Resource.Attribute.tickMarkTint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.tickMarkTintMode = global::DrivingLicenceApp.Resource.Attribute.tickMarkTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.tint = global::DrivingLicenceApp.Resource.Attribute.tint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.tintMode = global::DrivingLicenceApp.Resource.Attribute.tintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.title = global::DrivingLicenceApp.Resource.Attribute.title;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleMargin = global::DrivingLicenceApp.Resource.Attribute.titleMargin;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleMarginBottom = global::DrivingLicenceApp.Resource.Attribute.titleMarginBottom;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleMarginEnd = global::DrivingLicenceApp.Resource.Attribute.titleMarginEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleMarginStart = global::DrivingLicenceApp.Resource.Attribute.titleMarginStart;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleMarginTop = global::DrivingLicenceApp.Resource.Attribute.titleMarginTop;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleMargins = global::DrivingLicenceApp.Resource.Attribute.titleMargins;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleTextAppearance = global::DrivingLicenceApp.Resource.Attribute.titleTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleTextColor = global::DrivingLicenceApp.Resource.Attribute.titleTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.titleTextStyle = global::DrivingLicenceApp.Resource.Attribute.titleTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.toolbarNavigationButtonStyle = global::DrivingLicenceApp.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.toolbarStyle = global::DrivingLicenceApp.Resource.Attribute.toolbarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.track = global::DrivingLicenceApp.Resource.Attribute.track;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.trackTint = global::DrivingLicenceApp.Resource.Attribute.trackTint;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.trackTintMode = global::DrivingLicenceApp.Resource.Attribute.trackTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.voiceIcon = global::DrivingLicenceApp.Resource.Attribute.voiceIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowActionBar = global::DrivingLicenceApp.Resource.Attribute.windowActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowActionBarOverlay = global::DrivingLicenceApp.Resource.Attribute.windowActionBarOverlay;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowActionModeOverlay = global::DrivingLicenceApp.Resource.Attribute.windowActionModeOverlay;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowFixedHeightMajor = global::DrivingLicenceApp.Resource.Attribute.windowFixedHeightMajor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowFixedHeightMinor = global::DrivingLicenceApp.Resource.Attribute.windowFixedHeightMinor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowFixedWidthMajor = global::DrivingLicenceApp.Resource.Attribute.windowFixedWidthMajor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowFixedWidthMinor = global::DrivingLicenceApp.Resource.Attribute.windowFixedWidthMinor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowMinWidthMajor = global::DrivingLicenceApp.Resource.Attribute.windowMinWidthMajor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowMinWidthMinor = global::DrivingLicenceApp.Resource.Attribute.windowMinWidthMinor;
-			global::DrivingLicenceAndroidPCL.Resource.Attribute.windowNoTitle = global::DrivingLicenceApp.Resource.Attribute.windowNoTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Boolean.abc_action_bar_embed_tabs = global::DrivingLicenceApp.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::DrivingLicenceAndroidPCL.Resource.Boolean.abc_allow_stacked_button_bar = global::DrivingLicenceApp.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::DrivingLicenceAndroidPCL.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::DrivingLicenceApp.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::DrivingLicenceAndroidPCL.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::DrivingLicenceApp.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::DrivingLicenceAndroidPCL.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::DrivingLicenceApp.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_background_cache_hint_selector_material_dark = global::DrivingLicenceApp.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_background_cache_hint_selector_material_light = global::DrivingLicenceApp.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_btn_colored_borderless_text_material = global::DrivingLicenceApp.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_btn_colored_text_material = global::DrivingLicenceApp.Resource.Color.abc_btn_colored_text_material;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_color_highlight_material = global::DrivingLicenceApp.Resource.Color.abc_color_highlight_material;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_hint_foreground_material_dark = global::DrivingLicenceApp.Resource.Color.abc_hint_foreground_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_hint_foreground_material_light = global::DrivingLicenceApp.Resource.Color.abc_hint_foreground_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_input_method_navigation_guard = global::DrivingLicenceApp.Resource.Color.abc_input_method_navigation_guard;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_primary_text_disable_only_material_dark = global::DrivingLicenceApp.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_primary_text_disable_only_material_light = global::DrivingLicenceApp.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_primary_text_material_dark = global::DrivingLicenceApp.Resource.Color.abc_primary_text_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_primary_text_material_light = global::DrivingLicenceApp.Resource.Color.abc_primary_text_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_search_url_text = global::DrivingLicenceApp.Resource.Color.abc_search_url_text;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_search_url_text_normal = global::DrivingLicenceApp.Resource.Color.abc_search_url_text_normal;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_search_url_text_pressed = global::DrivingLicenceApp.Resource.Color.abc_search_url_text_pressed;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_search_url_text_selected = global::DrivingLicenceApp.Resource.Color.abc_search_url_text_selected;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_secondary_text_material_dark = global::DrivingLicenceApp.Resource.Color.abc_secondary_text_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_secondary_text_material_light = global::DrivingLicenceApp.Resource.Color.abc_secondary_text_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_tint_btn_checkable = global::DrivingLicenceApp.Resource.Color.abc_tint_btn_checkable;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_tint_default = global::DrivingLicenceApp.Resource.Color.abc_tint_default;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_tint_edittext = global::DrivingLicenceApp.Resource.Color.abc_tint_edittext;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_tint_seek_thumb = global::DrivingLicenceApp.Resource.Color.abc_tint_seek_thumb;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_tint_spinner = global::DrivingLicenceApp.Resource.Color.abc_tint_spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_tint_switch_thumb = global::DrivingLicenceApp.Resource.Color.abc_tint_switch_thumb;
-			global::DrivingLicenceAndroidPCL.Resource.Color.abc_tint_switch_track = global::DrivingLicenceApp.Resource.Color.abc_tint_switch_track;
-			global::DrivingLicenceAndroidPCL.Resource.Color.accent_material_dark = global::DrivingLicenceApp.Resource.Color.accent_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.accent_material_light = global::DrivingLicenceApp.Resource.Color.accent_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.background_floating_material_dark = global::DrivingLicenceApp.Resource.Color.background_floating_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.background_floating_material_light = global::DrivingLicenceApp.Resource.Color.background_floating_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.background_material_dark = global::DrivingLicenceApp.Resource.Color.background_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.background_material_light = global::DrivingLicenceApp.Resource.Color.background_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.bright_foreground_disabled_material_dark = global::DrivingLicenceApp.Resource.Color.bright_foreground_disabled_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.bright_foreground_disabled_material_light = global::DrivingLicenceApp.Resource.Color.bright_foreground_disabled_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.bright_foreground_inverse_material_dark = global::DrivingLicenceApp.Resource.Color.bright_foreground_inverse_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.bright_foreground_inverse_material_light = global::DrivingLicenceApp.Resource.Color.bright_foreground_inverse_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.bright_foreground_material_dark = global::DrivingLicenceApp.Resource.Color.bright_foreground_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.bright_foreground_material_light = global::DrivingLicenceApp.Resource.Color.bright_foreground_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.button_material_dark = global::DrivingLicenceApp.Resource.Color.button_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.button_material_light = global::DrivingLicenceApp.Resource.Color.button_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.dim_foreground_disabled_material_dark = global::DrivingLicenceApp.Resource.Color.dim_foreground_disabled_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.dim_foreground_disabled_material_light = global::DrivingLicenceApp.Resource.Color.dim_foreground_disabled_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.dim_foreground_material_dark = global::DrivingLicenceApp.Resource.Color.dim_foreground_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.dim_foreground_material_light = global::DrivingLicenceApp.Resource.Color.dim_foreground_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.foreground_material_dark = global::DrivingLicenceApp.Resource.Color.foreground_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.foreground_material_light = global::DrivingLicenceApp.Resource.Color.foreground_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.highlighted_text_material_dark = global::DrivingLicenceApp.Resource.Color.highlighted_text_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.highlighted_text_material_light = global::DrivingLicenceApp.Resource.Color.highlighted_text_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_blue_grey_800 = global::DrivingLicenceApp.Resource.Color.material_blue_grey_800;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_blue_grey_900 = global::DrivingLicenceApp.Resource.Color.material_blue_grey_900;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_blue_grey_950 = global::DrivingLicenceApp.Resource.Color.material_blue_grey_950;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_deep_teal_200 = global::DrivingLicenceApp.Resource.Color.material_deep_teal_200;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_deep_teal_500 = global::DrivingLicenceApp.Resource.Color.material_deep_teal_500;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_grey_100 = global::DrivingLicenceApp.Resource.Color.material_grey_100;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_grey_300 = global::DrivingLicenceApp.Resource.Color.material_grey_300;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_grey_50 = global::DrivingLicenceApp.Resource.Color.material_grey_50;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_grey_600 = global::DrivingLicenceApp.Resource.Color.material_grey_600;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_grey_800 = global::DrivingLicenceApp.Resource.Color.material_grey_800;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_grey_850 = global::DrivingLicenceApp.Resource.Color.material_grey_850;
-			global::DrivingLicenceAndroidPCL.Resource.Color.material_grey_900 = global::DrivingLicenceApp.Resource.Color.material_grey_900;
-			global::DrivingLicenceAndroidPCL.Resource.Color.notification_action_color_filter = global::DrivingLicenceApp.Resource.Color.notification_action_color_filter;
-			global::DrivingLicenceAndroidPCL.Resource.Color.notification_icon_bg_color = global::DrivingLicenceApp.Resource.Color.notification_icon_bg_color;
-			global::DrivingLicenceAndroidPCL.Resource.Color.notification_material_background_media_default_color = global::DrivingLicenceApp.Resource.Color.notification_material_background_media_default_color;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_dark_material_dark = global::DrivingLicenceApp.Resource.Color.primary_dark_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_dark_material_light = global::DrivingLicenceApp.Resource.Color.primary_dark_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_material_dark = global::DrivingLicenceApp.Resource.Color.primary_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_material_light = global::DrivingLicenceApp.Resource.Color.primary_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_text_default_material_dark = global::DrivingLicenceApp.Resource.Color.primary_text_default_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_text_default_material_light = global::DrivingLicenceApp.Resource.Color.primary_text_default_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_text_disabled_material_dark = global::DrivingLicenceApp.Resource.Color.primary_text_disabled_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.primary_text_disabled_material_light = global::DrivingLicenceApp.Resource.Color.primary_text_disabled_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.ripple_material_dark = global::DrivingLicenceApp.Resource.Color.ripple_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.ripple_material_light = global::DrivingLicenceApp.Resource.Color.ripple_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.secondary_text_default_material_dark = global::DrivingLicenceApp.Resource.Color.secondary_text_default_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.secondary_text_default_material_light = global::DrivingLicenceApp.Resource.Color.secondary_text_default_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.secondary_text_disabled_material_dark = global::DrivingLicenceApp.Resource.Color.secondary_text_disabled_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.secondary_text_disabled_material_light = global::DrivingLicenceApp.Resource.Color.secondary_text_disabled_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.switch_thumb_disabled_material_dark = global::DrivingLicenceApp.Resource.Color.switch_thumb_disabled_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.switch_thumb_disabled_material_light = global::DrivingLicenceApp.Resource.Color.switch_thumb_disabled_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.switch_thumb_material_dark = global::DrivingLicenceApp.Resource.Color.switch_thumb_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.switch_thumb_material_light = global::DrivingLicenceApp.Resource.Color.switch_thumb_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Color.switch_thumb_normal_material_dark = global::DrivingLicenceApp.Resource.Color.switch_thumb_normal_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Color.switch_thumb_normal_material_light = global::DrivingLicenceApp.Resource.Color.switch_thumb_normal_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_content_inset_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_default_height_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_default_height_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_default_padding_end_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_default_padding_start_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_elevation_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_elevation_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_progress_bar_size = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_stacked_max_height = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_button_min_height_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_button_min_height_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_button_min_width_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_button_min_width_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_action_button_min_width_overflow_material = global::DrivingLicenceApp.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_alert_dialog_button_bar_height = global::DrivingLicenceApp.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_button_inset_horizontal_material = global::DrivingLicenceApp.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_button_inset_vertical_material = global::DrivingLicenceApp.Resource.Dimension.abc_button_inset_vertical_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_button_padding_horizontal_material = global::DrivingLicenceApp.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_button_padding_vertical_material = global::DrivingLicenceApp.Resource.Dimension.abc_button_padding_vertical_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::DrivingLicenceApp.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_config_prefDialogWidth = global::DrivingLicenceApp.Resource.Dimension.abc_config_prefDialogWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_control_corner_material = global::DrivingLicenceApp.Resource.Dimension.abc_control_corner_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_control_inset_material = global::DrivingLicenceApp.Resource.Dimension.abc_control_inset_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_control_padding_material = global::DrivingLicenceApp.Resource.Dimension.abc_control_padding_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_fixed_height_major = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_fixed_height_minor = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_fixed_width_major = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_fixed_width_minor = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_list_padding_top_no_title;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_min_width_major = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_min_width_major;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_min_width_minor = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_min_width_minor;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_padding_material = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_padding_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_padding_top_material = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_padding_top_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dialog_title_divider_material = global::DrivingLicenceApp.Resource.Dimension.abc_dialog_title_divider_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_disabled_alpha_material_dark = global::DrivingLicenceApp.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_disabled_alpha_material_light = global::DrivingLicenceApp.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dropdownitem_icon_width = global::DrivingLicenceApp.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dropdownitem_text_padding_left = global::DrivingLicenceApp.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_dropdownitem_text_padding_right = global::DrivingLicenceApp.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_edit_text_inset_bottom_material = global::DrivingLicenceApp.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::DrivingLicenceApp.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_edit_text_inset_top_material = global::DrivingLicenceApp.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_floating_window_z = global::DrivingLicenceApp.Resource.Dimension.abc_floating_window_z;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_list_item_padding_horizontal_material = global::DrivingLicenceApp.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_panel_menu_list_width = global::DrivingLicenceApp.Resource.Dimension.abc_panel_menu_list_width;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_progress_bar_height_material = global::DrivingLicenceApp.Resource.Dimension.abc_progress_bar_height_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_search_view_preferred_height = global::DrivingLicenceApp.Resource.Dimension.abc_search_view_preferred_height;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_search_view_preferred_width = global::DrivingLicenceApp.Resource.Dimension.abc_search_view_preferred_width;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_seekbar_track_background_height_material = global::DrivingLicenceApp.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_seekbar_track_progress_height_material = global::DrivingLicenceApp.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_select_dialog_padding_start_material = global::DrivingLicenceApp.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_switch_padding = global::DrivingLicenceApp.Resource.Dimension.abc_switch_padding;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_body_1_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_body_1_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_body_2_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_body_2_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_button_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_button_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_caption_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_caption_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_display_1_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_display_1_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_display_2_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_display_2_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_display_3_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_display_3_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_display_4_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_display_4_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_headline_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_headline_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_large_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_large_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_medium_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_medium_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_menu_header_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_menu_header_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_menu_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_menu_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_small_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_small_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_subhead_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_subhead_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_title_material = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_title_material;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.abc_text_size_title_material_toolbar = global::DrivingLicenceApp.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.disabled_alpha_material_dark = global::DrivingLicenceApp.Resource.Dimension.disabled_alpha_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.disabled_alpha_material_light = global::DrivingLicenceApp.Resource.Dimension.disabled_alpha_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.highlight_alpha_material_colored = global::DrivingLicenceApp.Resource.Dimension.highlight_alpha_material_colored;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.highlight_alpha_material_dark = global::DrivingLicenceApp.Resource.Dimension.highlight_alpha_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.highlight_alpha_material_light = global::DrivingLicenceApp.Resource.Dimension.highlight_alpha_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.hint_alpha_material_dark = global::DrivingLicenceApp.Resource.Dimension.hint_alpha_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.hint_alpha_material_light = global::DrivingLicenceApp.Resource.Dimension.hint_alpha_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.hint_pressed_alpha_material_dark = global::DrivingLicenceApp.Resource.Dimension.hint_pressed_alpha_material_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.hint_pressed_alpha_material_light = global::DrivingLicenceApp.Resource.Dimension.hint_pressed_alpha_material_light;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_action_icon_size = global::DrivingLicenceApp.Resource.Dimension.notification_action_icon_size;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_action_text_size = global::DrivingLicenceApp.Resource.Dimension.notification_action_text_size;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_big_circle_margin = global::DrivingLicenceApp.Resource.Dimension.notification_big_circle_margin;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_content_margin_start = global::DrivingLicenceApp.Resource.Dimension.notification_content_margin_start;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_large_icon_height = global::DrivingLicenceApp.Resource.Dimension.notification_large_icon_height;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_large_icon_width = global::DrivingLicenceApp.Resource.Dimension.notification_large_icon_width;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_main_column_padding_top = global::DrivingLicenceApp.Resource.Dimension.notification_main_column_padding_top;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_media_narrow_margin = global::DrivingLicenceApp.Resource.Dimension.notification_media_narrow_margin;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_right_icon_size = global::DrivingLicenceApp.Resource.Dimension.notification_right_icon_size;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_right_side_padding_top = global::DrivingLicenceApp.Resource.Dimension.notification_right_side_padding_top;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_small_icon_background_padding = global::DrivingLicenceApp.Resource.Dimension.notification_small_icon_background_padding;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_small_icon_size_as_large = global::DrivingLicenceApp.Resource.Dimension.notification_small_icon_size_as_large;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_subtext_size = global::DrivingLicenceApp.Resource.Dimension.notification_subtext_size;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_top_pad = global::DrivingLicenceApp.Resource.Dimension.notification_top_pad;
-			global::DrivingLicenceAndroidPCL.Resource.Dimension.notification_top_pad_large_text = global::DrivingLicenceApp.Resource.Dimension.notification_top_pad_large_text;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_action_bar_item_background_material = global::DrivingLicenceApp.Resource.Drawable.abc_action_bar_item_background_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_borderless_material = global::DrivingLicenceApp.Resource.Drawable.abc_btn_borderless_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_check_material = global::DrivingLicenceApp.Resource.Drawable.abc_btn_check_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::DrivingLicenceApp.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::DrivingLicenceApp.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_colored_material = global::DrivingLicenceApp.Resource.Drawable.abc_btn_colored_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_default_mtrl_shape = global::DrivingLicenceApp.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_radio_material = global::DrivingLicenceApp.Resource.Drawable.abc_btn_radio_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::DrivingLicenceApp.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::DrivingLicenceApp.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::DrivingLicenceApp.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::DrivingLicenceApp.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_cab_background_internal_bg = global::DrivingLicenceApp.Resource.Drawable.abc_cab_background_internal_bg;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_cab_background_top_material = global::DrivingLicenceApp.Resource.Drawable.abc_cab_background_top_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_control_background_material = global::DrivingLicenceApp.Resource.Drawable.abc_control_background_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_dialog_material_background = global::DrivingLicenceApp.Resource.Drawable.abc_dialog_material_background;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_edit_text_material = global::DrivingLicenceApp.Resource.Drawable.abc_edit_text_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_ab_back_material = global::DrivingLicenceApp.Resource.Drawable.abc_ic_ab_back_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::DrivingLicenceApp.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_clear_material = global::DrivingLicenceApp.Resource.Drawable.abc_ic_clear_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_go_search_api_material = global::DrivingLicenceApp.Resource.Drawable.abc_ic_go_search_api_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_menu_overflow_material = global::DrivingLicenceApp.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_search_api_material = global::DrivingLicenceApp.Resource.Drawable.abc_ic_search_api_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_star_black_16dp = global::DrivingLicenceApp.Resource.Drawable.abc_ic_star_black_16dp;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_star_black_36dp = global::DrivingLicenceApp.Resource.Drawable.abc_ic_star_black_36dp;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_star_black_48dp = global::DrivingLicenceApp.Resource.Drawable.abc_ic_star_black_48dp;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_star_half_black_16dp = global::DrivingLicenceApp.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_star_half_black_36dp = global::DrivingLicenceApp.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_star_half_black_48dp = global::DrivingLicenceApp.Resource.Drawable.abc_ic_star_half_black_48dp;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ic_voice_search_api_material = global::DrivingLicenceApp.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_item_background_holo_dark = global::DrivingLicenceApp.Resource.Drawable.abc_item_background_holo_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_item_background_holo_light = global::DrivingLicenceApp.Resource.Drawable.abc_item_background_holo_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_divider_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_focused_holo = global::DrivingLicenceApp.Resource.Drawable.abc_list_focused_holo;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_longpressed_holo = global::DrivingLicenceApp.Resource.Drawable.abc_list_longpressed_holo;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_pressed_holo_dark = global::DrivingLicenceApp.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_pressed_holo_light = global::DrivingLicenceApp.Resource.Drawable.abc_list_pressed_holo_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::DrivingLicenceApp.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::DrivingLicenceApp.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::DrivingLicenceApp.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_selector_disabled_holo_light = global::DrivingLicenceApp.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_selector_holo_dark = global::DrivingLicenceApp.Resource.Drawable.abc_list_selector_holo_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_list_selector_holo_light = global::DrivingLicenceApp.Resource.Drawable.abc_list_selector_holo_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::DrivingLicenceApp.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_popup_background_mtrl_mult = global::DrivingLicenceApp.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ratingbar_indicator_material = global::DrivingLicenceApp.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ratingbar_material = global::DrivingLicenceApp.Resource.Drawable.abc_ratingbar_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_ratingbar_small_material = global::DrivingLicenceApp.Resource.Drawable.abc_ratingbar_small_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::DrivingLicenceApp.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::DrivingLicenceApp.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_seekbar_thumb_material = global::DrivingLicenceApp.Resource.Drawable.abc_seekbar_thumb_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_seekbar_tick_mark_material = global::DrivingLicenceApp.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_seekbar_track_material = global::DrivingLicenceApp.Resource.Drawable.abc_seekbar_track_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_spinner_textfield_background_material = global::DrivingLicenceApp.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_switch_thumb_material = global::DrivingLicenceApp.Resource.Drawable.abc_switch_thumb_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_switch_track_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_tab_indicator_material = global::DrivingLicenceApp.Resource.Drawable.abc_tab_indicator_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_text_cursor_material = global::DrivingLicenceApp.Resource.Drawable.abc_text_cursor_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::DrivingLicenceApp.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::DrivingLicenceApp.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::DrivingLicenceApp.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::DrivingLicenceApp.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::DrivingLicenceApp.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::DrivingLicenceApp.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::DrivingLicenceApp.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_textfield_search_material = global::DrivingLicenceApp.Resource.Drawable.abc_textfield_search_material;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.abc_vector_test = global::DrivingLicenceApp.Resource.Drawable.abc_vector_test;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_action_background = global::DrivingLicenceApp.Resource.Drawable.notification_action_background;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_bg = global::DrivingLicenceApp.Resource.Drawable.notification_bg;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_bg_low = global::DrivingLicenceApp.Resource.Drawable.notification_bg_low;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_bg_low_normal = global::DrivingLicenceApp.Resource.Drawable.notification_bg_low_normal;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_bg_low_pressed = global::DrivingLicenceApp.Resource.Drawable.notification_bg_low_pressed;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_bg_normal = global::DrivingLicenceApp.Resource.Drawable.notification_bg_normal;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_bg_normal_pressed = global::DrivingLicenceApp.Resource.Drawable.notification_bg_normal_pressed;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_icon_background = global::DrivingLicenceApp.Resource.Drawable.notification_icon_background;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_template_icon_bg = global::DrivingLicenceApp.Resource.Drawable.notification_template_icon_bg;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_template_icon_low_bg = global::DrivingLicenceApp.Resource.Drawable.notification_template_icon_low_bg;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notification_tile_bg = global::DrivingLicenceApp.Resource.Drawable.notification_tile_bg;
-			global::DrivingLicenceAndroidPCL.Resource.Drawable.notify_panel_notification_icon_bg = global::DrivingLicenceApp.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action0 = global::DrivingLicenceApp.Resource.Id.action0;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_bar = global::DrivingLicenceApp.Resource.Id.action_bar;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_bar_activity_content = global::DrivingLicenceApp.Resource.Id.action_bar_activity_content;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_bar_container = global::DrivingLicenceApp.Resource.Id.action_bar_container;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_bar_root = global::DrivingLicenceApp.Resource.Id.action_bar_root;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_bar_spinner = global::DrivingLicenceApp.Resource.Id.action_bar_spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_bar_subtitle = global::DrivingLicenceApp.Resource.Id.action_bar_subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_bar_title = global::DrivingLicenceApp.Resource.Id.action_bar_title;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_container = global::DrivingLicenceApp.Resource.Id.action_container;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_context_bar = global::DrivingLicenceApp.Resource.Id.action_context_bar;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_divider = global::DrivingLicenceApp.Resource.Id.action_divider;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_image = global::DrivingLicenceApp.Resource.Id.action_image;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_menu_divider = global::DrivingLicenceApp.Resource.Id.action_menu_divider;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_menu_presenter = global::DrivingLicenceApp.Resource.Id.action_menu_presenter;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_mode_bar = global::DrivingLicenceApp.Resource.Id.action_mode_bar;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_mode_bar_stub = global::DrivingLicenceApp.Resource.Id.action_mode_bar_stub;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_mode_close_button = global::DrivingLicenceApp.Resource.Id.action_mode_close_button;
-			global::DrivingLicenceAndroidPCL.Resource.Id.action_text = global::DrivingLicenceApp.Resource.Id.action_text;
-			global::DrivingLicenceAndroidPCL.Resource.Id.actions = global::DrivingLicenceApp.Resource.Id.actions;
-			global::DrivingLicenceAndroidPCL.Resource.Id.activity_chooser_view_content = global::DrivingLicenceApp.Resource.Id.activity_chooser_view_content;
-			global::DrivingLicenceAndroidPCL.Resource.Id.add = global::DrivingLicenceApp.Resource.Id.add;
-			global::DrivingLicenceAndroidPCL.Resource.Id.alertTitle = global::DrivingLicenceApp.Resource.Id.alertTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Id.always = global::DrivingLicenceApp.Resource.Id.always;
-			global::DrivingLicenceAndroidPCL.Resource.Id.beginning = global::DrivingLicenceApp.Resource.Id.beginning;
-			global::DrivingLicenceAndroidPCL.Resource.Id.bottom = global::DrivingLicenceApp.Resource.Id.bottom;
-			global::DrivingLicenceAndroidPCL.Resource.Id.buttonPanel = global::DrivingLicenceApp.Resource.Id.buttonPanel;
-			global::DrivingLicenceAndroidPCL.Resource.Id.cancel_action = global::DrivingLicenceApp.Resource.Id.cancel_action;
-			global::DrivingLicenceAndroidPCL.Resource.Id.checkbox = global::DrivingLicenceApp.Resource.Id.checkbox;
-			global::DrivingLicenceAndroidPCL.Resource.Id.chronometer = global::DrivingLicenceApp.Resource.Id.chronometer;
-			global::DrivingLicenceAndroidPCL.Resource.Id.collapseActionView = global::DrivingLicenceApp.Resource.Id.collapseActionView;
-			global::DrivingLicenceAndroidPCL.Resource.Id.contentPanel = global::DrivingLicenceApp.Resource.Id.contentPanel;
-			global::DrivingLicenceAndroidPCL.Resource.Id.custom = global::DrivingLicenceApp.Resource.Id.custom;
-			global::DrivingLicenceAndroidPCL.Resource.Id.customPanel = global::DrivingLicenceApp.Resource.Id.customPanel;
-			global::DrivingLicenceAndroidPCL.Resource.Id.decor_content_parent = global::DrivingLicenceApp.Resource.Id.decor_content_parent;
-			global::DrivingLicenceAndroidPCL.Resource.Id.default_activity_button = global::DrivingLicenceApp.Resource.Id.default_activity_button;
-			global::DrivingLicenceAndroidPCL.Resource.Id.disableHome = global::DrivingLicenceApp.Resource.Id.disableHome;
-			global::DrivingLicenceAndroidPCL.Resource.Id.edit_query = global::DrivingLicenceApp.Resource.Id.edit_query;
-			global::DrivingLicenceAndroidPCL.Resource.Id.end = global::DrivingLicenceApp.Resource.Id.end;
-			global::DrivingLicenceAndroidPCL.Resource.Id.end_padder = global::DrivingLicenceApp.Resource.Id.end_padder;
-			global::DrivingLicenceAndroidPCL.Resource.Id.expand_activities_button = global::DrivingLicenceApp.Resource.Id.expand_activities_button;
-			global::DrivingLicenceAndroidPCL.Resource.Id.expanded_menu = global::DrivingLicenceApp.Resource.Id.expanded_menu;
-			global::DrivingLicenceAndroidPCL.Resource.Id.home = global::DrivingLicenceApp.Resource.Id.home;
-			global::DrivingLicenceAndroidPCL.Resource.Id.homeAsUp = global::DrivingLicenceApp.Resource.Id.homeAsUp;
-			global::DrivingLicenceAndroidPCL.Resource.Id.icon = global::DrivingLicenceApp.Resource.Id.icon;
-			global::DrivingLicenceAndroidPCL.Resource.Id.icon_group = global::DrivingLicenceApp.Resource.Id.icon_group;
-			global::DrivingLicenceAndroidPCL.Resource.Id.ifRoom = global::DrivingLicenceApp.Resource.Id.ifRoom;
-			global::DrivingLicenceAndroidPCL.Resource.Id.image = global::DrivingLicenceApp.Resource.Id.image;
-			global::DrivingLicenceAndroidPCL.Resource.Id.info = global::DrivingLicenceApp.Resource.Id.info;
-			global::DrivingLicenceAndroidPCL.Resource.Id.line1 = global::DrivingLicenceApp.Resource.Id.line1;
-			global::DrivingLicenceAndroidPCL.Resource.Id.line3 = global::DrivingLicenceApp.Resource.Id.line3;
-			global::DrivingLicenceAndroidPCL.Resource.Id.listMode = global::DrivingLicenceApp.Resource.Id.listMode;
-			global::DrivingLicenceAndroidPCL.Resource.Id.list_item = global::DrivingLicenceApp.Resource.Id.list_item;
-			global::DrivingLicenceAndroidPCL.Resource.Id.media_actions = global::DrivingLicenceApp.Resource.Id.media_actions;
-			global::DrivingLicenceAndroidPCL.Resource.Id.middle = global::DrivingLicenceApp.Resource.Id.middle;
-			global::DrivingLicenceAndroidPCL.Resource.Id.multiply = global::DrivingLicenceApp.Resource.Id.multiply;
-			global::DrivingLicenceAndroidPCL.Resource.Id.never = global::DrivingLicenceApp.Resource.Id.never;
-			global::DrivingLicenceAndroidPCL.Resource.Id.none = global::DrivingLicenceApp.Resource.Id.none;
-			global::DrivingLicenceAndroidPCL.Resource.Id.normal = global::DrivingLicenceApp.Resource.Id.normal;
-			global::DrivingLicenceAndroidPCL.Resource.Id.notification_background = global::DrivingLicenceApp.Resource.Id.notification_background;
-			global::DrivingLicenceAndroidPCL.Resource.Id.notification_main_column = global::DrivingLicenceApp.Resource.Id.notification_main_column;
-			global::DrivingLicenceAndroidPCL.Resource.Id.notification_main_column_container = global::DrivingLicenceApp.Resource.Id.notification_main_column_container;
-			global::DrivingLicenceAndroidPCL.Resource.Id.parentPanel = global::DrivingLicenceApp.Resource.Id.parentPanel;
-			global::DrivingLicenceAndroidPCL.Resource.Id.progress_circular = global::DrivingLicenceApp.Resource.Id.progress_circular;
-			global::DrivingLicenceAndroidPCL.Resource.Id.progress_horizontal = global::DrivingLicenceApp.Resource.Id.progress_horizontal;
-			global::DrivingLicenceAndroidPCL.Resource.Id.radio = global::DrivingLicenceApp.Resource.Id.radio;
-			global::DrivingLicenceAndroidPCL.Resource.Id.right_icon = global::DrivingLicenceApp.Resource.Id.right_icon;
-			global::DrivingLicenceAndroidPCL.Resource.Id.right_side = global::DrivingLicenceApp.Resource.Id.right_side;
-			global::DrivingLicenceAndroidPCL.Resource.Id.screen = global::DrivingLicenceApp.Resource.Id.screen;
-			global::DrivingLicenceAndroidPCL.Resource.Id.scrollIndicatorDown = global::DrivingLicenceApp.Resource.Id.scrollIndicatorDown;
-			global::DrivingLicenceAndroidPCL.Resource.Id.scrollIndicatorUp = global::DrivingLicenceApp.Resource.Id.scrollIndicatorUp;
-			global::DrivingLicenceAndroidPCL.Resource.Id.scrollView = global::DrivingLicenceApp.Resource.Id.scrollView;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_badge = global::DrivingLicenceApp.Resource.Id.search_badge;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_bar = global::DrivingLicenceApp.Resource.Id.search_bar;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_button = global::DrivingLicenceApp.Resource.Id.search_button;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_close_btn = global::DrivingLicenceApp.Resource.Id.search_close_btn;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_edit_frame = global::DrivingLicenceApp.Resource.Id.search_edit_frame;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_go_btn = global::DrivingLicenceApp.Resource.Id.search_go_btn;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_mag_icon = global::DrivingLicenceApp.Resource.Id.search_mag_icon;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_plate = global::DrivingLicenceApp.Resource.Id.search_plate;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_src_text = global::DrivingLicenceApp.Resource.Id.search_src_text;
-			global::DrivingLicenceAndroidPCL.Resource.Id.search_voice_btn = global::DrivingLicenceApp.Resource.Id.search_voice_btn;
-			global::DrivingLicenceAndroidPCL.Resource.Id.select_dialog_listview = global::DrivingLicenceApp.Resource.Id.select_dialog_listview;
-			global::DrivingLicenceAndroidPCL.Resource.Id.shortcut = global::DrivingLicenceApp.Resource.Id.shortcut;
-			global::DrivingLicenceAndroidPCL.Resource.Id.showCustom = global::DrivingLicenceApp.Resource.Id.showCustom;
-			global::DrivingLicenceAndroidPCL.Resource.Id.showHome = global::DrivingLicenceApp.Resource.Id.showHome;
-			global::DrivingLicenceAndroidPCL.Resource.Id.showTitle = global::DrivingLicenceApp.Resource.Id.showTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Id.spacer = global::DrivingLicenceApp.Resource.Id.spacer;
-			global::DrivingLicenceAndroidPCL.Resource.Id.split_action_bar = global::DrivingLicenceApp.Resource.Id.split_action_bar;
-			global::DrivingLicenceAndroidPCL.Resource.Id.src_atop = global::DrivingLicenceApp.Resource.Id.src_atop;
-			global::DrivingLicenceAndroidPCL.Resource.Id.src_in = global::DrivingLicenceApp.Resource.Id.src_in;
-			global::DrivingLicenceAndroidPCL.Resource.Id.src_over = global::DrivingLicenceApp.Resource.Id.src_over;
-			global::DrivingLicenceAndroidPCL.Resource.Id.status_bar_latest_event_content = global::DrivingLicenceApp.Resource.Id.status_bar_latest_event_content;
-			global::DrivingLicenceAndroidPCL.Resource.Id.submenuarrow = global::DrivingLicenceApp.Resource.Id.submenuarrow;
-			global::DrivingLicenceAndroidPCL.Resource.Id.submit_area = global::DrivingLicenceApp.Resource.Id.submit_area;
-			global::DrivingLicenceAndroidPCL.Resource.Id.tabMode = global::DrivingLicenceApp.Resource.Id.tabMode;
-			global::DrivingLicenceAndroidPCL.Resource.Id.text = global::DrivingLicenceApp.Resource.Id.text;
-			global::DrivingLicenceAndroidPCL.Resource.Id.text2 = global::DrivingLicenceApp.Resource.Id.text2;
-			global::DrivingLicenceAndroidPCL.Resource.Id.textSpacerNoButtons = global::DrivingLicenceApp.Resource.Id.textSpacerNoButtons;
-			global::DrivingLicenceAndroidPCL.Resource.Id.textSpacerNoTitle = global::DrivingLicenceApp.Resource.Id.textSpacerNoTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Id.time = global::DrivingLicenceApp.Resource.Id.time;
-			global::DrivingLicenceAndroidPCL.Resource.Id.title = global::DrivingLicenceApp.Resource.Id.title;
-			global::DrivingLicenceAndroidPCL.Resource.Id.titleDividerNoCustom = global::DrivingLicenceApp.Resource.Id.titleDividerNoCustom;
-			global::DrivingLicenceAndroidPCL.Resource.Id.title_template = global::DrivingLicenceApp.Resource.Id.title_template;
-			global::DrivingLicenceAndroidPCL.Resource.Id.top = global::DrivingLicenceApp.Resource.Id.top;
-			global::DrivingLicenceAndroidPCL.Resource.Id.topPanel = global::DrivingLicenceApp.Resource.Id.topPanel;
-			global::DrivingLicenceAndroidPCL.Resource.Id.up = global::DrivingLicenceApp.Resource.Id.up;
-			global::DrivingLicenceAndroidPCL.Resource.Id.useLogo = global::DrivingLicenceApp.Resource.Id.useLogo;
-			global::DrivingLicenceAndroidPCL.Resource.Id.withText = global::DrivingLicenceApp.Resource.Id.withText;
-			global::DrivingLicenceAndroidPCL.Resource.Id.wrap_content = global::DrivingLicenceApp.Resource.Id.wrap_content;
-			global::DrivingLicenceAndroidPCL.Resource.Integer.abc_config_activityDefaultDur = global::DrivingLicenceApp.Resource.Integer.abc_config_activityDefaultDur;
-			global::DrivingLicenceAndroidPCL.Resource.Integer.abc_config_activityShortDur = global::DrivingLicenceApp.Resource.Integer.abc_config_activityShortDur;
-			global::DrivingLicenceAndroidPCL.Resource.Integer.cancel_button_image_alpha = global::DrivingLicenceApp.Resource.Integer.cancel_button_image_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Integer.status_bar_notification_info_maxnum = global::DrivingLicenceApp.Resource.Integer.status_bar_notification_info_maxnum;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_action_bar_title_item = global::DrivingLicenceApp.Resource.Layout.abc_action_bar_title_item;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_action_bar_up_container = global::DrivingLicenceApp.Resource.Layout.abc_action_bar_up_container;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_action_bar_view_list_nav_layout = global::DrivingLicenceApp.Resource.Layout.abc_action_bar_view_list_nav_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_action_menu_item_layout = global::DrivingLicenceApp.Resource.Layout.abc_action_menu_item_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_action_menu_layout = global::DrivingLicenceApp.Resource.Layout.abc_action_menu_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_action_mode_bar = global::DrivingLicenceApp.Resource.Layout.abc_action_mode_bar;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_action_mode_close_item_material = global::DrivingLicenceApp.Resource.Layout.abc_action_mode_close_item_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_activity_chooser_view = global::DrivingLicenceApp.Resource.Layout.abc_activity_chooser_view;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_activity_chooser_view_list_item = global::DrivingLicenceApp.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_alert_dialog_button_bar_material = global::DrivingLicenceApp.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_alert_dialog_material = global::DrivingLicenceApp.Resource.Layout.abc_alert_dialog_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_alert_dialog_title_material = global::DrivingLicenceApp.Resource.Layout.abc_alert_dialog_title_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_dialog_title_material = global::DrivingLicenceApp.Resource.Layout.abc_dialog_title_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_expanded_menu_layout = global::DrivingLicenceApp.Resource.Layout.abc_expanded_menu_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_list_menu_item_checkbox = global::DrivingLicenceApp.Resource.Layout.abc_list_menu_item_checkbox;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_list_menu_item_icon = global::DrivingLicenceApp.Resource.Layout.abc_list_menu_item_icon;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_list_menu_item_layout = global::DrivingLicenceApp.Resource.Layout.abc_list_menu_item_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_list_menu_item_radio = global::DrivingLicenceApp.Resource.Layout.abc_list_menu_item_radio;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_popup_menu_header_item_layout = global::DrivingLicenceApp.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_popup_menu_item_layout = global::DrivingLicenceApp.Resource.Layout.abc_popup_menu_item_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_screen_content_include = global::DrivingLicenceApp.Resource.Layout.abc_screen_content_include;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_screen_simple = global::DrivingLicenceApp.Resource.Layout.abc_screen_simple;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_screen_simple_overlay_action_mode = global::DrivingLicenceApp.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_screen_toolbar = global::DrivingLicenceApp.Resource.Layout.abc_screen_toolbar;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_search_dropdown_item_icons_2line = global::DrivingLicenceApp.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_search_view = global::DrivingLicenceApp.Resource.Layout.abc_search_view;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.abc_select_dialog_material = global::DrivingLicenceApp.Resource.Layout.abc_select_dialog_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_action = global::DrivingLicenceApp.Resource.Layout.notification_action;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_action_tombstone = global::DrivingLicenceApp.Resource.Layout.notification_action_tombstone;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_media_action = global::DrivingLicenceApp.Resource.Layout.notification_media_action;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_media_cancel_action = global::DrivingLicenceApp.Resource.Layout.notification_media_cancel_action;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_big_media = global::DrivingLicenceApp.Resource.Layout.notification_template_big_media;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_big_media_custom = global::DrivingLicenceApp.Resource.Layout.notification_template_big_media_custom;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_big_media_narrow = global::DrivingLicenceApp.Resource.Layout.notification_template_big_media_narrow;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_big_media_narrow_custom = global::DrivingLicenceApp.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_custom_big = global::DrivingLicenceApp.Resource.Layout.notification_template_custom_big;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_icon_group = global::DrivingLicenceApp.Resource.Layout.notification_template_icon_group;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_lines_media = global::DrivingLicenceApp.Resource.Layout.notification_template_lines_media;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_media = global::DrivingLicenceApp.Resource.Layout.notification_template_media;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_media_custom = global::DrivingLicenceApp.Resource.Layout.notification_template_media_custom;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_part_chronometer = global::DrivingLicenceApp.Resource.Layout.notification_template_part_chronometer;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.notification_template_part_time = global::DrivingLicenceApp.Resource.Layout.notification_template_part_time;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.select_dialog_item_material = global::DrivingLicenceApp.Resource.Layout.select_dialog_item_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.select_dialog_multichoice_material = global::DrivingLicenceApp.Resource.Layout.select_dialog_multichoice_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.select_dialog_singlechoice_material = global::DrivingLicenceApp.Resource.Layout.select_dialog_singlechoice_material;
-			global::DrivingLicenceAndroidPCL.Resource.Layout.support_simple_spinner_dropdown_item = global::DrivingLicenceApp.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_action_bar_home_description = global::DrivingLicenceApp.Resource.String.abc_action_bar_home_description;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_action_bar_home_description_format = global::DrivingLicenceApp.Resource.String.abc_action_bar_home_description_format;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_action_bar_home_subtitle_description_format = global::DrivingLicenceApp.Resource.String.abc_action_bar_home_subtitle_description_format;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_action_bar_up_description = global::DrivingLicenceApp.Resource.String.abc_action_bar_up_description;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_action_menu_overflow_description = global::DrivingLicenceApp.Resource.String.abc_action_menu_overflow_description;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_action_mode_done = global::DrivingLicenceApp.Resource.String.abc_action_mode_done;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_activity_chooser_view_see_all = global::DrivingLicenceApp.Resource.String.abc_activity_chooser_view_see_all;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_activitychooserview_choose_application = global::DrivingLicenceApp.Resource.String.abc_activitychooserview_choose_application;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_capital_off = global::DrivingLicenceApp.Resource.String.abc_capital_off;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_capital_on = global::DrivingLicenceApp.Resource.String.abc_capital_on;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_body_1_material = global::DrivingLicenceApp.Resource.String.abc_font_family_body_1_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_body_2_material = global::DrivingLicenceApp.Resource.String.abc_font_family_body_2_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_button_material = global::DrivingLicenceApp.Resource.String.abc_font_family_button_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_caption_material = global::DrivingLicenceApp.Resource.String.abc_font_family_caption_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_display_1_material = global::DrivingLicenceApp.Resource.String.abc_font_family_display_1_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_display_2_material = global::DrivingLicenceApp.Resource.String.abc_font_family_display_2_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_display_3_material = global::DrivingLicenceApp.Resource.String.abc_font_family_display_3_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_display_4_material = global::DrivingLicenceApp.Resource.String.abc_font_family_display_4_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_headline_material = global::DrivingLicenceApp.Resource.String.abc_font_family_headline_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_menu_material = global::DrivingLicenceApp.Resource.String.abc_font_family_menu_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_subhead_material = global::DrivingLicenceApp.Resource.String.abc_font_family_subhead_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_font_family_title_material = global::DrivingLicenceApp.Resource.String.abc_font_family_title_material;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_search_hint = global::DrivingLicenceApp.Resource.String.abc_search_hint;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_searchview_description_clear = global::DrivingLicenceApp.Resource.String.abc_searchview_description_clear;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_searchview_description_query = global::DrivingLicenceApp.Resource.String.abc_searchview_description_query;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_searchview_description_search = global::DrivingLicenceApp.Resource.String.abc_searchview_description_search;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_searchview_description_submit = global::DrivingLicenceApp.Resource.String.abc_searchview_description_submit;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_searchview_description_voice = global::DrivingLicenceApp.Resource.String.abc_searchview_description_voice;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_shareactionprovider_share_with = global::DrivingLicenceApp.Resource.String.abc_shareactionprovider_share_with;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_shareactionprovider_share_with_application = global::DrivingLicenceApp.Resource.String.abc_shareactionprovider_share_with_application;
-			global::DrivingLicenceAndroidPCL.Resource.String.abc_toolbar_collapse_description = global::DrivingLicenceApp.Resource.String.abc_toolbar_collapse_description;
-			global::DrivingLicenceAndroidPCL.Resource.String.app_name = global::DrivingLicenceApp.Resource.String.app_name;
-			global::DrivingLicenceAndroidPCL.Resource.String.hello = global::DrivingLicenceApp.Resource.String.hello;
-			global::DrivingLicenceAndroidPCL.Resource.String.search_menu_title = global::DrivingLicenceApp.Resource.String.search_menu_title;
-			global::DrivingLicenceAndroidPCL.Resource.String.status_bar_notification_info_overflow = global::DrivingLicenceApp.Resource.String.status_bar_notification_info_overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.AlertDialog_AppCompat = global::DrivingLicenceApp.Resource.Style.AlertDialog_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.AlertDialog_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.AlertDialog_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Animation_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Animation_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Animation_AppCompat_DropDownUp = global::DrivingLicenceApp.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_AlertDialog_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_AlertDialog_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_AlertDialog_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Animation_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::DrivingLicenceApp.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_DialogWindowTitle_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Button = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Large = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Small = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Title = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::DrivingLicenceApp.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::DrivingLicenceApp.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_ThemeOverlay_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::DrivingLicenceApp.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::DrivingLicenceApp.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::DrivingLicenceApp.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::DrivingLicenceApp.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::DrivingLicenceApp.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::DrivingLicenceApp.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V21_Theme_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_V21_Theme_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V21_Theme_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V22_Theme_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_V22_Theme_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V22_Theme_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V23_Theme_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_V23_Theme_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V23_Theme_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V7_Theme_AppCompat = global::DrivingLicenceApp.Resource.Style.Base_V7_Theme_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V7_Theme_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::DrivingLicenceApp.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::DrivingLicenceApp.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionButton = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActionMode = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Button = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Button;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Button_Small = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_EditText = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ImageButton = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ListView = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_RatingBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_SearchView = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_SeekBar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Spinner = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Toolbar = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::DrivingLicenceApp.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_AppCompat = global::DrivingLicenceApp.Resource.Style.Platform_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Platform_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_ThemeOverlay_AppCompat = global::DrivingLicenceApp.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::DrivingLicenceApp.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V11_AppCompat = global::DrivingLicenceApp.Resource.Style.Platform_V11_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V11_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Platform_V11_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V14_AppCompat = global::DrivingLicenceApp.Resource.Style.Platform_V14_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V14_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Platform_V14_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V21_AppCompat = global::DrivingLicenceApp.Resource.Style.Platform_V21_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V21_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Platform_V21_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V25_AppCompat = global::DrivingLicenceApp.Resource.Style.Platform_V25_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_V25_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Platform_V25_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Platform_Widget_AppCompat_Spinner = global::DrivingLicenceApp.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::DrivingLicenceApp.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::DrivingLicenceApp.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::DrivingLicenceApp.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::DrivingLicenceApp.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Body1 = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Body2 = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Button = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Button;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Caption = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Display1 = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Display2 = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Display3 = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Display4 = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Headline = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Large = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Large;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Medium = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Menu = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Info = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Info;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Line2 = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Line2;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Media = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Media;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Time = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Time;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Small = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Subhead = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::DrivingLicenceApp.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_StatusBar_EventContent = global::DrivingLicenceApp.Resource.Style.TextAppearance_StatusBar_EventContent;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::DrivingLicenceApp.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::DrivingLicenceApp.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::DrivingLicenceApp.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::DrivingLicenceApp.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::DrivingLicenceApp.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::DrivingLicenceApp.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_CompactMenu = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DayNight = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DayNight;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Dialog_Alert = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Light_Dialog = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Theme_AppCompat_NoActionBar = global::DrivingLicenceApp.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.ThemeOverlay_AppCompat = global::DrivingLicenceApp.Resource.Style.ThemeOverlay_AppCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::DrivingLicenceApp.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.ThemeOverlay_AppCompat_Dark = global::DrivingLicenceApp.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::DrivingLicenceAndroidPCL.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::DrivingLicenceApp.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::DrivingLicenceApp.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::DrivingLicenceApp.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::DrivingLicenceAndroidPCL.Resource.Style.ThemeOverlay_AppCompat_Light = global::DrivingLicenceApp.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionButton = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActionMode = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActionMode;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ActivityChooserView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Button = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Button;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Button_Borderless = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Button_Colored = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Button_Small = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Button_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ButtonBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_EditText = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_EditText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ImageButton = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ImageButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionButton = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_SearchView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ListMenuView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ListPopupWindow = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ListView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ListView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ListView_DropDown = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ListView_Menu = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_NotificationActionContainer = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_NotificationActionContainer;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_NotificationActionText = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_NotificationActionText;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_PopupMenu = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_PopupWindow = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ProgressBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_RatingBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_RatingBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_RatingBar_Small = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_SearchView = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_SearchView;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_SeekBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_SeekBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Spinner = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Toolbar = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Toolbar;
-			global::DrivingLicenceAndroidPCL.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::DrivingLicenceApp.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar = global::DrivingLicenceApp.Resource.Styleable.ActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_background = global::DrivingLicenceApp.Resource.Styleable.ActionBar_background;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_backgroundSplit = global::DrivingLicenceApp.Resource.Styleable.ActionBar_backgroundSplit;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_backgroundStacked = global::DrivingLicenceApp.Resource.Styleable.ActionBar_backgroundStacked;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_contentInsetEnd = global::DrivingLicenceApp.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::DrivingLicenceApp.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_contentInsetLeft = global::DrivingLicenceApp.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_contentInsetRight = global::DrivingLicenceApp.Resource.Styleable.ActionBar_contentInsetRight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_contentInsetStart = global::DrivingLicenceApp.Resource.Styleable.ActionBar_contentInsetStart;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::DrivingLicenceApp.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_customNavigationLayout = global::DrivingLicenceApp.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_displayOptions = global::DrivingLicenceApp.Resource.Styleable.ActionBar_displayOptions;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_divider = global::DrivingLicenceApp.Resource.Styleable.ActionBar_divider;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_elevation = global::DrivingLicenceApp.Resource.Styleable.ActionBar_elevation;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_height = global::DrivingLicenceApp.Resource.Styleable.ActionBar_height;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_hideOnContentScroll = global::DrivingLicenceApp.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_homeAsUpIndicator = global::DrivingLicenceApp.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_homeLayout = global::DrivingLicenceApp.Resource.Styleable.ActionBar_homeLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_icon = global::DrivingLicenceApp.Resource.Styleable.ActionBar_icon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::DrivingLicenceApp.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_itemPadding = global::DrivingLicenceApp.Resource.Styleable.ActionBar_itemPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_logo = global::DrivingLicenceApp.Resource.Styleable.ActionBar_logo;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_navigationMode = global::DrivingLicenceApp.Resource.Styleable.ActionBar_navigationMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_popupTheme = global::DrivingLicenceApp.Resource.Styleable.ActionBar_popupTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_progressBarPadding = global::DrivingLicenceApp.Resource.Styleable.ActionBar_progressBarPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_progressBarStyle = global::DrivingLicenceApp.Resource.Styleable.ActionBar_progressBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_subtitle = global::DrivingLicenceApp.Resource.Styleable.ActionBar_subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_subtitleTextStyle = global::DrivingLicenceApp.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_title = global::DrivingLicenceApp.Resource.Styleable.ActionBar_title;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBar_titleTextStyle = global::DrivingLicenceApp.Resource.Styleable.ActionBar_titleTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBarLayout = global::DrivingLicenceApp.Resource.Styleable.ActionBarLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::DrivingLicenceApp.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMenuItemView = global::DrivingLicenceApp.Resource.Styleable.ActionMenuItemView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMenuItemView_android_minWidth = global::DrivingLicenceApp.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMenuView = global::DrivingLicenceApp.Resource.Styleable.ActionMenuView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMode = global::DrivingLicenceApp.Resource.Styleable.ActionMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMode_background = global::DrivingLicenceApp.Resource.Styleable.ActionMode_background;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMode_backgroundSplit = global::DrivingLicenceApp.Resource.Styleable.ActionMode_backgroundSplit;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMode_closeItemLayout = global::DrivingLicenceApp.Resource.Styleable.ActionMode_closeItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMode_height = global::DrivingLicenceApp.Resource.Styleable.ActionMode_height;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMode_subtitleTextStyle = global::DrivingLicenceApp.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActionMode_titleTextStyle = global::DrivingLicenceApp.Resource.Styleable.ActionMode_titleTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActivityChooserView = global::DrivingLicenceApp.Resource.Styleable.ActivityChooserView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::DrivingLicenceApp.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ActivityChooserView_initialActivityCount = global::DrivingLicenceApp.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog = global::DrivingLicenceApp.Resource.Styleable.AlertDialog;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog_android_layout = global::DrivingLicenceApp.Resource.Styleable.AlertDialog_android_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::DrivingLicenceApp.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog_listItemLayout = global::DrivingLicenceApp.Resource.Styleable.AlertDialog_listItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog_listLayout = global::DrivingLicenceApp.Resource.Styleable.AlertDialog_listLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::DrivingLicenceApp.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog_showTitle = global::DrivingLicenceApp.Resource.Styleable.AlertDialog_showTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::DrivingLicenceApp.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatImageView = global::DrivingLicenceApp.Resource.Styleable.AppCompatImageView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatImageView_android_src = global::DrivingLicenceApp.Resource.Styleable.AppCompatImageView_android_src;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatImageView_srcCompat = global::DrivingLicenceApp.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatImageView_tint = global::DrivingLicenceApp.Resource.Styleable.AppCompatImageView_tint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatImageView_tintMode = global::DrivingLicenceApp.Resource.Styleable.AppCompatImageView_tintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatSeekBar = global::DrivingLicenceApp.Resource.Styleable.AppCompatSeekBar;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatSeekBar_android_thumb = global::DrivingLicenceApp.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatSeekBar_tickMark = global::DrivingLicenceApp.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::DrivingLicenceApp.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::DrivingLicenceApp.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextView = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextView_android_textAppearance = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTextView_textAllCaps = global::DrivingLicenceApp.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarDivider = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarSize = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarTheme = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeBackground = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_buttonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_checkboxStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorAccent = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorControlActivated = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorControlNormal = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorPrimary = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_controlBackground = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_dialogTheme = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_dividerVertical = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_editTextBackground = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_editTextColor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_editTextStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_panelBackground = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_searchViewStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_seekBarStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_spinnerStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_switchStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_toolbarStyle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowActionBar = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.AppCompatTheme_windowNoTitle = global::DrivingLicenceApp.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ButtonBarLayout = global::DrivingLicenceApp.Resource.Styleable.ButtonBarLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ButtonBarLayout_allowStacking = global::DrivingLicenceApp.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ColorStateListItem = global::DrivingLicenceApp.Resource.Styleable.ColorStateListItem;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ColorStateListItem_alpha = global::DrivingLicenceApp.Resource.Styleable.ColorStateListItem_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ColorStateListItem_android_alpha = global::DrivingLicenceApp.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ColorStateListItem_android_color = global::DrivingLicenceApp.Resource.Styleable.ColorStateListItem_android_color;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.CompoundButton = global::DrivingLicenceApp.Resource.Styleable.CompoundButton;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.CompoundButton_android_button = global::DrivingLicenceApp.Resource.Styleable.CompoundButton_android_button;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.CompoundButton_buttonTint = global::DrivingLicenceApp.Resource.Styleable.CompoundButton_buttonTint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.CompoundButton_buttonTintMode = global::DrivingLicenceApp.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_barLength = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_color = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_color;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_drawableSize = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_spinBars = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.DrawerArrowToggle_thickness = global::DrivingLicenceApp.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_android_gravity = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_android_orientation = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_divider = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_divider;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_showDividers = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_Layout = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::DrivingLicenceApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ListPopupWindow = global::DrivingLicenceApp.Resource.Styleable.ListPopupWindow;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::DrivingLicenceApp.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::DrivingLicenceApp.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuGroup = global::DrivingLicenceApp.Resource.Styleable.MenuGroup;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuGroup_android_checkableBehavior = global::DrivingLicenceApp.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuGroup_android_enabled = global::DrivingLicenceApp.Resource.Styleable.MenuGroup_android_enabled;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuGroup_android_id = global::DrivingLicenceApp.Resource.Styleable.MenuGroup_android_id;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuGroup_android_menuCategory = global::DrivingLicenceApp.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuGroup_android_orderInCategory = global::DrivingLicenceApp.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuGroup_android_visible = global::DrivingLicenceApp.Resource.Styleable.MenuGroup_android_visible;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem = global::DrivingLicenceApp.Resource.Styleable.MenuItem;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_actionLayout = global::DrivingLicenceApp.Resource.Styleable.MenuItem_actionLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_actionProviderClass = global::DrivingLicenceApp.Resource.Styleable.MenuItem_actionProviderClass;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_actionViewClass = global::DrivingLicenceApp.Resource.Styleable.MenuItem_actionViewClass;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_checkable = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_checkable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_checked = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_checked;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_enabled = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_enabled;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_icon = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_icon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_id = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_id;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_menuCategory = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_menuCategory;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_numericShortcut = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_onClick = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_onClick;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_orderInCategory = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_title = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_title;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_titleCondensed = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_android_visible = global::DrivingLicenceApp.Resource.Styleable.MenuItem_android_visible;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuItem_showAsAction = global::DrivingLicenceApp.Resource.Styleable.MenuItem_showAsAction;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView = global::DrivingLicenceApp.Resource.Styleable.MenuView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_android_headerBackground = global::DrivingLicenceApp.Resource.Styleable.MenuView_android_headerBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_android_horizontalDivider = global::DrivingLicenceApp.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_android_itemBackground = global::DrivingLicenceApp.Resource.Styleable.MenuView_android_itemBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::DrivingLicenceApp.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_android_itemTextAppearance = global::DrivingLicenceApp.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_android_verticalDivider = global::DrivingLicenceApp.Resource.Styleable.MenuView_android_verticalDivider;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_android_windowAnimationStyle = global::DrivingLicenceApp.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_preserveIconSpacing = global::DrivingLicenceApp.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.MenuView_subMenuArrow = global::DrivingLicenceApp.Resource.Styleable.MenuView_subMenuArrow;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.PopupWindow = global::DrivingLicenceApp.Resource.Styleable.PopupWindow;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::DrivingLicenceApp.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.PopupWindow_android_popupBackground = global::DrivingLicenceApp.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.PopupWindow_overlapAnchor = global::DrivingLicenceApp.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.PopupWindowBackgroundState = global::DrivingLicenceApp.Resource.Styleable.PopupWindowBackgroundState;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::DrivingLicenceApp.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.RecycleListView = global::DrivingLicenceApp.Resource.Styleable.RecycleListView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::DrivingLicenceApp.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::DrivingLicenceApp.Resource.Styleable.RecycleListView_paddingTopNoTitle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView = global::DrivingLicenceApp.Resource.Styleable.SearchView;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_android_focusable = global::DrivingLicenceApp.Resource.Styleable.SearchView_android_focusable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_android_imeOptions = global::DrivingLicenceApp.Resource.Styleable.SearchView_android_imeOptions;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_android_inputType = global::DrivingLicenceApp.Resource.Styleable.SearchView_android_inputType;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_android_maxWidth = global::DrivingLicenceApp.Resource.Styleable.SearchView_android_maxWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_closeIcon = global::DrivingLicenceApp.Resource.Styleable.SearchView_closeIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_commitIcon = global::DrivingLicenceApp.Resource.Styleable.SearchView_commitIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_defaultQueryHint = global::DrivingLicenceApp.Resource.Styleable.SearchView_defaultQueryHint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_goIcon = global::DrivingLicenceApp.Resource.Styleable.SearchView_goIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_iconifiedByDefault = global::DrivingLicenceApp.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_layout = global::DrivingLicenceApp.Resource.Styleable.SearchView_layout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_queryBackground = global::DrivingLicenceApp.Resource.Styleable.SearchView_queryBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_queryHint = global::DrivingLicenceApp.Resource.Styleable.SearchView_queryHint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_searchHintIcon = global::DrivingLicenceApp.Resource.Styleable.SearchView_searchHintIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_searchIcon = global::DrivingLicenceApp.Resource.Styleable.SearchView_searchIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_submitBackground = global::DrivingLicenceApp.Resource.Styleable.SearchView_submitBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_suggestionRowLayout = global::DrivingLicenceApp.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SearchView_voiceIcon = global::DrivingLicenceApp.Resource.Styleable.SearchView_voiceIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Spinner = global::DrivingLicenceApp.Resource.Styleable.Spinner;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Spinner_android_dropDownWidth = global::DrivingLicenceApp.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Spinner_android_entries = global::DrivingLicenceApp.Resource.Styleable.Spinner_android_entries;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Spinner_android_popupBackground = global::DrivingLicenceApp.Resource.Styleable.Spinner_android_popupBackground;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Spinner_android_prompt = global::DrivingLicenceApp.Resource.Styleable.Spinner_android_prompt;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Spinner_popupTheme = global::DrivingLicenceApp.Resource.Styleable.Spinner_popupTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_android_textOff = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_android_textOff;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_android_textOn = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_android_textOn;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_android_thumb = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_android_thumb;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_showText = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_showText;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_splitTrack = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_splitTrack;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_switchMinWidth = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_switchPadding = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_switchPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_switchTextAppearance = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_thumbTextPadding = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_thumbTint = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_thumbTint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_thumbTintMode = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_track = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_track;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_trackTint = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_trackTint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.SwitchCompat_trackTintMode = global::DrivingLicenceApp.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance = global::DrivingLicenceApp.Resource.Styleable.TextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_shadowColor = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_shadowDx = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_shadowDy = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_shadowRadius = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_textColor = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_textColor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_textColorHint = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_textColorHint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_textSize = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_textSize;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_textStyle = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_textStyle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_android_typeface = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_android_typeface;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.TextAppearance_textAllCaps = global::DrivingLicenceApp.Resource.Styleable.TextAppearance_textAllCaps;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar = global::DrivingLicenceApp.Resource.Styleable.Toolbar;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_android_gravity = global::DrivingLicenceApp.Resource.Styleable.Toolbar_android_gravity;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_android_minHeight = global::DrivingLicenceApp.Resource.Styleable.Toolbar_android_minHeight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_buttonGravity = global::DrivingLicenceApp.Resource.Styleable.Toolbar_buttonGravity;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_collapseContentDescription = global::DrivingLicenceApp.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_collapseIcon = global::DrivingLicenceApp.Resource.Styleable.Toolbar_collapseIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_contentInsetEnd = global::DrivingLicenceApp.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::DrivingLicenceApp.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_contentInsetLeft = global::DrivingLicenceApp.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_contentInsetRight = global::DrivingLicenceApp.Resource.Styleable.Toolbar_contentInsetRight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_contentInsetStart = global::DrivingLicenceApp.Resource.Styleable.Toolbar_contentInsetStart;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::DrivingLicenceApp.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_logo = global::DrivingLicenceApp.Resource.Styleable.Toolbar_logo;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_logoDescription = global::DrivingLicenceApp.Resource.Styleable.Toolbar_logoDescription;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_maxButtonHeight = global::DrivingLicenceApp.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_navigationContentDescription = global::DrivingLicenceApp.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_navigationIcon = global::DrivingLicenceApp.Resource.Styleable.Toolbar_navigationIcon;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_popupTheme = global::DrivingLicenceApp.Resource.Styleable.Toolbar_popupTheme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_subtitle = global::DrivingLicenceApp.Resource.Styleable.Toolbar_subtitle;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_subtitleTextAppearance = global::DrivingLicenceApp.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_subtitleTextColor = global::DrivingLicenceApp.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_title = global::DrivingLicenceApp.Resource.Styleable.Toolbar_title;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleMargin = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleMargin;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleMarginBottom = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleMarginEnd = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleMarginStart = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleMarginStart;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleMarginTop = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleMarginTop;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleMargins = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleMargins;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleTextAppearance = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.Toolbar_titleTextColor = global::DrivingLicenceApp.Resource.Styleable.Toolbar_titleTextColor;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.View = global::DrivingLicenceApp.Resource.Styleable.View;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.View_android_focusable = global::DrivingLicenceApp.Resource.Styleable.View_android_focusable;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.View_android_theme = global::DrivingLicenceApp.Resource.Styleable.View_android_theme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.View_paddingEnd = global::DrivingLicenceApp.Resource.Styleable.View_paddingEnd;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.View_paddingStart = global::DrivingLicenceApp.Resource.Styleable.View_paddingStart;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.View_theme = global::DrivingLicenceApp.Resource.Styleable.View_theme;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewBackgroundHelper = global::DrivingLicenceApp.Resource.Styleable.ViewBackgroundHelper;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewBackgroundHelper_android_background = global::DrivingLicenceApp.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::DrivingLicenceApp.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::DrivingLicenceApp.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewStubCompat = global::DrivingLicenceApp.Resource.Styleable.ViewStubCompat;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewStubCompat_android_id = global::DrivingLicenceApp.Resource.Styleable.ViewStubCompat_android_id;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewStubCompat_android_inflatedId = global::DrivingLicenceApp.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::DrivingLicenceAndroidPCL.Resource.Styleable.ViewStubCompat_android_layout = global::DrivingLicenceApp.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::DrivingLicenceApp.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 		}
 		
@@ -3525,26 +2093,26 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02006a
-			public const int avd_hide_password_1 = 2130837610;
-			
 			// aapt resource value: 0x7f02006b
-			public const int avd_hide_password_2 = 2130837611;
+			public const int avd_hide_password_1 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int avd_hide_password_3 = 2130837612;
+			public const int avd_hide_password_2 = 2130837612;
+			
+			// aapt resource value: 0x7f02006d
+			public const int avd_hide_password_3 = 2130837613;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02006d
-			public const int avd_show_password_1 = 2130837613;
-			
 			// aapt resource value: 0x7f02006e
-			public const int avd_show_password_2 = 2130837614;
+			public const int avd_show_password_1 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int avd_show_password_3 = 2130837615;
+			public const int avd_show_password_2 = 2130837615;
+			
+			// aapt resource value: 0x7f020070
+			public const int avd_show_password_3 = 2130837616;
 			
 			// aapt resource value: 0x7f020055
 			public const int categorycard = 2130837589;
@@ -3574,40 +2142,43 @@ namespace DrivingLicenceApp
 			public const int navigation_empty_icon = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int notification_action_background = 2130837598;
+			public const int NextDrivingApp = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int notification_bg = 2130837599;
+			public const int notification_action_background = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int notification_bg_low = 2130837600;
+			public const int notification_bg = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int notification_bg_low_normal = 2130837601;
+			public const int notification_bg_low = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_bg_low_pressed = 2130837602;
+			public const int notification_bg_low_normal = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_bg_normal = 2130837603;
+			public const int notification_bg_low_pressed = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int notification_bg_normal_pressed = 2130837604;
+			public const int notification_bg_normal = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int notification_icon_background = 2130837605;
-			
-			// aapt resource value: 0x7f020068
-			public const int notification_template_icon_bg = 2130837608;
-			
-			// aapt resource value: 0x7f020069
-			public const int notification_template_icon_low_bg = 2130837609;
+			public const int notification_bg_normal_pressed = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int notification_tile_bg = 2130837606;
+			public const int notification_icon_background = 2130837606;
+			
+			// aapt resource value: 0x7f020069
+			public const int notification_template_icon_bg = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int notification_template_icon_low_bg = 2130837610;
 			
 			// aapt resource value: 0x7f020067
-			public const int notify_panel_notification_icon_bg = 2130837607;
+			public const int notification_tile_bg = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int notify_panel_notification_icon_bg = 2130837608;
 			
 			static Drawable()
 			{
@@ -3622,26 +2193,32 @@ namespace DrivingLicenceApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090078
-			public const int CategoryCard = 2131296376;
-			
-			// aapt resource value: 0x7f090073
-			public const int CategoryRecycler = 2131296371;
+			// aapt resource value: 0x7f09007a
+			public const int CategoryCard = 2131296378;
 			
 			// aapt resource value: 0x7f090074
-			public const int LogInNickOrEmile = 2131296372;
+			public const int CategoryRecycler = 2131296372;
 			
 			// aapt resource value: 0x7f090075
-			public const int LogInPassword = 2131296373;
+			public const int LogInNickOrEmile = 2131296373;
 			
 			// aapt resource value: 0x7f090076
-			public const int SingInBtn = 2131296374;
+			public const int LogInPassword = 2131296374;
+			
+			// aapt resource value: 0x7f090079
+			public const int QuestionsCountTxt = 2131296377;
 			
 			// aapt resource value: 0x7f090077
-			public const int SingUpBtn = 2131296375;
+			public const int SingInBtn = 2131296375;
 			
-			// aapt resource value: 0x7f09008a
-			public const int action0 = 2131296394;
+			// aapt resource value: 0x7f090078
+			public const int SingUpBtn = 2131296376;
+			
+			// aapt resource value: 0x7f090073
+			public const int StartTestImg = 2131296371;
+			
+			// aapt resource value: 0x7f09008c
+			public const int action0 = 2131296396;
 			
 			// aapt resource value: 0x7f090064
 			public const int action_bar = 2131296356;
@@ -3664,17 +2241,17 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090041
 			public const int action_bar_title = 2131296321;
 			
-			// aapt resource value: 0x7f090087
-			public const int action_container = 2131296391;
+			// aapt resource value: 0x7f090089
+			public const int action_container = 2131296393;
 			
 			// aapt resource value: 0x7f090065
 			public const int action_context_bar = 2131296357;
 			
-			// aapt resource value: 0x7f09008e
-			public const int action_divider = 2131296398;
+			// aapt resource value: 0x7f090090
+			public const int action_divider = 2131296400;
 			
-			// aapt resource value: 0x7f090088
-			public const int action_image = 2131296392;
+			// aapt resource value: 0x7f09008a
+			public const int action_image = 2131296394;
 			
 			// aapt resource value: 0x7f090003
 			public const int action_menu_divider = 2131296259;
@@ -3691,11 +2268,11 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090043
 			public const int action_mode_close_button = 2131296323;
 			
-			// aapt resource value: 0x7f090089
-			public const int action_text = 2131296393;
+			// aapt resource value: 0x7f09008b
+			public const int action_text = 2131296395;
 			
-			// aapt resource value: 0x7f090097
-			public const int actions = 2131296407;
+			// aapt resource value: 0x7f090099
+			public const int actions = 2131296409;
 			
 			// aapt resource value: 0x7f090044
 			public const int activity_chooser_view_content = 2131296324;
@@ -3724,8 +2301,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f09004b
 			public const int buttonPanel = 2131296331;
 			
-			// aapt resource value: 0x7f09008b
-			public const int cancel_action = 2131296395;
+			// aapt resource value: 0x7f09008d
+			public const int cancel_action = 2131296397;
 			
 			// aapt resource value: 0x7f090030
 			public const int center = 2131296304;
@@ -3739,8 +2316,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f09005b
 			public const int checkbox = 2131296347;
 			
-			// aapt resource value: 0x7f090093
-			public const int chronometer = 2131296403;
+			// aapt resource value: 0x7f090095
+			public const int chronometer = 2131296405;
 			
 			// aapt resource value: 0x7f090039
 			public const int clip_horizontal = 2131296313;
@@ -3751,14 +2328,14 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090024
 			public const int collapseActionView = 2131296292;
 			
-			// aapt resource value: 0x7f09007b
-			public const int container = 2131296379;
+			// aapt resource value: 0x7f09007d
+			public const int container = 2131296381;
 			
 			// aapt resource value: 0x7f09004e
 			public const int contentPanel = 2131296334;
 			
-			// aapt resource value: 0x7f09007c
-			public const int coordinator = 2131296380;
+			// aapt resource value: 0x7f09007e
+			public const int coordinator = 2131296382;
 			
 			// aapt resource value: 0x7f090055
 			public const int custom = 2131296341;
@@ -3772,20 +2349,20 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090047
 			public const int default_activity_button = 2131296327;
 			
-			// aapt resource value: 0x7f09007e
-			public const int design_bottom_sheet = 2131296382;
+			// aapt resource value: 0x7f090080
+			public const int design_bottom_sheet = 2131296384;
+			
+			// aapt resource value: 0x7f090087
+			public const int design_menu_item_action_area = 2131296391;
+			
+			// aapt resource value: 0x7f090086
+			public const int design_menu_item_action_area_stub = 2131296390;
 			
 			// aapt resource value: 0x7f090085
-			public const int design_menu_item_action_area = 2131296389;
+			public const int design_menu_item_text = 2131296389;
 			
 			// aapt resource value: 0x7f090084
-			public const int design_menu_item_action_area_stub = 2131296388;
-			
-			// aapt resource value: 0x7f090083
-			public const int design_menu_item_text = 2131296387;
-			
-			// aapt resource value: 0x7f090082
-			public const int design_navigation_view = 2131296386;
+			public const int design_navigation_view = 2131296388;
 			
 			// aapt resource value: 0x7f090012
 			public const int disableHome = 2131296274;
@@ -3796,8 +2373,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090021
 			public const int end = 2131296289;
 			
-			// aapt resource value: 0x7f09009d
-			public const int end_padder = 2131296413;
+			// aapt resource value: 0x7f09009f
+			public const int end_padder = 2131296415;
 			
 			// aapt resource value: 0x7f09002a
 			public const int enterAlways = 2131296298;
@@ -3835,8 +2412,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090049
 			public const int icon = 2131296329;
 			
-			// aapt resource value: 0x7f090098
-			public const int icon_group = 2131296408;
+			// aapt resource value: 0x7f09009a
+			public const int icon_group = 2131296410;
 			
 			// aapt resource value: 0x7f090025
 			public const int ifRoom = 2131296293;
@@ -3844,23 +2421,23 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090046
 			public const int image = 2131296326;
 			
-			// aapt resource value: 0x7f090094
-			public const int info = 2131296404;
+			// aapt resource value: 0x7f090096
+			public const int info = 2131296406;
 			
 			// aapt resource value: 0x7f090000
 			public const int item_touch_helper_previous_elevation = 2131296256;
 			
-			// aapt resource value: 0x7f09007a
-			public const int largeLabel = 2131296378;
+			// aapt resource value: 0x7f09007c
+			public const int largeLabel = 2131296380;
 			
 			// aapt resource value: 0x7f090034
 			public const int left = 2131296308;
 			
-			// aapt resource value: 0x7f090099
-			public const int line1 = 2131296409;
-			
 			// aapt resource value: 0x7f09009b
-			public const int line3 = 2131296411;
+			public const int line1 = 2131296411;
+			
+			// aapt resource value: 0x7f09009d
+			public const int line3 = 2131296413;
 			
 			// aapt resource value: 0x7f09000f
 			public const int listMode = 2131296271;
@@ -3868,11 +2445,11 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090048
 			public const int list_item = 2131296328;
 			
-			// aapt resource value: 0x7f09009f
-			public const int masked = 2131296415;
+			// aapt resource value: 0x7f0900a1
+			public const int masked = 2131296417;
 			
-			// aapt resource value: 0x7f09008d
-			public const int media_actions = 2131296397;
+			// aapt resource value: 0x7f09008f
+			public const int media_actions = 2131296399;
 			
 			// aapt resource value: 0x7f090022
 			public const int middle = 2131296290;
@@ -3883,8 +2460,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090019
 			public const int multiply = 2131296281;
 			
-			// aapt resource value: 0x7f090081
-			public const int navigation_header_container = 2131296385;
+			// aapt resource value: 0x7f090083
+			public const int navigation_header_container = 2131296387;
 			
 			// aapt resource value: 0x7f090026
 			public const int never = 2131296294;
@@ -3895,14 +2472,14 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090010
 			public const int normal = 2131296272;
 			
-			// aapt resource value: 0x7f090096
-			public const int notification_background = 2131296406;
+			// aapt resource value: 0x7f090098
+			public const int notification_background = 2131296408;
 			
-			// aapt resource value: 0x7f090090
-			public const int notification_main_column = 2131296400;
+			// aapt resource value: 0x7f090092
+			public const int notification_main_column = 2131296402;
 			
-			// aapt resource value: 0x7f09008f
-			public const int notification_main_column_container = 2131296399;
+			// aapt resource value: 0x7f090091
+			public const int notification_main_column_container = 2131296401;
 			
 			// aapt resource value: 0x7f090037
 			public const int parallax = 2131296311;
@@ -3925,11 +2502,11 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090035
 			public const int right = 2131296309;
 			
-			// aapt resource value: 0x7f090095
-			public const int right_icon = 2131296405;
+			// aapt resource value: 0x7f090097
+			public const int right_icon = 2131296407;
 			
-			// aapt resource value: 0x7f090091
-			public const int right_side = 2131296401;
+			// aapt resource value: 0x7f090093
+			public const int right_side = 2131296403;
 			
 			// aapt resource value: 0x7f09001a
 			public const int screen = 2131296282;
@@ -3994,14 +2571,14 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090017
 			public const int showTitle = 2131296279;
 			
-			// aapt resource value: 0x7f090079
-			public const int smallLabel = 2131296377;
+			// aapt resource value: 0x7f09007b
+			public const int smallLabel = 2131296379;
 			
-			// aapt resource value: 0x7f090080
-			public const int snackbar_action = 2131296384;
+			// aapt resource value: 0x7f090082
+			public const int snackbar_action = 2131296386;
 			
-			// aapt resource value: 0x7f09007f
-			public const int snackbar_text = 2131296383;
+			// aapt resource value: 0x7f090081
+			public const int snackbar_text = 2131296385;
 			
 			// aapt resource value: 0x7f09002e
 			public const int snap = 2131296302;
@@ -4024,8 +2601,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090036
 			public const int start = 2131296310;
 			
-			// aapt resource value: 0x7f09008c
-			public const int status_bar_latest_event_content = 2131296396;
+			// aapt resource value: 0x7f09008e
+			public const int status_bar_latest_event_content = 2131296398;
 			
 			// aapt resource value: 0x7f09005e
 			public const int submenuarrow = 2131296350;
@@ -4036,11 +2613,11 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090011
 			public const int tabMode = 2131296273;
 			
-			// aapt resource value: 0x7f09009c
-			public const int text = 2131296412;
+			// aapt resource value: 0x7f09009e
+			public const int text = 2131296414;
 			
-			// aapt resource value: 0x7f09009a
-			public const int text2 = 2131296410;
+			// aapt resource value: 0x7f09009c
+			public const int text2 = 2131296412;
 			
 			// aapt resource value: 0x7f090052
 			public const int textSpacerNoButtons = 2131296338;
@@ -4048,8 +2625,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090051
 			public const int textSpacerNoTitle = 2131296337;
 			
-			// aapt resource value: 0x7f090086
-			public const int text_input_password_toggle = 2131296390;
+			// aapt resource value: 0x7f090088
+			public const int text_input_password_toggle = 2131296392;
 			
 			// aapt resource value: 0x7f09000c
 			public const int textinput_counter = 2131296268;
@@ -4057,8 +2634,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f09000d
 			public const int textinput_error = 2131296269;
 			
-			// aapt resource value: 0x7f090092
-			public const int time = 2131296402;
+			// aapt resource value: 0x7f090094
+			public const int time = 2131296404;
 			
 			// aapt resource value: 0x7f09004a
 			public const int title = 2131296330;
@@ -4075,8 +2652,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f090056
 			public const int topPanel = 2131296342;
 			
-			// aapt resource value: 0x7f09007d
-			public const int touch_outside = 2131296381;
+			// aapt resource value: 0x7f09007f
+			public const int touch_outside = 2131296383;
 			
 			// aapt resource value: 0x7f09000a
 			public const int transition_current_scene = 2131296266;
@@ -4093,8 +2670,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f09000e
 			public const int view_offset_helper = 2131296270;
 			
-			// aapt resource value: 0x7f09009e
-			public const int visible = 2131296414;
+			// aapt resource value: 0x7f0900a0
+			public const int visible = 2131296416;
 			
 			// aapt resource value: 0x7f090027
 			public const int withText = 2131296295;
@@ -4243,106 +2820,109 @@ namespace DrivingLicenceApp
 			public const int activity_main = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int category_Item = 2130968605;
+			public const int activity_testing = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int design_bottom_navigation_item = 2130968606;
+			public const int category_Item = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_bottom_sheet_dialog = 2130968607;
+			public const int design_bottom_navigation_item = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_layout_snackbar = 2130968608;
+			public const int design_bottom_sheet_dialog = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_layout_snackbar_include = 2130968609;
+			public const int design_layout_snackbar = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_layout_tab_icon = 2130968610;
+			public const int design_layout_snackbar_include = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_layout_tab_text = 2130968611;
+			public const int design_layout_tab_icon = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_menu_item_action_area = 2130968612;
+			public const int design_layout_tab_text = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_navigation_item = 2130968613;
+			public const int design_menu_item_action_area = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_item_header = 2130968614;
+			public const int design_navigation_item = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_navigation_item_separator = 2130968615;
+			public const int design_navigation_item_header = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int design_navigation_item_subheader = 2130968616;
+			public const int design_navigation_item_separator = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int design_navigation_menu = 2130968617;
+			public const int design_navigation_item_subheader = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int design_navigation_menu_item = 2130968618;
+			public const int design_navigation_menu = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int design_text_input_password_icon = 2130968619;
+			public const int design_navigation_menu_item = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int notification_action = 2130968620;
+			public const int design_text_input_password_icon = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_action_tombstone = 2130968621;
+			public const int notification_action = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_media_action = 2130968622;
+			public const int notification_action_tombstone = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_media_cancel_action = 2130968623;
+			public const int notification_media_action = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_template_big_media = 2130968624;
+			public const int notification_media_cancel_action = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_template_big_media_custom = 2130968625;
+			public const int notification_template_big_media = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_big_media_narrow = 2130968626;
+			public const int notification_template_big_media_custom = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_big_media_narrow_custom = 2130968627;
+			public const int notification_template_big_media_narrow = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_custom_big = 2130968628;
+			public const int notification_template_big_media_narrow_custom = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_icon_group = 2130968629;
+			public const int notification_template_custom_big = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_lines_media = 2130968630;
+			public const int notification_template_icon_group = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_media = 2130968631;
+			public const int notification_template_lines_media = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_media_custom = 2130968632;
+			public const int notification_template_media = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_part_chronometer = 2130968633;
+			public const int notification_template_media_custom = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_part_time = 2130968634;
+			public const int notification_template_part_chronometer = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int select_dialog_item_material = 2130968635;
+			public const int notification_template_part_time = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int select_dialog_multichoice_material = 2130968636;
+			public const int select_dialog_item_material = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int select_dialog_singlechoice_material = 2130968637;
+			public const int select_dialog_multichoice_material = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int support_simple_spinner_dropdown_item = 2130968638;
+			public const int select_dialog_singlechoice_material = 2130968638;
+			
+			// aapt resource value: 0x7f04003f
+			public const int support_simple_spinner_dropdown_item = 2130968639;
 			
 			static Layout()
 			{
@@ -4472,11 +3052,11 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7f0a0012
 			public const int abc_toolbar_collapse_description = 2131361810;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int action_settings = 2131361835;
-			
 			// aapt resource value: 0x7f0a002a
-			public const int app_name = 2131361834;
+			public const int action_settings = 2131361834;
+			
+			// aapt resource value: 0x7f0a0029
+			public const int app_name = 2131361833;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int appbar_scrolling_view_behavior = 2131361825;
@@ -4486,9 +3066,6 @@ namespace DrivingLicenceApp
 			
 			// aapt resource value: 0x7f0a0023
 			public const int character_counter_pattern = 2131361827;
-			
-			// aapt resource value: 0x7f0a0029
-			public const int hello = 2131361833;
 			
 			// aapt resource value: 0x7f0a0024
 			public const int password_toggle_content_description = 2131361828;

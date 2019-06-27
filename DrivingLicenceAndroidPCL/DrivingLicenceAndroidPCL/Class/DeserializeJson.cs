@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using DrivingLicenceAndroidPCL.Interface.Json;
 using DrivingLicenceAndroidPCL.Class.Json;
-using DrivingLicenceAndroidPCL.Interface.Json;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Net.Http;
 using Newtonsoft.Json;
 
 namespace DrivingLicenceAndroidPCL.Class

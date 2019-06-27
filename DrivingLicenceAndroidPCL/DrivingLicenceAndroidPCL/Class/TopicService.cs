@@ -1,28 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using DrivingLicenceAndroidPCL.Class.Json;
+﻿using DrivingLicenceAndroidPCL.Interface.Json;
 using DrivingLicenceAndroidPCL.Interface;
-using DrivingLicenceAndroidPCL.Interface.Json;
-using SQLite;
-using SQLitePCL;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
+using DrivingLicenceAndroidPCL.Linq;
+using DrivingLicenceAndroidPCL.Class.Json;
 
 namespace DrivingLicenceAndroidPCL.Class
 {
     public class TopicService : ITopicService
     {
-        public async Task<ITopic> GetOneTopic(string name)
+        public async Task<IEnumerable<ITicket>> GetOneTicketAsync(string name)
         {
             var topics = await DownloadService.DownloadTicketsAsync();
-            return topics.FirstOrDefault(o => o.Name == name);
+            return topics.FirstOrDefault(o => o.Name == name).Tickets;
         }
 
-        public async Task<IEnumerable<ITopic>> GetByIDs(IEnumerable<string> names)
+        public async Task<IEnumerable<ITicket>> GetByNamesAsync(IEnumerable<string> names, int count)
         {
             var topics = await DownloadService.DownloadTicketsAsync();
-            return topics.Where(o => names.Any(i => i == o.Name));
+            var topicsFiltred = topics.Where(o => names.Any(i => i == o.Name)).ToList();
+
+            List<Ticket> randomTickets = new List<Ticket>();
+            if (topicsFiltred.Count() == 1)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (i > topicsFiltred.Count())
+                        i = 0;
+                }
+
+                topicsFiltred.First().Tickets.Shuffle();
+                return topicsFiltred.First().Tickets.Take(30);
+            }
+
+            foreach (var item in topicsFiltred)
+            {
+                item.Tickets.Shuffle();
+                randomTickets.Add(item.Tickets.First());
+            }
+
+            return randomTickets;
         }
 
         public async Task<IEnumerable<ITopic>> GetAllTopicAsync() =>

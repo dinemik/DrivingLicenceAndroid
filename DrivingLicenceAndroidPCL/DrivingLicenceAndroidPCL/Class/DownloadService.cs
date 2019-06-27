@@ -1,19 +1,20 @@
-﻿using System;
+﻿using DrivingLicenceAndroidPCL.Class.Json;
 using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
-using DrivingLicenceAndroidPCL.Class.Json;
-using DrivingLicenceAndroidPCL.Interface;
-using DrivingLicenceAndroidPCL.Interface.Json;
+using System.IO;
+using System;
 using SQLite;
+using SQLiteNetExtensions.Extensions;
+using System.Linq;
+using DrivingLicenceAndroidPCL.Interface.Json;
 
 namespace DrivingLicenceAndroidPCL.Class
 {
     public class DownloadService
     {
-        public static List<Topic> Topics { get; set; } = null;
+        public static IEnumerable<ITopic> Topics { get; set; } = null;
 
-        public static async Task<List<Topic>> DownloadTicketsAsync()
+        public static async Task<IEnumerable<ITopic>> DownloadTicketsAsync()
         {
             if(Topics == null)
             {
@@ -21,7 +22,7 @@ namespace DrivingLicenceAndroidPCL.Class
                 
                 using (var db = new SQLiteConnection(conStr))
                 {
-                    if(File.Exists(conStr))
+                    if (File.Exists(conStr))
                     {
                         db.CreateTable<Topic>();
                         db.CreateTable<Ticket>();
@@ -36,13 +37,26 @@ namespace DrivingLicenceAndroidPCL.Class
                         db.CreateTable<Ticket>();
 
                         var topics = await DeserializeJson.GetTopicsAsync();
+
                         foreach (var item in topics)
                         {
                             db.Insert(item);
+                            foreach (var tick in item.Tickets)
+                            {
+                                db.Insert(tick);
+                            }
                         }
                     }
-                
-                    return db.Table<Topic>().ToList();
+
+                    /* TODO */
+                    /* This is f**k */
+                    var tickets = db.Table<Ticket>().ToList();
+                    var topic = db.Table<Topic>().ToList();
+                    topic.ForEach(o => o.Tickets = tickets.Where(i => i.TopicId == o.Id).ToList());
+
+                    Topics = topic;
+
+                    return Topics;
                 }
             }
 

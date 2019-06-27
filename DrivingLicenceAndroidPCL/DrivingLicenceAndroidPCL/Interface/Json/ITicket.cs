@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using System;
 using SQLite;
 
 namespace DrivingLicenceAndroidPCL.Interface.Json
@@ -26,7 +26,7 @@ namespace DrivingLicenceAndroidPCL.Interface.Json
         long FileParent { get; set; }
 
         [JsonProperty("Filename")]
-        Uri Filename { get; set; }
+        string Filename { get; set; }
 
         [JsonProperty("Id")]
         int Id { get; set; }
@@ -36,8 +36,5 @@ namespace DrivingLicenceAndroidPCL.Interface.Json
 
         [JsonProperty("Timestamp")]
         string Timestamp { get; set; }
-
-        //[JsonProperty("Topic")]
-        //int Topic { get; set; }
     }
 }

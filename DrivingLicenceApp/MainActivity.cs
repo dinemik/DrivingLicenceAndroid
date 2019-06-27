@@ -32,6 +32,9 @@ namespace DrivingLicenceApp
             ///
             SingInBtn.Click += new EventHandler(SingIn);
             SingUpBtn.Click += new EventHandler(SingUp);
+
+            //Intent Category = new Intent(this, typeof(CategoryActivity));
+            //StartActivity(Category);
         }
 
         /*TODO*/

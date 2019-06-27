@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using DrivingLicenceAndroidPCL.Class.Json;
+﻿using DrivingLicenceAndroidPCL.Class.Json;
+using SQLiteNetExtensions.Attributes;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 using SQLite;
 
@@ -13,7 +14,7 @@ namespace DrivingLicenceAndroidPCL.Interface.Json
         [JsonProperty("Name")]
         string Name { get; set; }
 
-        [JsonProperty("Tickets")]
+        [JsonProperty("Tickets"), ManyToMany(typeof(Ticket))]
         List<Ticket> Tickets { get; set; }
     }
 }

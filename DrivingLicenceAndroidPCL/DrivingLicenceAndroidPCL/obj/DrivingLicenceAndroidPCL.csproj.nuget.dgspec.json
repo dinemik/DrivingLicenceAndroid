@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+        "projectName": "DrivingLicenceAndroidPCL",
+        "projectPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+        "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\davit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid71"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid71": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid71": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.5.231, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

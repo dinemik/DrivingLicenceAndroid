@@ -2180,6 +2180,9 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F020065
 			public const int notify_panel_notification_icon_bg = 2130837605;
 			
+			// aapt resource value: 0x7F010005
+			public const int textviewIntestingact = 2130771973;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -2599,7 +2602,7 @@ namespace DrivingLicenceApp
 			public const int start = 2131492910;
 			
 			// aapt resource value: 0x7F020002
-			public const int StartTestBtn = 2130837506;
+			public const int StartTestImg = 2130837506;
 			
 			// aapt resource value: 0x7F0C0086
 			public const int status_bar_latest_event_content = 2131492998;

@@ -5,6 +5,7 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLi
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\MonoAndroid,Version=v7.1.AssemblyAttributes.cs
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\build.props
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\adb.props
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\DrivingLicenceAndroidPCL.csprojAssemblyReference.cache
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\libraryimports.cache.stamp
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\resourcepaths.cache
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\res.flag
@@ -18,4 +19,3 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLi
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\stamp\_BuildAdditionalResourcesCache.stamp
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\stamp\_CleanIntermediateIfNuGetsChange.stamp
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceAndroidPCL\DrivingLicenceAndroidPCL\obj\Debug\71\DrivingLicenceAndroidPCL.csprojAssemblyReference.cache

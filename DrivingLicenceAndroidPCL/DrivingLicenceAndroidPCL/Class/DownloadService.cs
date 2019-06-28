@@ -22,7 +22,7 @@ namespace DrivingLicenceAndroidPCL.Class
                 
                 using (var db = new SQLiteConnection(conStr))
                 {
-                    var topics = await DeserializeJson.GetTopicsAsync();
+                    List<Topic> topics =( await DeserializeJson.GetTopicsAsync()).Cast<Topic>().ToList<Topic>();
 
                     if (File.Exists(conStr))
                     {
@@ -40,24 +40,13 @@ namespace DrivingLicenceAndroidPCL.Class
 
                         foreach (var item in topics)
                         {
-                            db.Insert(item);
-                            foreach (var tick in item.Tickets)
-                            {
-                                db.Insert(tick);
-                            }
+                            db.InsertWithChildren(item);
                         }
+
+                        db.Commit();
                     }
 
-                    /* TODO */
-                    /* Fix this f**k */
-                    var tickets = db.Table<Ticket>().ToList();
-                    var topic = db.Table<Topic>().ToList();
-
-                    tickets.ForEach(o => o.Answers = topics.SelectMany(tick => tick.Tickets).First(ans => ans.Id == o.Id).Answers);
-
-                    topic.ForEach(o => o.Tickets = tickets.Where(i => i.TopicId == o.Id).ToList());
-
-                    Topics = topic;
+                    Topics = db.GetAllWithChildren<Topic>();
                     return Topics;
                 }
             }

@@ -9,7 +9,7 @@ namespace DrivingLicenceAndroidPCL.Interface.Json
     public partial interface ITopic
     {
         [JsonProperty("Id"), PrimaryKey]
-        long Id { get; set; }
+        int Id { get; set; }
 
         [JsonProperty("Name")]
         string Name { get; set; }

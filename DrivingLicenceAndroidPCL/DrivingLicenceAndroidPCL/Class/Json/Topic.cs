@@ -10,12 +10,12 @@ namespace DrivingLicenceAndroidPCL.Class.Json
     public class Topic : ITopic
     {
         [JsonProperty("Id"), PrimaryKey]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [JsonProperty("Name")]
         public string Name { get; set; }
 
-        [JsonProperty("Tickets"), OneToMany]
-        public List<Ticket> Tickets { get; set; } = new List<Ticket>();
+        [JsonProperty("Tickets"), OneToMany(CascadeOperations = CascadeOperation.All)]
+        public List<Ticket> Tickets { get; set; }
     }
 }

@@ -9,6 +9,10 @@ namespace DrivingLicenceAndroidPCL.Class
 {
     public static class DeserializeJson
     {
+        /*
+         * 1. Download string 'json'
+         * 2. Deserialize 
+         */
         public static async Task<IEnumerable<ITopicJson>> GetTopicsAsync()
         {
             using (HttpClient web = new HttpClient())

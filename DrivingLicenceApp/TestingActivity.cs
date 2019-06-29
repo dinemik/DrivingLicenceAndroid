@@ -20,7 +20,8 @@ namespace DrivingLicenceApp
     [Activity]
     public class TestingActivity : AppCompatActivity
     {
-        private IEnumerable<ITicketDb> Topics { get; set; }
+        //tickets for testing.
+        private IEnumerable<ITicketDb> Tickets { get; set; }
 
         #region UI
         private TextView TimerTxt { get; set; }
@@ -34,14 +35,22 @@ namespace DrivingLicenceApp
         private ImageView NextImg { get; set; }
         #endregion
 
-        private int Position { get; set; }
+        //tickets count
+        private int TicketsCount { get; set; } = 30;
+        //ticket id
+        private int Position { get; set; } = 0;
 
         protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_testing);
-            Topics = await new TopicService().GetTopicsByNamesAsync(Intent.GetStringArrayListExtra("Tickets"), 30);
 
+            //getting tickets.
+            Tickets = await new TopicService().GetTopicsByNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
+            //getting taked tickets count.
+            TicketsCount = Tickets.Count();
+
+            //UI.
             TimerTxt = FindViewById<TextView>(Resource.Id.TimeTxt);
             HelpImg = FindViewById<ImageView>(Resource.Id.HelpImg);
             QuestionPic = FindViewById<ImageViewAsync>(Resource.Id.QuestionImg);
@@ -49,47 +58,60 @@ namespace DrivingLicenceApp
             QuestionTxt = FindViewById<TextView>(Resource.Id.QuestionTxt);
             QuestionsRecView = FindViewById<RecyclerView>(Resource.Id.QuestionsRecView);
 
+            NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg);
+            NextImg.Click += NextBtn;
+
+            //Recycler View Config.
             var manager = new LinearLayoutManager(this)
             { Orientation = OrientationHelper.Vertical };
             QuestionsRecView.SetLayoutManager(manager);
 
-            NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg);
-            NextImg.Click += Next;
-
-            Position = 0;
+            NextImg.Enabled = false;
+            Next();
         }
 
         private void Answer(object sender, EventArgs args)
         {
-            var send = (sender as TextView);
-            var elem = Topics.ElementAt(Position);
+            //if correct
+            (sender as TextView).SetBackgroundColor(Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text).Correct ? Color.Green : Color.Red);
+            //if not correct
+            QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
 
-            send.SetBackgroundColor(elem.Answers.FirstOrDefault(o => o.Answ == send.Text).Correct ? Color.Green : Color.Red);
-            QuestionsRecView.GetChildAt(elem.Answers.IndexOf(elem.Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
+            //disable all answers
+            for (int i = 0; i < QuestionsRecView.ChildCount; i++)
+                QuestionsRecView.GetChildAt(i).FindViewById<TextView>(Resource.Id.AnsTxt).Enabled = false;
 
             NextImg.Enabled = true;
         }
         
-        private void Next(object sender, EventArgs args)
+        private void NextBtn(object sender, EventArgs args)
         {
-            var elem = Topics.ElementAt(Position);
+            //new ticket id.
+            Position++;
 
-            try
-            {
-                QuestionPic.LoadImage(elem.Filename);
-
-                if(elem.Filename != null)
-                    QuestionPic.SetPadding(20, 20, 20, 20);
-                else
-                    QuestionPic.SetPadding(0, 0, 0, 0);
-            }
-            catch (Exception) { }
-
-            QuestionTxt.Text = elem.Question;
-
-            QuestionsRecView.SetAdapter(new AnswerAdapter(elem.Answers, Answer));
+            Next();
 
             NextImg.Enabled = false;
+        }
+
+        private void Next()
+        {
+            //current ticket
+            var elem = Tickets.ElementAt(Position);
+
+            //set picture
+            QuestionPic.LoadImage(elem.Filename, false);
+            //picture desing
+            int padding = elem.Filename != null ? 20 : 0;
+            QuestionPic.SetPadding(padding, padding, padding, padding);
+            //unload image
+            if(padding == 0)
+                QuestionPic.SetImageBitmap(null);
+
+            QuestionTxt.Text = elem.Question;
+            
+            //recycler view adapter
+            QuestionsRecView.SetAdapter(new AnswerAdapter(elem.Answers, Answer));
         }
     }
 }

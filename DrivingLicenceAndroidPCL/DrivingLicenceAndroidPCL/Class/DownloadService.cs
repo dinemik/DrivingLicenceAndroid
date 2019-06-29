@@ -19,6 +19,7 @@ namespace DrivingLicenceAndroidPCL.Class
         {
             List<TopicJson> topics = (await DeserializeJson.GetTopicsAsync()).Cast<TopicJson>().ToList();
 
+            /*TODO*/
             /*
             if(Topics == null)
             {
@@ -99,6 +100,7 @@ namespace DrivingLicenceAndroidPCL.Class
             }
             */
 
+            /*Temp code*/
             var jsonObjDb = topics.Select(o =>
                        new TopicDb
                        {

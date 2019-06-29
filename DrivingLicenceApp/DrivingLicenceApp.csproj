@@ -59,8 +59,11 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\AnswerAdapter.cs" />
     <Compile Include="Adapter\CategoryAdapter.cs" />
     <Compile Include="CategoryActivity.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Holder\AnswerHolder.cs" />
     <Compile Include="Holder\CategoryHolder.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -103,6 +106,9 @@
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\DrivingApplicationBackGround.jpg" />
@@ -129,9 +135,13 @@
     <AndroidResource Include="Resources\layout\activity_testing.axml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Question40X40.png" />
     <Content Include="Resources\drawable\textviewIntestingact.xml">
       <SubType>Designer</SubType>
     </Content>
+    <AndroidResource Include="Resources\layout\answer_Item.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

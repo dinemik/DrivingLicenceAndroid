@@ -47,13 +47,21 @@
   <ItemGroup>
     <Compile Include="Class\DeserializeJson.cs" />
     <Compile Include="Class\DownloadService.cs" />
-    <Compile Include="Class\Json\Ticket.cs" />
-    <Compile Include="Class\Json\Topic.cs" />
     <Compile Include="Class\TopicService.cs" />
     <Compile Include="Interface\ITopicService.cs" />
-    <Compile Include="Interface\Json\ITicket.cs" />
-    <Compile Include="Interface\Json\ITopic.cs" />
     <Compile Include="Linq\MyMethods.cs" />
+    <Compile Include="Model\Class\DataBase\AnswerDb.cs" />
+    <Compile Include="Model\Class\DataBase\TicketDb.cs" />
+    <Compile Include="Model\Class\DataBase\TopicDb.cs" />
+    <Compile Include="Model\Class\Json\TicketJson.cs" />
+    <Compile Include="Model\Class\Json\TopicJson.cs" />
+    <Compile Include="Model\Interface\All\ITicket.cs" />
+    <Compile Include="Model\Interface\All\ITopic.cs" />
+    <Compile Include="Model\Interface\DataBase\IAnsewerDb.cs" />
+    <Compile Include="Model\Interface\DataBase\ITicketDb.cs" />
+    <Compile Include="Model\Interface\DataBase\ITopicDb.cs" />
+    <Compile Include="Model\Interface\Json\ITicketJson.cs" />
+    <Compile Include="Model\Interface\Json\ITopicJson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +73,9 @@
     </PackageReference>
     <PackageReference Include="SQLiteNetExtensions">
       <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.NonGeneric">
+      <Version>4.3.0</Version>
     </PackageReference>
     <PackageReference Include="System.Net.Http">
       <Version>4.3.4</Version>

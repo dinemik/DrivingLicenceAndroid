@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
+            "System.Collections.NonGeneric": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"

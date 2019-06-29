@@ -1,17 +1,14 @@
-﻿using DrivingLicenceAndroidPCL.Interface.Json;
-using DrivingLicenceAndroidPCL.Class.Json;
-using DrivingLicenceAndroidPCL.Class;
+﻿using DrivingLicenceAndroidPCL.Class;
 using System.Collections.Generic;
 using DrivingLicenceApp.Adapter;
 using Android.Support.V7.Widget;
 using Android.Support.V7.App;
-using System.Threading.Tasks;
+using Android.Content;
 using Android.Widget;
+using System.Linq;
 using Android.App;
 using Android.OS;
 using System;
-using System.Linq;
-using Android.Content;
 
 namespace DrivingLicenceApp
 {
@@ -36,12 +33,10 @@ namespace DrivingLicenceApp
             Recycler = FindViewById<RecyclerView>(Resource.Id.CategoryRecycler);
             Confirm = FindViewById<ImageView>(Resource.Id.StartTestImg);
 
-            var meneger = new LinearLayoutManager(this)
-            {
-                Orientation = (int)Orientation.Vertical
-            };
+            var manager = new LinearLayoutManager(this)
+            { Orientation = (int)Orientation.Vertical };
 
-            Recycler.SetLayoutManager(meneger);
+            Recycler.SetLayoutManager(manager);
             Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
 
             Confirm.Click += StartTesting;

@@ -112,6 +112,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "DrivingLicenceApp.dll" comes first in this list. */
 		"DrivingLicenceApp.dll",
 		"DrivingLicenceAndroidPCL.dll",
+		"FFImageLoading.dll",
+		"FFImageLoading.Platform.dll",
 		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
 		"SQLiteNetExtensions.dll",

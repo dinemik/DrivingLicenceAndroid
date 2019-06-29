@@ -2181,7 +2181,10 @@ namespace DrivingLicenceApp
 			public const int notify_panel_notification_icon_bg = 2130837605;
 			
 			// aapt resource value: 0x7F010005
-			public const int textviewIntestingact = 2130771973;
+			public const int Question40X40 = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int textviewIntestingact = 2130771974;
 			
 			static Drawable()
 			{
@@ -2268,6 +2271,21 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C003A
 			public const int always = 2131492922;
 			
+			// aapt resource value: 0x7F020012
+			public const int Ans1Txt = 2130837522;
+			
+			// aapt resource value: 0x7F020013
+			public const int Ans2Txt = 2130837523;
+			
+			// aapt resource value: 0x7F020014
+			public const int Ans3Txt = 2130837524;
+			
+			// aapt resource value: 0x7F020015
+			public const int Ans4Txt = 2130837525;
+			
+			// aapt resource value: 0x7F020017
+			public const int AnsTxt = 2130837527;
+			
 			// aapt resource value: 0x7F0C0025
 			public const int auto = 2131492901;
 			
@@ -2283,8 +2301,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C0085
 			public const int cancel_action = 2131492997;
 			
-			// aapt resource value: 0x7F020009
-			public const int CategoryCard = 2130837513;
+			// aapt resource value: 0x7F020019
+			public const int CategoryCard = 2130837529;
 			
 			// aapt resource value: 0x7F020003
 			public const int CategoryRecycler = 2130837507;
@@ -2388,6 +2406,9 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C003F
 			public const int @fixed = 2131492927;
 			
+			// aapt resource value: 0x7F020008
+			public const int HelpImg = 2130837512;
+			
 			// aapt resource value: 0x7F0C0004
 			public const int home = 2131492868;
 			
@@ -2457,6 +2478,9 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C003D
 			public const int never = 2131492925;
 			
+			// aapt resource value: 0x7F020016
+			public const int NextQuestImg = 2130837526;
+			
 			// aapt resource value: 0x7F0C0014
 			public const int none = 2131492884;
 			
@@ -2487,8 +2511,14 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C0007
 			public const int progress_horizontal = 2131492871;
 			
-			// aapt resource value: 0x7F020008
-			public const int QuestionsCountTxt = 2130837512;
+			// aapt resource value: 0x7F020011
+			public const int QuestionImg = 2130837521;
+			
+			// aapt resource value: 0x7F020018
+			public const int QuestionsCountTxt = 2130837528;
+			
+			// aapt resource value: 0x7F020010
+			public const int QuestionTxt = 2130837520;
 			
 			// aapt resource value: 0x7F0C005D
 			public const int radio = 2131492957;
@@ -2639,6 +2669,9 @@ namespace DrivingLicenceApp
 			
 			// aapt resource value: 0x7F0C008C
 			public const int time = 2131493004;
+			
+			// aapt resource value: 0x7F020009
+			public const int TimeTxt = 2130837513;
 			
 			// aapt resource value: 0x7F0C004A
 			public const int title = 2131492938;
@@ -2826,7 +2859,10 @@ namespace DrivingLicenceApp
 			public const int activity_testing = 2130903044;
 			
 			// aapt resource value: 0x7F030005
-			public const int category_Item = 2130903045;
+			public const int answer_Item = 2130903045;
+			
+			// aapt resource value: 0x7F030006
+			public const int category_Item = 2130903046;
 			
 			// aapt resource value: 0x7F03001B
 			public const int design_bottom_navigation_item = 2130903067;

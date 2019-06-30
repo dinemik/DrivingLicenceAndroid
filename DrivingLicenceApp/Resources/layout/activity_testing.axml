@@ -15,6 +15,56 @@
                       android:orientation="horizontal" 
                       android:gravity="right">
 
+            <FrameLayout android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" 
+                         android:layout_gravity="center" 
+                         android:layout_marginRight="10dp">
+                
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent" 
+                              android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" 
+                              android:text="0" 
+                              android:textColor="#fff" 
+                              android:id="@+id/NextQuest" />
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" 
+                              android:text="-დან " 
+                              android:textColor="#fff" />
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" 
+                              android:text="0" 
+                              android:textColor="#fff" 
+                              android:id="@+id/AllQuestions" 
+                              android:layout_marginRight="10dp"/>
+
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" 
+                              android:text="0" 
+                              android:textColor="#ff0000" 
+                              android:id="@+id/FiledAnswers"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" 
+                              android:text="/" 
+                              android:textColor="#ffffff"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" 
+                              android:text="0" 
+                              android:textColor="#008000"
+                              android:id="@+id/CorrectAnswers"/>
+
+                </LinearLayout>
+            
+            </FrameLayout>
+           
+
            <ImageView android:layout_width="40dp"
                       android:layout_height="40dp" 
                       android:src="@drawable/question40x40" 
@@ -41,7 +91,7 @@
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:textColor="#fff"
-                  android:text="Questuin" 
+                  android:text="შეკითხვების შერჩევა........" 
                   android:layout_margin="10dp" 
                   android:id="@+id/QuestionTxt"/>
 
@@ -54,15 +104,15 @@
                                          android:layout_gravity="center"
                                          android:background="@drawable/categorycard" />
 
-     <FrameLayout android:layout_width="wrap_content"
-                  android:layout_height="wrap_content" 
-                  android:layout_gravity="right">
+    <FrameLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" 
+                 android:layout_gravity="right">
     
-           <ImageView android:layout_width="40dp"
-                      android:layout_height="40dp" 
-                      android:id="@+id/NextQuestImg"
-                      android:src="@drawable/NextDrivingApp" 
-                      android:layout_marginRight="10dp"/>
+          <ImageView android:layout_width="40dp"
+                     android:layout_height="40dp" 
+                     android:id="@+id/NextQuestImg"
+                     android:src="@drawable/NextDrivingApp" 
+                     android:layout_marginRight="10dp"/>
 
     </FrameLayout>
 

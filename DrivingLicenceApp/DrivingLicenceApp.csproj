@@ -66,6 +66,8 @@
     <Compile Include="Holder\AnswerHolder.cs" />
     <Compile Include="Holder\CategoryHolder.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Models\Class\TopicAndroid.cs" />
+    <Compile Include="Models\Interface\ITopicAndroid.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestingActivity.cs" />

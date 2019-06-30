@@ -2271,20 +2271,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C003A
 			public const int always = 2131492922;
 			
-			// aapt resource value: 0x7F020012
-			public const int Ans1Txt = 2130837522;
-			
-			// aapt resource value: 0x7F020013
-			public const int Ans2Txt = 2130837523;
-			
 			// aapt resource value: 0x7F020014
-			public const int Ans3Txt = 2130837524;
-			
-			// aapt resource value: 0x7F020015
-			public const int Ans4Txt = 2130837525;
-			
-			// aapt resource value: 0x7F020017
-			public const int AnsTxt = 2130837527;
+			public const int AnsTxt = 2130837524;
 			
 			// aapt resource value: 0x7F0C0025
 			public const int auto = 2131492901;
@@ -2301,8 +2289,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C0085
 			public const int cancel_action = 2131492997;
 			
-			// aapt resource value: 0x7F020019
-			public const int CategoryCard = 2130837529;
+			// aapt resource value: 0x7F020016
+			public const int CategoryCard = 2130837526;
 			
 			// aapt resource value: 0x7F020003
 			public const int CategoryRecycler = 2130837507;
@@ -2478,8 +2466,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C003D
 			public const int never = 2131492925;
 			
-			// aapt resource value: 0x7F020016
-			public const int NextQuestImg = 2130837526;
+			// aapt resource value: 0x7F020012
+			public const int NextQuestImg = 2130837522;
 			
 			// aapt resource value: 0x7F0C0014
 			public const int none = 2131492884;
@@ -2514,8 +2502,11 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F020011
 			public const int QuestionImg = 2130837521;
 			
-			// aapt resource value: 0x7F020018
-			public const int QuestionsCountTxt = 2130837528;
+			// aapt resource value: 0x7F020015
+			public const int QuestionsCountTxt = 2130837525;
+			
+			// aapt resource value: 0x7F020013
+			public const int QuestionsRecView = 2130837523;
 			
 			// aapt resource value: 0x7F020010
 			public const int QuestionTxt = 2130837520;

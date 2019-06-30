@@ -15,11 +15,11 @@ namespace DrivingLicenceAndroidPCL.Class
     {
         public static IEnumerable<ITopicDb> Topics { get; set; } = null;
 
+        /*TODO*/
         public static async Task<IEnumerable<ITopicDb>> DownloadTicketsAsync()
         {
             List<TopicJson> topics = (await DeserializeJson.GetTopicsAsync()).Cast<TopicJson>().ToList();
-
-            /*TODO*/
+            
             /*
             if(Topics == null)
             {

@@ -9,21 +9,17 @@ using System.Linq;
 using Android.App;
 using Android.OS;
 using System;
+using System.Threading.Tasks;
 
 namespace DrivingLicenceApp
 {
-    [Activity]
+    [Activity(MainLauncher = true)]
     public class CategoryActivity : AppCompatActivity
     {
         private RecyclerView Recycler { get; set; }
-
         private ImageView Confirm { get; set; }
-
         private List<string> Category { get; set; } = new List<string>();
-
         private bool Checked { get; set; } = false;
-
-
 
         protected override async void OnCreate(Bundle savedInstanceState)
         {
@@ -37,6 +33,10 @@ namespace DrivingLicenceApp
             { Orientation = (int)Orientation.Vertical };
 
             Recycler.SetLayoutManager(manager);
+
+            /*TODO*/
+            //await Task.Run(() => {  });
+
             Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
 
             Confirm.Click += StartTesting;

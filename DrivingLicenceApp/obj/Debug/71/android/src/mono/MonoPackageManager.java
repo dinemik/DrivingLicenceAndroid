@@ -115,6 +115,7 @@ class MonoPackageManager_Resources {
 		"FFImageLoading.dll",
 		"FFImageLoading.Platform.dll",
 		"Newtonsoft.Json.dll",
+		"Refractored.GifImageView.dll",
 		"SQLite-net.dll",
 		"SQLiteNetExtensions.dll",
 		"SQLitePCLRaw.batteries_green.dll",

@@ -6,6 +6,7 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\and
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Mono.Android.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\mscorlib.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Newtonsoft.Json.dll
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Refractored.GifImageView.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SQLite-net.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SQLiteNetExtensions.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SQLitePCLRaw.batteries_green.dll

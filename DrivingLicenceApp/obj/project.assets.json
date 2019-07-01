@@ -11,6 +11,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Refractored.GifImageView/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/monoandroid/Refractored.GifImageView.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid/Refractored.GifImageView.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -412,6 +421,18 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.12.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "Refractored.GifImageView/2.0.0": {
+      "sha512": "c67NJ1I9i0tNdSgd+4pofTCEoDJ85EVRq4pFmXT8BZ75n3/tLYT0RrEQKDQ6Rfw2E5tBMcz0RxXoBH1gdx/htw==",
+      "type": "package",
+      "path": "refractored.gifimageview/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid/Refractored.GifImageView.dll",
+        "refractored.gifimageview.2.0.0.nupkg.sha512",
+        "refractored.gifimageview.nuspec"
       ]
     },
     "sqlite-net-pcl/1.5.231": {
@@ -1098,6 +1119,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v7.1": [
       "DrivingLicenceAndroidPCL >= 1.0.0",
+      "Refractored.GifImageView >= 2.0.0",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
       "Xamarin.Android.Support.Design >= 28.0.0.1",
@@ -1147,6 +1169,10 @@
     "frameworks": {
       "monoandroid71": {
         "dependencies": {
+          "Refractored.GifImageView": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
             "version": "[28.0.0.1, )"

@@ -13,6 +13,7 @@ using FFImageLoading.Views;
 using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
 using System.Threading.Tasks;
+using Felipecsl.GifImageViewLibrary;
 
 namespace DrivingLicenceApp
 {
@@ -55,13 +56,11 @@ namespace DrivingLicenceApp
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_testing);
 
-            /*TODO*/
-            //await Task.Run(() => { });
-
             //getting tickets.
             Tickets = await new TopicService().GetTopicsByNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
             //getting taked tickets count.
             TicketsCount = Tickets.Count();
+            //tst.Dispose();
 
             //UI.
             TimerTxt = FindViewById<TextView>(Resource.Id.TimeTxt);
@@ -77,7 +76,8 @@ namespace DrivingLicenceApp
             QuestionCount = FindViewById<TextView>(Resource.Id.AllQuestions);
             NextQuestion = FindViewById<TextView>(Resource.Id.NextQuest);
 
-            NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg);
+
+            NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg); 
             NextImg.Click += NextBtn;
 
             //_________
@@ -88,7 +88,7 @@ namespace DrivingLicenceApp
             var manager = new LinearLayoutManager(this)
             { Orientation = OrientationHelper.Vertical };
             QuestionsRecView.SetLayoutManager(manager);
-
+             
             NextImg.Enabled = false;
             Next();
 

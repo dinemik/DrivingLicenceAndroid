@@ -8,8 +8,12 @@ using Android.Widget;
 using System.Linq;
 using Android.App;
 using Android.OS;
-using System;
 using System.Threading.Tasks;
+using Felipecsl.GifImageViewLibrary;
+using System.Net.Http;
+using Android.Net;
+using System.IO;
+using System;
 
 namespace DrivingLicenceApp
 {
@@ -18,6 +22,9 @@ namespace DrivingLicenceApp
     {
         private RecyclerView Recycler { get; set; }
         private ImageView Confirm { get; set; }
+        private GifImageView GifLoading { get; set; }
+
+
         private List<string> Category { get; set; } = new List<string>();
         private bool Checked { get; set; } = false;
 
@@ -28,16 +35,22 @@ namespace DrivingLicenceApp
 
             Recycler = FindViewById<RecyclerView>(Resource.Id.CategoryRecycler);
             Confirm = FindViewById<ImageView>(Resource.Id.StartTestImg);
+            GifLoading = FindViewById<GifImageView>(Resource.Id.LoadingGif);
 
             var manager = new LinearLayoutManager(this)
             { Orientation = (int)Orientation.Vertical };
 
             Recycler.SetLayoutManager(manager);
 
-            /*TODO*/
-            //await Task.Run(() => {  });
-
+            // Loading Animation
+            await Task.Run(async () => {
+                var bytes = await new HttpClient().GetByteArrayAsync("https://thumbs.gfycat.com/ClearcutPleasantCockroach-small.gif");
+                GifLoading.SetBytes(bytes);
+                GifLoading.StartAnimation();
+            });
             Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
+            GifLoading.Visibility = Android.Views.ViewStates.Gone;
+            GifLoading.StopAnimation();
 
             Confirm.Click += StartTesting;
         }
@@ -51,7 +64,7 @@ namespace DrivingLicenceApp
             else
                 Category.Add(txt);
         }
-
+         
         private void StartTesting(object sender, EventArgs args)
         {
             if(Category.Count == 0)

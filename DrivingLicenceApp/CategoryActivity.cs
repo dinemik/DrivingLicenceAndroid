@@ -11,8 +11,6 @@ using Android.OS;
 using System.Threading.Tasks;
 using Felipecsl.GifImageViewLibrary;
 using System.Net.Http;
-using Android.Net;
-using System.IO;
 using System;
 
 namespace DrivingLicenceApp
@@ -20,13 +18,15 @@ namespace DrivingLicenceApp
     [Activity(MainLauncher = true)]
     public class CategoryActivity : AppCompatActivity
     {
+        #region UI
         private RecyclerView Recycler { get; set; }
         private ImageView Confirm { get; set; }
         private GifImageView GifLoading { get; set; }
-
+        #endregion
 
         private List<string> Category { get; set; } = new List<string>();
         private bool Checked { get; set; } = false;
+
 
         protected override async void OnCreate(Bundle savedInstanceState)
         {
@@ -48,7 +48,10 @@ namespace DrivingLicenceApp
                 GifLoading.SetBytes(bytes);
                 GifLoading.StartAnimation();
             });
+            // load categoryes.
             Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
+            
+            // hide Loaging Animation
             GifLoading.Visibility = Android.Views.ViewStates.Gone;
             GifLoading.StopAnimation();
 

@@ -12,8 +12,7 @@ using System;
 using FFImageLoading.Views;
 using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
-using System.Threading.Tasks;
-using Felipecsl.GifImageViewLibrary;
+using System.Timers;
 
 namespace DrivingLicenceApp
 {
@@ -26,7 +25,9 @@ namespace DrivingLicenceApp
         #region UI
         private TextView TimerTxt { get; set; }
         private ImageView HelpImg { get; set; }
+#pragma warning disable CS0618 // Type or member is obsolete
         private ImageViewAsync QuestionPic { get; set; }
+#pragma warning restore CS0618 // Type or member is obsolete
 
         private TextView QuestionTxt { get; set; }
 
@@ -43,13 +44,32 @@ namespace DrivingLicenceApp
         #endregion
 
         //tickets count
-        private int TicketsCount { get; set; } = 30;
+        private int TicketsCount { get; set; }
         //ticket id
-        private int Position { get; set; } = 0;
+        private int Position { get; set; }
 
-        private int CorrectAns { get; set; } = 0;
-        private int FailedAns { get; set; } = 0;
-        private int MaxIncorectCount { get; set; } = 3;
+        //correct answers count.
+        private int CorrectAns { get; set; }
+        //filed answers count.
+        private int FailedAns { get; set; } 
+        //max incorrect answers count
+        private int MaxIncorrectCount { get; set; }
+        //timer obj...
+        private Timer Timer { get; set; }
+        //max time...
+        private int Sec { get; set; }
+
+        public TestingActivity()
+        {
+            Sec = 1800;
+
+            TicketsCount = 30;
+            Position = 0;
+            CorrectAns = 0;
+            FailedAns = 0;
+            MaxIncorrectCount = 3;
+            Timer = new Timer();
+        }
 
         protected override async void OnCreate(Bundle savedInstanceState)
         {
@@ -65,7 +85,9 @@ namespace DrivingLicenceApp
             //UI.
             TimerTxt = FindViewById<TextView>(Resource.Id.TimeTxt);
             HelpImg = FindViewById<ImageView>(Resource.Id.HelpImg);
+#pragma warning disable CS0618 // Type or member is obsolete
             QuestionPic = FindViewById<ImageViewAsync>(Resource.Id.QuestionImg);
+#pragma warning restore CS0618 // Type or member is obsolete
 
             QuestionTxt = FindViewById<TextView>(Resource.Id.QuestionTxt);
             QuestionsRecView = FindViewById<RecyclerView>(Resource.Id.QuestionsRecView);
@@ -93,6 +115,9 @@ namespace DrivingLicenceApp
             Next();
 
             HelpImg.Click += HelpForAns;
+
+            //start timer.
+            TimerStart();
         }
 
         private void Answer(object sender, EventArgs args)
@@ -114,8 +139,8 @@ namespace DrivingLicenceApp
             FilAns.Text = FailedAns.ToString();
 
             // if incorect answers limit set limit -> int MaxIncorectCount = 3 default
-            if (FailedAns == MaxIncorectCount) 
-                Toast.MakeText(Application.Context, $"შენ ვერ ჩააბარე გამოცდა იმითომ რომ {MaxIncorectCount} შეკითხვას გაეცი არასწორი პასუხი", ToastLength.Long).Show();
+            if (FailedAns == MaxIncorrectCount) 
+                Toast.MakeText(Application.Context, $"შენ ვერ ჩააბარე გამოცდა იმითომ რომ {MaxIncorrectCount} შეკითხვას გაეცი არასწორი პასუხი", ToastLength.Long).Show();
 
             NextImg.Enabled = true;
         }
@@ -156,5 +181,34 @@ namespace DrivingLicenceApp
         //help method
         private void HelpForAns(object sender, EventArgs args) =>
             Toast.MakeText(Application.Context, Tickets.ElementAt(Position).Desc, ToastLength.Long).Show();
+
+        private void TimerStart()
+        {
+            //seconds
+            Timer.Interval = Sec;
+            Timer.Elapsed += Timer_Elapsed;
+            Timer.Start();
+        }
+
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            //seconds to minutes and seconds mm:ss
+            string formato = $"{Sec/60}:{Sec%60}";
+            RunOnUiThread(() => { TimerTxt.Text = formato; });
+
+            if (Sec == 0)
+                Cancelar();
+
+            Sec--;
+        }
+
+        //disable timer and notified
+        private void Cancelar()
+        {
+            Timer.Enabled = false;
+            Timer.Dispose();
+
+            RunOnUiThread(() => { Toast.MakeText(Application.Context, "დრო გავიდა", ToastLength.Long).Show(); });
+        }
     }
 }

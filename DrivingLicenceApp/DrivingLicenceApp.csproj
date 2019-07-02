@@ -141,7 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Question40X40.png" />
-    <AndroidResource Include="Resources\drawable\LoadingAnimation.gif" />
     <Content Include="Resources\drawable\textviewIntestingact.xml">
       <SubType>Designer</SubType>
     </Content>

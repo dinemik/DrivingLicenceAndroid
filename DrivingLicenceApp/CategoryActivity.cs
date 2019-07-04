@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Felipecsl.GifImageViewLibrary;
 using System.Net.Http;
 using System;
+using Android.Graphics;
 
 namespace DrivingLicenceApp
 {
@@ -48,6 +49,7 @@ namespace DrivingLicenceApp
                 GifLoading.SetBytes(bytes);
                 GifLoading.StartAnimation();
             });
+
             // load categoryes.
             Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
             

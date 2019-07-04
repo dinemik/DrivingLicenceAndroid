@@ -6,13 +6,13 @@ using Android.Widget;
 using Android.App;
 using Android.OS;
 using System.Linq;
-using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
 using Android.Graphics;
 using System;
 using FFImageLoading.Views;
 using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
 using System.Timers;
+using DrivingLicenceAndroidPCL.Model.Interface.Json;
 
 namespace DrivingLicenceApp
 {
@@ -20,7 +20,7 @@ namespace DrivingLicenceApp
     public class TestingActivity : AppCompatActivity
     {
         //tickets for testing.
-        private IEnumerable<ITicketDb> Tickets { get; set; }
+        private IEnumerable<ITicketJson> Tickets { get; set; }
 
         #region UI
         private TextView TimerTxt { get; set; }
@@ -123,11 +123,11 @@ namespace DrivingLicenceApp
         private void Answer(object sender, EventArgs args)
         {
             //if correct
-            (sender as TextView).SetBackgroundColor(Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text).Correct ? Color.Green : Color.Red);
+            (sender as TextView).SetBackgroundColor(Tickets.ElementAt(Position).Answers[(Tickets.ElementAt(Position).CorrectAnswer - 1)] == (sender as TextView).Text ? Color.Green : Color.Red);
             //if not correct
-            QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
+            QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers[(Tickets.ElementAt(Position).CorrectAnswer - 1)])).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
             //correct or incorect count detect
-            _ = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text).Correct ? CorrectAns++ : FailedAns++;
+            _ = Tickets.ElementAt(Position).Answers[(Tickets.ElementAt(Position).CorrectAnswer - 1)] == (sender as TextView).Text ? CorrectAns++ : FailedAns++;
 
             //disable all answers
             for (int i = 0; i < QuestionsRecView.ChildCount; i++)
@@ -139,8 +139,15 @@ namespace DrivingLicenceApp
             FilAns.Text = FailedAns.ToString();
 
             // if incorect answers limit set limit -> int MaxIncorectCount = 3 default
-            if (FailedAns == MaxIncorrectCount) 
-                Toast.MakeText(Application.Context, $"შენ ვერ ჩააბარე გამოცდა იმითომ რომ {MaxIncorrectCount} შეკითხვას გაეცი არასწორი პასუხი", ToastLength.Long).Show();
+            if (FailedAns == MaxIncorrectCount)
+            {
+                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                alert.SetTitle("არადა კაი იყო 😁");
+                alert.SetMessage($"შენ ვერ ჩააბარე გამოცდა იმითომ რომ {MaxIncorrectCount} შეკითხვას გაეცი არასწორი პასუხი");
+
+                Dialog dialog = alert.Create();
+                dialog.Show();
+            }
 
             NextImg.Enabled = true;
         }
@@ -179,8 +186,15 @@ namespace DrivingLicenceApp
         }
 
         //help method
-        private void HelpForAns(object sender, EventArgs args) =>
-            Toast.MakeText(Application.Context, Tickets.ElementAt(Position).Desc, ToastLength.Long).Show();
+        private void HelpForAns(object sender, EventArgs args)
+        {
+            Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+            alert.SetTitle("დახმარება");
+            alert.SetMessage(Tickets.ElementAt(Position).Desc);
+
+            Dialog dialog = alert.Create();
+            dialog.Show();
+        }
 
         private void TimerStart()
         {
@@ -208,7 +222,9 @@ namespace DrivingLicenceApp
             Timer.Enabled = false;
             Timer.Dispose();
 
-            RunOnUiThread(() => { Toast.MakeText(Application.Context, "დრო გავიდა", ToastLength.Long).Show(); });
+            RunOnUiThread(() => {
+                Toast.MakeText(Application.Context, "დრო გავიდა", ToastLength.Long).Show();
+            });
         }
     }
 }

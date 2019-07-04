@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 using DrivingLicenceAndroidPCL.Linq;
-using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
+using DrivingLicenceAndroidPCL.Model.Interface.Json;
 
 namespace DrivingLicenceAndroidPCL.Class
 {
@@ -16,17 +16,17 @@ namespace DrivingLicenceAndroidPCL.Class
         * 3. Shuffle
         * 4. Taking --int count-- questions
         */
-        public async Task<IEnumerable<ITicketDb>> GetTopicsByNamesAsync(IEnumerable<string> names, int count)
+        public async Task<IEnumerable<ITicketJson>> GetTopicsByNamesAsync(IEnumerable<string> names, int count)
         {
-            var topics = await DownloadService.DownloadTicketsAsync();
-            var tickets = topics.Where(o => names.Any(i => i == o.Name)).SelectMany(o => o.TicketsDb).ToList().Shuffle();
+            var topics = await OfflineSaveService.DownloadTicketsAsync();
+            var tickets = topics.Where(o => names.Any(i => i == o.Name)).SelectMany(o => o.Tickets).ToList().Shuffle();
             return tickets.Count() >= count ? tickets.Take(count) : tickets;
         }
 
         /*
          * Get All Topics
          */
-        public async Task<IEnumerable<ITopicDb>> GetAllTopicAsync() =>
-             await DownloadService.DownloadTicketsAsync();
+        public async Task<IEnumerable<ITopicJson>> GetAllTopicAsync() =>
+             await OfflineSaveService.DownloadTicketsAsync();
     }
 }

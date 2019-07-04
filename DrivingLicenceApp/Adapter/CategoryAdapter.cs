@@ -4,10 +4,10 @@ using DrivingLicenceApp.Holder;
 using Android.Views;
 using System.Linq;
 using System;
-using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
 using DrivingLicenceApp.Models.Interface;
 using DrivingLicenceApp.Models.Class;
 using Android.Widget;
+using DrivingLicenceAndroidPCL.Model.Interface.Json;
 
 namespace DrivingLicenceApp.Adapter
 {
@@ -19,7 +19,7 @@ namespace DrivingLicenceApp.Adapter
 
         public override int ItemCount => CategoriesAll.Count();
 
-        public CategoryAdapter(IEnumerable<ITopicDb> categories, Action<object, EventArgs> unChecked, bool check)
+        public CategoryAdapter(IEnumerable<ITopicJson> categories, Action<object, EventArgs> unChecked, bool check)
         {
             UnChecked = unChecked;
 
@@ -28,7 +28,7 @@ namespace DrivingLicenceApp.Adapter
                 Id = o.Id,
                 isChecked = check,
                 Name = o.Name,
-                TicketsCount = o.TicketsDb.Count()
+                TicketsCount = o.Tickets.Count()
             }).ToList();
         }
         

@@ -43,16 +43,34 @@ namespace DrivingLicenceApp
 
             Recycler.SetLayoutManager(manager);
 
-            // Loading Animation
-            await Task.Run(async () => {
-                var bytes = await new HttpClient().GetByteArrayAsync("https://thumbs.gfycat.com/ClearcutPleasantCockroach-small.gif");
-                GifLoading.SetBytes(bytes);
-                GifLoading.StartAnimation();
-            });
+            try
+            {
+                // Loading Animation
+                await Task.Run(async () => {
+                    var bytes = await new HttpClient().GetByteArrayAsync("https://thumbs.gfycat.com/ClearcutPleasantCockroach-small.gif");
+                    GifLoading.SetBytes(bytes);
+                    GifLoading.StartAnimation();
+                });
+            }
+            catch (Exception)
+            {}
 
-            // load categoryes.
-            Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
-            
+            try
+            {
+                // load categoryes.
+                Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
+            }
+            catch (Exception ex)
+            {
+                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                alert.SetTitle("ინტერნეტის კავშირი");
+                alert.SetMessage("ეს აპლიკაცია ირთვება პირვლად იმისთვის რომ ჩაირთოს საჭიროა ინტერნეტთან კავშირი შეკითხვების გადმოსაწერათ ერთჯერადი კავშირია.");
+
+                Dialog dialog = alert.Create();
+                dialog.Show();
+                Console.WriteLine(ex.Message);
+            }
+           
             // hide Loaging Animation
             GifLoading.Visibility = Android.Views.ViewStates.Gone;
             GifLoading.StopAnimation();

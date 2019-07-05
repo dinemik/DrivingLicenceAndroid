@@ -20,6 +20,7 @@ FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\activity_testing.xml
 foreground;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\71\res\layout\activity_category.xml
+FrameLayout;obj\Debug\71\res\layout\activity_end.xml
 FrameLayout;obj\Debug\71\res\layout\activity_main.xml
 FrameLayout;obj\Debug\71\res\layout\activity_testing.xml
 FrameLayout;obj\Debug\71\res\layout\answer_item.xml
@@ -27,6 +28,7 @@ ImageView;obj\Debug\71\res\layout\activity_category.xml
 ImageView;obj\Debug\71\res\layout\activity_testing.xml
 item;obj\Debug\71\res\values\styles.xml
 LinearLayout;obj\Debug\71\res\layout\activity_category.xml
+LinearLayout;obj\Debug\71\res\layout\activity_end.xml
 LinearLayout;obj\Debug\71\res\layout\activity_main.xml
 LinearLayout;obj\Debug\71\res\layout\activity_testing.xml
 LinearLayout;obj\Debug\71\res\layout\answer_item.xml
@@ -41,6 +43,7 @@ solid;obj\Debug\71\res\drawable\categorycard.xml
 string;obj\Debug\71\res\values\strings.xml
 stroke;obj\Debug\71\res\drawable\categorycard.xml
 style;obj\Debug\71\res\values\styles.xml
+TextView;obj\Debug\71\res\layout\activity_end.xml
 TextView;obj\Debug\71\res\layout\activity_testing.xml
 TextView;obj\Debug\71\res\layout\answer_item.xml
 TextView;obj\Debug\71\res\layout\category_item.xml

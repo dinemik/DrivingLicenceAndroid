@@ -16,7 +16,7 @@ using Android.Graphics;
 
 namespace DrivingLicenceApp
 {
-    [Activity(MainLauncher = true)]
+    [Activity]
     public class CategoryActivity : AppCompatActivity
     {
         #region UI
@@ -25,7 +25,7 @@ namespace DrivingLicenceApp
         private GifImageView GifLoading { get; set; }
         #endregion
 
-        private List<string> Category { get; set; } = new List<string>();
+        private List<string> Category { get; set; } = new List<string>(); 
         private bool Checked { get; set; } = false;
 
 
@@ -43,21 +43,13 @@ namespace DrivingLicenceApp
 
             Recycler.SetLayoutManager(manager);
 
-            try
-            {
-                // Loading Animation
-                await Task.Run(async () => {
-                    var bytes = await new HttpClient().GetByteArrayAsync("https://thumbs.gfycat.com/ClearcutPleasantCockroach-small.gif");
-                    GifLoading.SetBytes(bytes);
-                    GifLoading.StartAnimation();
-                });
-            }
-            catch (Exception)
-            {}
+
+            var bytes = await new HttpClient().GetByteArrayAsync("https://thumbs.gfycat.com/ClearcutPleasantCockroach-small.gif");
+            GifLoading.SetBytes(bytes);
+            GifLoading.StartAnimation();
 
             try
             {
-                // load categoryes.
                 Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
             }
             catch (Exception ex)
@@ -68,9 +60,8 @@ namespace DrivingLicenceApp
 
                 Dialog dialog = alert.Create();
                 dialog.Show();
-                Console.WriteLine(ex.Message);
             }
-           
+
             // hide Loaging Animation
             GifLoading.Visibility = Android.Views.ViewStates.Gone;
             GifLoading.StopAnimation();

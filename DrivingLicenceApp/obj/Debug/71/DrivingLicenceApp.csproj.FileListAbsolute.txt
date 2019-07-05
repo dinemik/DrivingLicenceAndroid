@@ -360,3 +360,5 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\sta
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\stamp\_GenerateJavaStubs.stamp
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\res\layout\activity_end.xml
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\src\md55d283cf755beb8e603c3256add530e5d\EndActivity.java

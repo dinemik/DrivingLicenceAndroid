@@ -12,7 +12,7 @@ using FFImageLoading.Views;
 using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
 using System.Timers;
-using DrivingLicenceAndroidPCL.Model.Interface.Json;
+using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
 
 namespace DrivingLicenceApp
 {
@@ -20,7 +20,7 @@ namespace DrivingLicenceApp
     public class TestingActivity : AppCompatActivity
     {
         //tickets for testing.
-        private IEnumerable<ITicketJson> Tickets { get; set; }
+        private IEnumerable<ITicketDb> Tickets { get; set; }
 
         #region UI
         private TextView TimerTxt { get; set; }
@@ -77,7 +77,7 @@ namespace DrivingLicenceApp
             SetContentView(Resource.Layout.activity_testing);
 
             //getting tickets.
-            Tickets = await new TopicService().GetTopicsByNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
+            Tickets = await new TopicService().GetTicketsByTopicNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
             //getting taked tickets count.
             TicketsCount = Tickets.Count();
             //tst.Dispose();
@@ -123,11 +123,11 @@ namespace DrivingLicenceApp
         private void Answer(object sender, EventArgs args)
         {
             //if correct
-            (sender as TextView).SetBackgroundColor(Tickets.ElementAt(Position).Answers[(Tickets.ElementAt(Position).CorrectAnswer - 1)] == (sender as TextView).Text ? Color.Green : Color.Red);
+            (sender as TextView).SetBackgroundColor(Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text).Correct ? Color.Green : Color.Red);
             //if not correct
-            QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers[(Tickets.ElementAt(Position).CorrectAnswer - 1)])).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
+            QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
             //correct or incorect count detect
-            _ = Tickets.ElementAt(Position).Answers[(Tickets.ElementAt(Position).CorrectAnswer - 1)] == (sender as TextView).Text ? CorrectAns++ : FailedAns++;
+            _ = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text).Correct ? CorrectAns++ : FailedAns++;
 
             //disable all answers
             for (int i = 0; i < QuestionsRecView.ChildCount; i++)

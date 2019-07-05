@@ -13,40 +13,31 @@ namespace DrivingLicenceApp
      * MainLauncher = false...
      * this is main UI
      */
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        private TextInputLayout NickOrEmileTxt { get; set; }
-        private TextInputLayout PasswordTxt { get; set; }
-
-        private Button SingInBtn { get; set; }
-        private Button SingUpBtn { get; set; }
+        private Button CategoryBtn { get; set; }
+        private Button RandomBtn { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            NickOrEmileTxt = FindViewById<TextInputLayout>(Resource.Id.LogInNickOrEmile);
-            PasswordTxt = FindViewById<TextInputLayout>(Resource.Id.LogInPassword);
-            //
-            SingInBtn = FindViewById<Button>(Resource.Id.SingInBtn);
-            SingUpBtn = FindViewById<Button>(Resource.Id.SingUpBtn);
+            CategoryBtn = FindViewById<Button>(Resource.Id.CategoryStart);
+            RandomBtn = FindViewById<Button>(Resource.Id.RandomStart);
             ///
-            SingInBtn.Click += new EventHandler(SingIn);
-            SingUpBtn.Click += new EventHandler(SingUp);
-
-            Intent Category = new Intent(this, typeof(CategoryActivity));
-            StartActivity(Category);
+            CategoryBtn.Click += Category;
+            RandomBtn.Click += Random;
         }
 
-        private void SingIn(object sender, EventArgs args)
+        private void Category(object sender, EventArgs args)
         {
             Intent Category = new Intent(this, typeof(CategoryActivity));
             StartActivity(Category);
         }
 
-        private void SingUp(object sender, EventArgs args)
+        private void Random(object sender, EventArgs args)
         {
 
         }

@@ -15,8 +15,5 @@ namespace DrivingLicenceAndroidPCL.Model.Class.DataBase
         public bool Correct { get; set; }
         [ForeignKey(typeof(TicketDb))]
         public int TicketId { get; set; }
-
-        [ManyToOne]
-        public TicketDb Ticke { get; set; }
     }
 }

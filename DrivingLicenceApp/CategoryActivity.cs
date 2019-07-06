@@ -16,7 +16,7 @@ using Android.Graphics;
 
 namespace DrivingLicenceApp
 {
-    [Activity]
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class CategoryActivity : AppCompatActivity
     {
         #region UI
@@ -52,7 +52,7 @@ namespace DrivingLicenceApp
             {
                 Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
             }
-            catch (Exception ex)
+            catch
             {
                 Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
                 alert.SetTitle("ინტერნეტის კავშირი");

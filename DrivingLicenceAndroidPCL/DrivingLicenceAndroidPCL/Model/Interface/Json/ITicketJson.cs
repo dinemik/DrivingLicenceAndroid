@@ -6,5 +6,6 @@ namespace DrivingLicenceAndroidPCL.Model.Interface.Json
     public interface ITicketJson : ITicket
     {
         List<string> Answers { get; set; }
+        int CorrectAnswer { get; set; }
     }
 }

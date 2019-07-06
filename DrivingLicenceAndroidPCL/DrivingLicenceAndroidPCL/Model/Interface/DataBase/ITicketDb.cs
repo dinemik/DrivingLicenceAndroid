@@ -7,5 +7,7 @@ namespace DrivingLicenceAndroidPCL.Model.Interface.DataBase
     public interface ITicketDb : ITicket
     {
         List<AnswerDb> Answers { get; set; }
+        int TopicId { get; set; }
+        TopicDb Topic { get; set; }
     }
 }

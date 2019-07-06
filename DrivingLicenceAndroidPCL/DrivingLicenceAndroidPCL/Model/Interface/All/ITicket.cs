@@ -16,13 +16,8 @@ namespace DrivingLicenceAndroidPCL.Model.Interface.All
     {
         int Id { get; set; }
         string Coeficient { get; set; }
-        int CorrectAnswer { get; set; }
-        int Cutoff { get; set; }
         string Desc { get; set; }
-        int FileParent { get; set; }
         string Filename { get; set; }
         string Question { get; set; }
-        string Timestamp { get; set; }
-        int TopicId { get; set; }
     }
 }

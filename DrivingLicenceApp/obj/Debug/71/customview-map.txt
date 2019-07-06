@@ -1,8 +1,5 @@
 adaptive-icon;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
 adaptive-icon;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher_round.xml
-android.support.design.widget.TextInputEditText;obj\Debug\71\res\layout\activity_main.xml
-android.support.design.widget.TextInputLayout;obj\Debug\71\res\layout\activity_main.xml
-android.support.v7.widget.AppCompatEditText;obj\Debug\71\res\layout\activity_main.xml
 android.support.v7.widget.RecyclerView;obj\Debug\71\res\layout\activity_category.xml
 android.support.v7.widget.RecyclerView;obj\Debug\71\res\layout\activity_testing.xml
 background;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml

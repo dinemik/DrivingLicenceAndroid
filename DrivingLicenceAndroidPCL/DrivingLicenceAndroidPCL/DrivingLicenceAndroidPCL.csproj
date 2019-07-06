@@ -46,8 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\DeserializeJson.cs" />
+    <Compile Include="Class\AnsweredService.cs" />
     <Compile Include="Class\OfflineSaveService.cs" />
     <Compile Include="Class\TopicService.cs" />
+    <Compile Include="Interface\IAnsweredService.cs" />
     <Compile Include="Interface\ITopicService.cs" />
     <Compile Include="Linq\MyMethods.cs" />
     <Compile Include="Model\Class\DataBase\AnswerDb.cs" />

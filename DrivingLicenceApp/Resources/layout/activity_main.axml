@@ -13,16 +13,25 @@
                    android:gravity="center"
                    android:layout_margin="30dp">
     
-            <Button android:id="@+id/CategoryStart"
+            <Button android:id="@+id/StatisticBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
                     android:textColor="#fff"
                     android:background="#A4F72323"
                     android:padding="10dp"
+                    android:text="სტატისტიკა"/>
+
+            <Button android:id="@+id/CategoryStartBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:background="#A4F72323"
+                    android:padding="10dp"
                     android:text="კატეგორიებით დაწყება"/>
     
-            <Button android:id="@+id/RandomStart"
+            <Button android:id="@+id/RandomStartBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"

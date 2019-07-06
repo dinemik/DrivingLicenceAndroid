@@ -13,22 +13,25 @@ namespace DrivingLicenceApp
      * MainLauncher = false...
      * this is main UI
      */
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity
     {
         private Button CategoryBtn { get; set; }
         private Button RandomBtn { get; set; }
+        private Button StatisticBtn { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            CategoryBtn = FindViewById<Button>(Resource.Id.CategoryStart);
-            RandomBtn = FindViewById<Button>(Resource.Id.RandomStart);
+            CategoryBtn = FindViewById<Button>(Resource.Id.CategoryStartBtn);
+            RandomBtn = FindViewById<Button>(Resource.Id.RandomStartBtn);
+            StatisticBtn = FindViewById<Button>(Resource.Id.StatisticBtn);
             ///
             CategoryBtn.Click += Category;
             RandomBtn.Click += Random;
+            StatisticBtn.Click += Statistic;
         }
 
         private void Category(object sender, EventArgs args)
@@ -38,6 +41,12 @@ namespace DrivingLicenceApp
         }
 
         private void Random(object sender, EventArgs args)
+        {
+            Intent Category = new Intent(this, typeof(TestingActivity));
+            StartActivity(Category);
+        }
+
+        private void Statistic(object sender, EventArgs args)
         {
 
         }

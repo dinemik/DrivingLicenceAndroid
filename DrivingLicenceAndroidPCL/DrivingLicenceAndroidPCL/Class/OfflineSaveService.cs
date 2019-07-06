@@ -25,12 +25,9 @@ namespace DrivingLicenceAndroidPCL.Class
 
                     using (var db = new SQLiteConnection(conStr))
                     {
-                        if (File.Exists(conStr))
-                        {
-                            db.CreateTable<TopicDb>();
-                            db.CreateTable<TicketDb>();
-                            db.CreateTable<AnswerDb>();
-                        }
+                        db.CreateTable<TopicDb>();
+                        db.CreateTable<TicketDb>();
+                        db.CreateTable<AnswerDb>();
 
                         if (db.Table<TopicDb>().Count() == 0)
                         {
@@ -52,14 +49,9 @@ namespace DrivingLicenceAndroidPCL.Class
                                 new TicketDb
                                 {
                                     Coeficient = i.Coeficient,
-                                    CorrectAnswer = i.CorrectAnswer,
-                                    Cutoff = i.Cutoff,
                                     Desc = i.Desc,
                                     Filename = i.Filename,
-                                    FileParent = i.FileParent,
                                     Question = i.Question,
-                                    Timestamp = i.Timestamp,
-                                    TopicId = i.TopicId,
                                     Answers = i.Answers.Select(ans =>
                                     new AnswerDb
                                     {
@@ -68,7 +60,7 @@ namespace DrivingLicenceAndroidPCL.Class
                                         TicketId = i.Id
                                     }).ToList()
                                 }).ToList()
-                            });
+                            }).ToList();
 
                             db.InsertAllWithChildren(jsonObjDb, true);
 

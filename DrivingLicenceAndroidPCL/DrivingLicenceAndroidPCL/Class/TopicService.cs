@@ -23,6 +23,12 @@ namespace DrivingLicenceAndroidPCL.Class
             return tickets.Count() >= count ? tickets.Take(count) : tickets;
         }
 
+        public async Task<IEnumerable<ITicketDb>> GetTicketsByCount(int count)
+        {
+            var topics = await OfflineSaveService.DownloadTicketsAsync();
+            return topics.SelectMany(o => o.TicketsDb).ToList().Shuffle().Take(count);
+        }
+
         /*
          * Get All Topics
          */

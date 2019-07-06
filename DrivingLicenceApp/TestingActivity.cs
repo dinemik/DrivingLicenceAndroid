@@ -16,7 +16,7 @@ using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
 
 namespace DrivingLicenceApp
 {
-    [Activity]
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class TestingActivity : AppCompatActivity
     {
         //tickets for testing.
@@ -77,7 +77,11 @@ namespace DrivingLicenceApp
             SetContentView(Resource.Layout.activity_testing);
 
             //getting tickets.
-            Tickets = await new TopicService().GetTicketsByTopicNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
+            if(Intent.GetStringArrayListExtra("Tickets") != null)
+                Tickets = await new TopicService().GetTicketsByTopicNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
+            else
+                Tickets = await new TopicService().GetTicketsByCount(TicketsCount);
+
             //getting taked tickets count.
             TicketsCount = Tickets.Count();
             //tst.Dispose();
@@ -97,7 +101,6 @@ namespace DrivingLicenceApp
 
             QuestionCount = FindViewById<TextView>(Resource.Id.AllQuestions);
             NextQuestion = FindViewById<TextView>(Resource.Id.NextQuest);
-
 
             NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg); 
             NextImg.Click += NextBtn;
@@ -156,6 +159,13 @@ namespace DrivingLicenceApp
         {
             //new ticket id.
             Position++;
+            
+            
+            /*TODO*/
+            //_ = new AnsweredService().SaveUserAnswersAsync(Tickets, new List<int> { 1, 2, 3 });
+            
+            
+            
             //question count.
             NextQuestion.Text = (Position + 1).ToString();
             //disable this btn.

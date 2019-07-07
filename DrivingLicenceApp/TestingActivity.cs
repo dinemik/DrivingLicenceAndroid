@@ -124,6 +124,12 @@ namespace DrivingLicenceApp
 
             HelpImg.Click += HelpForAns;
 
+            QuestionPic.Click += (s, e) => {
+                var resiz = new Intent(this, typeof(ResizeImageActivity));
+                resiz.PutExtra("TicketImage", Tickets.ElementAt(Position).Filename);
+                StartActivity(resiz);
+            };
+
             //start timer.
             TimerStart();
         }
@@ -173,6 +179,9 @@ namespace DrivingLicenceApp
             if (Position == TicketsCount)
             {
                 Position = 0;
+                CorrectAns = 0;
+                FailedAns = 0;
+
                 await new AnsweredService().SaveUserAnswersAsync(Tickets, AnswerIds);
 
                 var endUi = new Intent(this, typeof(EndActivity));

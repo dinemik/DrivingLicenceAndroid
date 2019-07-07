@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
@@ -12,7 +14,7 @@ using DrivingLicenceApp.Adapter;
 
 namespace DrivingLicenceApp
 {
-    [Activity]
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     class EndActivity : AppCompatActivity
     {
         private RecyclerView Recycler { get; set; }

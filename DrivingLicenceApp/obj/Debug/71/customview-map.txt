@@ -16,6 +16,7 @@ com.felipecsl.gifimageview.library.GifImageView;obj\Debug\71\res\layout\activity
 corners;obj\Debug\71\res\drawable\categorycard.xml
 external-cache-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\26\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\26\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\activity_resizeimage.xml
 FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\activity_testing.xml
 FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\endui_item.xml
 foreground;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
@@ -31,6 +32,7 @@ item;obj\Debug\71\res\values\styles.xml
 LinearLayout;obj\Debug\71\res\layout\activity_category.xml
 LinearLayout;obj\Debug\71\res\layout\activity_end.xml
 LinearLayout;obj\Debug\71\res\layout\activity_main.xml
+LinearLayout;obj\Debug\71\res\layout\activity_resizeimage.xml
 LinearLayout;obj\Debug\71\res\layout\activity_testing.xml
 LinearLayout;obj\Debug\71\res\layout\answer_item.xml
 LinearLayout;obj\Debug\71\res\layout\category_item.xml

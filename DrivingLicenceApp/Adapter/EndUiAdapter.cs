@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBaseIncorrect;
 using DrivingLicenceApp.Holder;
+using FFImageLoading.Views;
 
 namespace DrivingLicenceApp.Adapter
 {
@@ -21,11 +22,8 @@ namespace DrivingLicenceApp.Adapter
         public override int ItemCount => Tickets.Count();
         private Context Context { get; set; }
 
-
-        public EndUiAdapter(IEnumerable<ITicketIncorrectDb> tickets)
-        {
+        public EndUiAdapter(IEnumerable<ITicketIncorrectDb> tickets) =>
             Tickets = tickets;
-        }
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
@@ -39,7 +37,7 @@ namespace DrivingLicenceApp.Adapter
             { Orientation = LinearLayoutManager.Vertical };
             vh.AnswersRV.SetLayoutManager(meneger);
 
-            vh.AnswersRV.SetAdapter(new AnswerEndAdapter(Tickets.ElementAt(position))); 
+            vh.AnswersRV.SetAdapter(new AnswerEndAdapter(Tickets.ElementAt(position)));
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)

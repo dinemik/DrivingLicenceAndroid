@@ -13,6 +13,7 @@ using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
 using System.Timers;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
+using DrivingLicenceAndroidPCL.Enums;
 
 namespace DrivingLicenceApp
 {
@@ -21,6 +22,7 @@ namespace DrivingLicenceApp
     {
         //tickets for testing.
         private IEnumerable<ITicketDb> Tickets { get; set; }
+        private List<int> AnswerIds { get; set; }
 
         #region UI
         private TextView TimerTxt { get; set; }
@@ -59,16 +61,18 @@ namespace DrivingLicenceApp
         //max time...
         private int Sec { get; set; }
 
+
         public TestingActivity()
         {
             Sec = 1800;
 
-            TicketsCount = 30;
+            TicketsCount = 4;
             Position = 0;
             CorrectAns = 0;
             FailedAns = 0;
             MaxIncorrectCount = 3;
             Timer = new Timer();
+            AnswerIds = new List<int>();
         }
 
         protected override async void OnCreate(Bundle savedInstanceState)
@@ -112,6 +116,7 @@ namespace DrivingLicenceApp
             //Recycler View Config.
             var manager = new LinearLayoutManager(this)
             { Orientation = OrientationHelper.Vertical };
+
             QuestionsRecView.SetLayoutManager(manager);
              
             NextImg.Enabled = false;
@@ -126,7 +131,11 @@ namespace DrivingLicenceApp
         private void Answer(object sender, EventArgs args)
         {
             //if correct
-            (sender as TextView).SetBackgroundColor(Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text).Correct ? Color.Green : Color.Red);
+            var userAns = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text);
+            (sender as TextView).SetBackgroundColor(userAns.Correct ? Color.Green : Color.Red);
+            //add user answer
+            AnswerIds.Add(userAns.Id);
+
             //if not correct
             QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
             //correct or incorect count detect
@@ -155,17 +164,22 @@ namespace DrivingLicenceApp
             NextImg.Enabled = true;
         }
         
-        private void NextBtn(object sender, EventArgs args)
+        private async void NextBtn(object sender, EventArgs args)
         {
             //new ticket id.
             Position++;
-            
-            
-            /*TODO*/
-            //_ = new AnsweredService().SaveUserAnswersAsync(Tickets, new List<int> { 1, 2, 3 });
-            
-            
-            
+
+            //save answers.
+            if (Position == TicketsCount)
+            {
+                Position = 0;
+                await new AnsweredService().SaveUserAnswersAsync(Tickets, AnswerIds);
+
+                var endUi = new Intent(this, typeof(EndActivity));
+                endUi.PutExtra("TicketsCount", TicketsCount);
+                StartActivity(endUi);
+            }
+
             //question count.
             NextQuestion.Text = (Position + 1).ToString();
             //disable this btn.
@@ -206,6 +220,7 @@ namespace DrivingLicenceApp
             dialog.Show();
         }
 
+        //start timer.
         private void TimerStart()
         {
             //seconds
@@ -214,6 +229,7 @@ namespace DrivingLicenceApp
             Timer.Start();
         }
 
+        //ui change.
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             //seconds to minutes and seconds mm:ss

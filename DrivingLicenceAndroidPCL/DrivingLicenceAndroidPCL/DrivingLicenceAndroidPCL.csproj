@@ -49,9 +49,11 @@
     <Compile Include="Class\AnsweredService.cs" />
     <Compile Include="Class\OfflineSaveService.cs" />
     <Compile Include="Class\TopicService.cs" />
+    <Compile Include="Enums\GetTicketBy.cs" />
     <Compile Include="Interface\IAnsweredService.cs" />
     <Compile Include="Interface\ITopicService.cs" />
     <Compile Include="Linq\MyMethods.cs" />
+    <Compile Include="Model\Class\DataBaseIncorrect\TicketIncorrectDb.cs" />
     <Compile Include="Model\Class\DataBase\AnswerDb.cs" />
     <Compile Include="Model\Class\DataBase\TicketDb.cs" />
     <Compile Include="Model\Class\DataBase\TopicDb.cs" />
@@ -59,6 +61,9 @@
     <Compile Include="Model\Class\Json\TopicJson.cs" />
     <Compile Include="Model\Interface\All\ITicket.cs" />
     <Compile Include="Model\Interface\All\ITopic.cs" />
+    <Compile Include="Model\Class\DataBaseIncorrect\AnswerIncorrectDb.cs" />
+    <Compile Include="Model\Interface\DataBaseIncorrect\IAnswerIncorrectDb.cs" />
+    <Compile Include="Model\Interface\DataBaseIncorrect\ITicketIncorrectDb.cs" />
     <Compile Include="Model\Interface\DataBase\IAnsewerDb.cs" />
     <Compile Include="Model\Interface\DataBase\ITicketDb.cs" />
     <Compile Include="Model\Interface\DataBase\ITopicDb.cs" />

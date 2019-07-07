@@ -60,12 +60,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter\AnswerAdapter.cs" />
+    <Compile Include="Adapter\AnswerEndAdapter.cs" />
     <Compile Include="Adapter\CategoryAdapter.cs" />
+    <Compile Include="Adapter\EndUiAdapter.cs" />
     <Compile Include="CategoryActivity.cs" />
     <Compile Include="EndActivity.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Holder\AnswerEndHolder.cs" />
     <Compile Include="Holder\AnswerHolder.cs" />
     <Compile Include="Holder\CategoryHolder.cs" />
+    <Compile Include="Holder\EndUiHolder.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Models\Class\TopicAndroid.cs" />
     <Compile Include="Models\Interface\ITopicAndroid.cs" />
@@ -151,6 +155,7 @@
     <AndroidResource Include="Resources\layout\activity_end.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\EndUI_Item.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

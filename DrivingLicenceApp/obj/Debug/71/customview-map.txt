@@ -1,9 +1,12 @@
 adaptive-icon;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
 adaptive-icon;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher_round.xml
 android.support.v7.widget.RecyclerView;obj\Debug\71\res\layout\activity_category.xml
+android.support.v7.widget.RecyclerView;obj\Debug\71\res\layout\activity_end.xml
 android.support.v7.widget.RecyclerView;obj\Debug\71\res\layout\activity_testing.xml
+android.support.v7.widget.RecyclerView;obj\Debug\71\res\layout\endui_item.xml
 background;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher_round.xml
+Button;obj\Debug\71\res\layout\activity_end.xml
 Button;obj\Debug\71\res\layout\activity_main.xml
 cache-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\26\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 CheckBox;obj\Debug\71\res\layout\category_item.xml
@@ -14,6 +17,7 @@ corners;obj\Debug\71\res\drawable\categorycard.xml
 external-cache-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\26\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\26\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\activity_testing.xml
+FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\endui_item.xml
 foreground;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\71\res\layout\activity_category.xml
@@ -30,6 +34,7 @@ LinearLayout;obj\Debug\71\res\layout\activity_main.xml
 LinearLayout;obj\Debug\71\res\layout\activity_testing.xml
 LinearLayout;obj\Debug\71\res\layout\answer_item.xml
 LinearLayout;obj\Debug\71\res\layout\category_item.xml
+LinearLayout;obj\Debug\71\res\layout\endui_item.xml
 paths;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\26\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;obj\Debug\71\res\values\colors.xml
 resources;obj\Debug\71\res\values\ic_launcher_background.xml
@@ -40,7 +45,7 @@ solid;obj\Debug\71\res\drawable\categorycard.xml
 string;obj\Debug\71\res\values\strings.xml
 stroke;obj\Debug\71\res\drawable\categorycard.xml
 style;obj\Debug\71\res\values\styles.xml
-TextView;obj\Debug\71\res\layout\activity_end.xml
 TextView;obj\Debug\71\res\layout\activity_testing.xml
 TextView;obj\Debug\71\res\layout\answer_item.xml
 TextView;obj\Debug\71\res\layout\category_item.xml
+TextView;obj\Debug\71\res\layout\endui_item.xml

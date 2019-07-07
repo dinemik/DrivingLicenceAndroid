@@ -1,76 +1,95 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.IO;
-//using System.Linq;
-//using System.Threading.Tasks;
-//using DrivingLicenceAndroidPCL.Interface;
-//using DrivingLicenceAndroidPCL.Model.Class.DataBase;
-//using DrivingLicenceAndroidPCL.Model.Class.DataBaseAnswered;
-//using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
-//using SQLite;
-//using SQLiteNetExtensions.Extensions;
-//using SQLitePCL;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using DrivingLicenceAndroidPCL.Enums;
+using DrivingLicenceAndroidPCL.Interface;
+using DrivingLicenceAndroidPCL.Model.Class.DataBaseIncorrect;
+using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
+using DrivingLicenceAndroidPCL.Model.Interface.DataBaseIncorrect;
+using SQLite;
+using SQLiteNetExtensions.Extensions;
 
-//namespace DrivingLicenceAndroidPCL.Class
-//{
-//    public class AnsweredService : IAnsweredService
-//    {
-//        public async Task<bool> SaveUserAnswersAsync(IEnumerable<ITicketDb> tickets, IEnumerable<int> answersIDs)
-//        {
-//            return await Task.Run(() => {
+namespace DrivingLicenceAndroidPCL.Class
+{
+    public class AnsweredService : IAnsweredService
+    {
+        private static string ConStr { get; set; }
 
-//                var conStr = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DrivingLicenceAnsweredDatabase.db3");
+        public AnsweredService() =>
+            ConStr = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DrivingLicenceAnsweredDatabase.db3");
 
-//                using (SQLiteConnection db = new SQLiteConnection(conStr))
-//                {
-//                    //if (File.Exists(conStr))
-//                    //{
-//                    //    db.CreateTable<TopicAnsweredDb>();
-//                    //    db.CreateTable<TicketAnsweredDb>();
-//                    //    db.CreateTable<AnswerDb>();
-//                    //}
 
-//                    db.DropTable<TopicAnsweredDb>();
-//                    db.DropTable<TicketAnsweredDb>();
-//                    //db.DropTable<AnswerDb>();
+        public async Task<IEnumerable<ITicketIncorrectDb>> GetIncorrectTicketAsync(GetTicketBy get)
+        {
+            switch (get)
+            {
+                case GetTicketBy.All:
+                    return await GetAllIncorrectTickets();
 
-//                    db.CreateTable<TopicAnsweredDb>();
-//                    db.CreateTable<TicketAnsweredDb>();
-//                    //db.CreateTable<AnswerDb>();
+                case GetTicketBy.ToDay:
+                    return (await GetAllIncorrectTickets()).Where(o => o.Time.Day == DateTime.Now.Day);
 
-//                    var tick = tickets.Select(o => new TicketAnsweredDb
-//                    {
-//                        //Answers = o.Answers,
-//                        Coeficient = o.Coeficient,
-//                        CorrectAnswer = o.CorrectAnswer,
-//                        Cutoff = o.Cutoff,
-//                        Desc = o.Desc,
-//                        Filename = o.Filename,
-//                        FileParent = o.FileParent,
-//                        Question = o.Question,
-//                        Timestamp = o.Timestamp,
-//                        Topic = new TopicAnsweredDb
-//                        {
-//                            Name = o.Topic.Name,
-//                            Time = DateTime.Now,
-//                        },
-//                    }).Take(3).ToList();
+                case GetTicketBy.Yesterday:
+                    return (await GetAllIncorrectTickets()).Where(o => o.Time.Day == DateTime.Now.AddDays(-1).Day);
 
-//                    for (int i = 0; i < tick.Count(); i++)
-//                    {
-//                        tick[i].UserAnswerId = answersIDs.ElementAt(i);
-//                    }
+                case GetTicketBy.Hrs:
+                    return (await GetAllIncorrectTickets()).Where(o => o.Time.AddHours(-1).Hour == DateTime.Now.AddHours(-1).Hour || 
+                                                                       o.Time.Hour == DateTime.Now.Hour);
+                default:
+                    throw new Exception("Incorrect command");
+            }
+        }
 
-//                    db.InsertAll(tick);
-//                    //db.InsertAllWithChildren(tick, false);
+        private async Task<IEnumerable<ITicketIncorrectDb>> GetAllIncorrectTickets()
+        {
+            using (SQLiteConnection db = new SQLiteConnection(ConStr))
+            {
+                return await Task.Run<IEnumerable<ITicketIncorrectDb>>(() => db.GetAllWithChildren<TicketIncorrectDb>().ToList());
+            }
+        }
 
-//                    db.Commit();
+        public async Task<bool> SaveUserAnswersAsync(IEnumerable<ITicketDb> tickets, IEnumerable<int> answersIDs)
+        {
+            return await Task.Run(() =>
+            {
+                using (SQLiteConnection db = new SQLiteConnection(ConStr))
+                {
+                    db.CreateTable<AnswerIncorrectDb>();
+                    db.CreateTable<TicketIncorrectDb>();
 
-//                    var tst = db.Table<TicketAnsweredDb>().ToList();
+                    List<TicketIncorrectDb> ticketsIncorrect = new List<TicketIncorrectDb>();
 
-//                    return true;
-//                }
-//            });
-//        }
-//    }
-//}
+                    for (int i = 0; i < tickets.Count(); i++)
+                    {
+                        var tick = tickets.ElementAt(i);
+                        var ans = answersIDs.ElementAt(i);
+
+                        ticketsIncorrect.Add(new TicketIncorrectDb
+                        {
+                            Answers = tick.Answers.Select(o => new AnswerIncorrectDb
+                            {
+                                AnsId = o.Id,
+                                Answ = o.Answ,
+                                Correct = o.Correct
+                            }).ToList(),
+                            UserAnswerId = ans,
+                            Coeficient = tick.Coeficient,
+                            Desc = tick.Desc,
+                            Filename = tick.Filename,
+                            Question = tick.Question,
+                            Time = DateTime.Now
+                        });
+                    }
+
+                    db.InsertAllWithChildren(ticketsIncorrect);
+
+                    db.Commit();
+
+                    return true;
+                }
+            });
+        }
+    }
+}

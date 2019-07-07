@@ -47,8 +47,8 @@ namespace DrivingLicenceApp.Adapter
         {
            var holder= new CategoryHolder(LayoutInflater.From(parent.Context).Inflate(Resource.Layout.category_Item, parent, false));
            
-            holder.Category.Click += new EventHandler(UnChecked);
-            holder.Category.Click += Check;
+           holder.Category.Click += new EventHandler(UnChecked);
+           holder.Category.Click += Check;
 
             return holder;
         }

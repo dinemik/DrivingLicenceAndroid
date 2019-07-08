@@ -20,6 +20,11 @@
 
     </FrameLayout>
 
+    <ProgressBar android:layout_width="100dp"
+                 android:layout_height="100dp" 
+                 android:layout_gravity="center" 
+                 android:id="@+id/DownloadingProgress"/>
+
     <com.felipecsl.gifimageview.library.GifImageView android:id="@+id/LoadingGif"
                                                      android:layout_gravity="center"
                                                      android:layout_width="wrap_content"

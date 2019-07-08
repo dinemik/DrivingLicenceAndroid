@@ -38,6 +38,7 @@ LinearLayout;obj\Debug\71\res\layout\answer_item.xml
 LinearLayout;obj\Debug\71\res\layout\category_item.xml
 LinearLayout;obj\Debug\71\res\layout\endui_item.xml
 paths;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\26\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+ProgressBar;obj\Debug\71\res\layout\activity_category.xml
 resources;obj\Debug\71\res\values\colors.xml
 resources;obj\Debug\71\res\values\ic_launcher_background.xml
 resources;obj\Debug\71\res\values\strings.xml

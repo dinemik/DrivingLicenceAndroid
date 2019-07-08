@@ -13,6 +13,7 @@ using Felipecsl.GifImageViewLibrary;
 using System.Net.Http;
 using System;
 using Android.Graphics;
+using System.Threading;
 
 namespace DrivingLicenceApp
 {
@@ -22,7 +23,7 @@ namespace DrivingLicenceApp
         #region UI
         private RecyclerView Recycler { get; set; }
         private ImageView Confirm { get; set; }
-        private GifImageView GifLoading { get; set; }
+        private ProgressBar ProgressBar { get; set; }
         #endregion
 
         private List<string> Category { get; set; } = new List<string>(); 
@@ -36,17 +37,30 @@ namespace DrivingLicenceApp
 
             Recycler = FindViewById<RecyclerView>(Resource.Id.CategoryRecycler);
             Confirm = FindViewById<ImageView>(Resource.Id.StartTestImg);
-            GifLoading = FindViewById<GifImageView>(Resource.Id.LoadingGif);
+            ProgressBar = FindViewById<ProgressBar>(Resource.Id.DownloadingProgress);
 
             var manager = new LinearLayoutManager(this)
             { Orientation = (int)Orientation.Vertical };
 
             Recycler.SetLayoutManager(manager);
 
-
-            var bytes = await new HttpClient().GetByteArrayAsync("https://thumbs.gfycat.com/ClearcutPleasantCockroach-small.gif");
-            GifLoading.SetBytes(bytes);
-            GifLoading.StartAnimation();
+            /*
+             ProgressBar.StartAnimation(ViewAnimator.);
+             ProgressBar.Max = 100;
+             ProgressBar.Progress = 100;
+             ProgressBar.SecondaryProgress = 100;
+             
+             int progressStatus = 0, progressStatus1 = 100;
+             new System.Threading.Thread(new ThreadStart(delegate {
+                 while (progressStatus < 100)
+                 {
+                     progressStatus += 1;
+                     progressStatus1 -= 1;
+                     ProgressBar.Progress = progressStatus1;
+                     System.Threading.Thread.Sleep(100);
+                 }
+             })).Start();
+            */
 
             try
             {
@@ -63,8 +77,7 @@ namespace DrivingLicenceApp
             }
 
             // hide Loaging Animation
-            GifLoading.Visibility = Android.Views.ViewStates.Gone;
-            GifLoading.StopAnimation();
+            ProgressBar.Visibility = Android.Views.ViewStates.Gone;
 
             Confirm.Click += StartTesting;
         }

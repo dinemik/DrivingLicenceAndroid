@@ -1,8 +1,11 @@
 DrivingLicenceAndroidPCL
 FFImageLoading
 FFImageLoading.Platform
+Microcharts
+Microcharts.Droid
 Newtonsoft.Json
-Refractored.GifImageView
+SkiaSharp
+SkiaSharp.Views.Android
 SQLite-net
 SQLiteNetExtensions
 SQLitePCLRaw.batteries_green
@@ -25,6 +28,7 @@ Xamarin.Android.Support.v7.AppCompat
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Essentials
+System.Collections
 netstandard
 System.Reflection.Extensions
 System.Resources.ResourceManager

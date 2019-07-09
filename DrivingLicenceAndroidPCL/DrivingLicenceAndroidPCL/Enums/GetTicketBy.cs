@@ -5,6 +5,6 @@
         All,
         ToDay,
         Yesterday,
-        Hrs,
+        Hrs
     }
 }

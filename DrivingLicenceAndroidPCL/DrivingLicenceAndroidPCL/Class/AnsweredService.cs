@@ -18,7 +18,7 @@ namespace DrivingLicenceAndroidPCL.Class
         private static string ConStr { get; set; }
 
         public AnsweredService() =>
-            ConStr = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DrivingLicenceAnsweredDatabase.db3");
+            ConStr = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DrivingLicenceDatabase.db3");
 
 
         public async Task<IEnumerable<ITicketIncorrectDb>> GetIncorrectTicketAsync(GetTicketBy get)

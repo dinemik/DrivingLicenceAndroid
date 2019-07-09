@@ -14,6 +14,7 @@ using DrivingLicenceApp.Adapter;
 using System.Timers;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
 using DrivingLicenceAndroidPCL.Enums;
+using DrivingLicenceApp.Class;
 
 namespace DrivingLicenceApp
 {
@@ -80,11 +81,23 @@ namespace DrivingLicenceApp
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_testing);
 
-            //getting tickets.
-            if(Intent.GetStringArrayListExtra("Tickets") != null)
-                Tickets = await new TopicService().GetTicketsByTopicNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
-            else
-                Tickets = await new TopicService().GetTicketsByCount(TicketsCount);
+            try
+            {
+                //getting tickets.
+                if (Intent.GetStringArrayListExtra("Tickets") != null)
+                    Tickets = await new TopicService().GetTicketsByTopicNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
+                else
+                    Tickets = await new TopicService().GetTicketsByCount(TicketsCount);
+            }
+            catch (Java.Net.UnknownHostException)
+            {
+                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                alert.SetTitle("ინტერნეტის კავშირი");
+                alert.SetMessage("ეს აპლიკაცია ირთვება პირვლად იმისთვის რომ ჩაირთოს საჭიროა ინტერნეტთან კავშირი შეკითხვების გადმოსაწერათ ერთჯერადი კავშირია.");
+
+                Dialog dialog = alert.Create();
+                dialog.Show();
+            }
 
             //getting taked tickets count.
             TicketsCount = Tickets.Count();

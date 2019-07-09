@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v7.1": {
+      "Microcharts/0.7.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.Views": "1.59.1.1"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Microcharts.Droid.dll": {},
+          "lib/MonoAndroid10/Microcharts.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Microcharts.Droid.dll": {},
+          "lib/MonoAndroid10/Microcharts.dll": {}
+        }
+      },
       "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
@@ -11,13 +25,39 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Refractored.GifImageView/2.0.0": {
+      "SkiaSharp/1.59.1": {
         "type": "package",
         "compile": {
-          "lib/monoandroid/Refractored.GifImageView.dll": {}
+          "lib/MonoAndroid/SkiaSharp.dll": {}
         },
         "runtime": {
-          "lib/monoandroid/Refractored.GifImageView.dll": {}
+          "lib/MonoAndroid/SkiaSharp.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win7-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win7-x64"
+          },
+          "runtimes/win7-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win7-x86"
+          }
+        }
+      },
+      "SkiaSharp.Views/1.59.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/MonoAndroid/SkiaSharp.Views.Android.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SkiaSharp.Views.Android.dll": {}
         }
       },
       "sqlite-net-pcl/1.5.231": {
@@ -341,7 +381,7 @@
           "build/monoandroid71/Xamarin.Android.Support.Vector.Drawable.targets": {}
         }
       },
-      "Xamarin.Essentials/1.1.0": {
+      "Xamarin.Essentials/1.2.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0",
@@ -393,6 +433,26 @@
     }
   },
   "libraries": {
+    "Microcharts/0.7.1": {
+      "sha512": "Py79bYXqvsqthZtk1ChdDhy/n4mb7T2CKjzTVU7ldj4dnjgFC2nbOJMGeAJkDk1lZPoQPSPx3obSq7S29Zrt8g==",
+      "type": "package",
+      "path": "microcharts/0.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Microcharts.Droid.dll",
+        "lib/MonoAndroid10/Microcharts.dll",
+        "lib/Xamarin.iOS10/Microcharts.dll",
+        "lib/Xamarin.iOS10/Microcharts.iOS.dll",
+        "lib/netstandard1.4/Microcharts.dll",
+        "lib/uap/Microcharts.Uwp.dll",
+        "lib/uap/Microcharts.dll",
+        "lib/xamarinmac/Microcharts.dll",
+        "lib/xamarinmac/Microcharts.macOS.dll",
+        "microcharts.0.7.1.nupkg.sha512",
+        "microcharts.nuspec"
+      ]
+    },
     "Newtonsoft.Json/12.0.2": {
       "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
@@ -423,16 +483,65 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "Refractored.GifImageView/2.0.0": {
-      "sha512": "c67NJ1I9i0tNdSgd+4pofTCEoDJ85EVRq4pFmXT8BZ75n3/tLYT0RrEQKDQ6Rfw2E5tBMcz0RxXoBH1gdx/htw==",
+    "SkiaSharp/1.59.1": {
+      "sha512": "Le+YqP0aWwJ5ImHikWiLWOWjdH8oOV6F2D7fknzKp9ArzDIrtPASeiHpI1RgqQEK/GGvR56B2l5belsDzwK7uQ==",
       "type": "package",
-      "path": "refractored.gifimageview/2.0.0",
+      "path": "skiasharp/1.59.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid/Refractored.GifImageView.dll",
-        "refractored.gifimageview.2.0.0.nupkg.sha512",
-        "refractored.gifimageview.nuspec"
+        "build/net45/SkiaSharp.dll.config",
+        "build/net45/SkiaSharp.targets",
+        "lib/MonoAndroid/SkiaSharp.dll",
+        "lib/MonoAndroid/SkiaSharp.xml",
+        "lib/XamarinMac/SkiaSharp.dll",
+        "lib/XamarinMac/SkiaSharp.xml",
+        "lib/XamariniOS/SkiaSharp.dll",
+        "lib/XamariniOS/SkiaSharp.xml",
+        "lib/XamarintvOS/SkiaSharp.dll",
+        "lib/XamarintvOS/SkiaSharp.xml",
+        "lib/net45/SkiaSharp.dll",
+        "lib/net45/SkiaSharp.dll.config",
+        "lib/net45/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/portable-net45+win8+wpa81+wp8/SkiaSharp.dll",
+        "lib/portable-net45+win8+wpa81+wp8/SkiaSharp.xml",
+        "lib/uap10.0/SkiaSharp.dll",
+        "lib/uap10.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win7-x64/native/libSkiaSharp.dll",
+        "runtimes/win7-x86/native/libSkiaSharp.dll",
+        "skiasharp.1.59.1.nupkg.sha512",
+        "skiasharp.nuspec",
+        "xamarin.interactive/SkiaSharp.Workbooks.dll"
+      ]
+    },
+    "SkiaSharp.Views/1.59.1.1": {
+      "sha512": "1MQmOh3OjdrCD87Ehdn986RoD43WEe8D9zzncCotuAckYHB++JmDv1poOhaiWtoYqCLXU6Vk5IcQR6+EgZ0ofQ==",
+      "type": "package",
+      "path": "skiasharp.views/1.59.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.dll",
+        "lib/XamarinMac/SkiaSharp.Views.Mac.dll",
+        "lib/XamariniOS/SkiaSharp.Views.iOS.dll",
+        "lib/XamarintvOS/SkiaSharp.Views.tvOS.dll",
+        "lib/net45/SkiaSharp.Views.Desktop.dll",
+        "lib/net45/SkiaSharp.Views.WPF.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "skiasharp.views.1.59.1.1.nupkg.sha512",
+        "skiasharp.views.nuspec"
       ]
     },
     "sqlite-net-pcl/1.5.231": {
@@ -1001,10 +1110,10 @@
         "xamarin.android.support.vector.drawable.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.1.0": {
-      "sha512": "W0XOt1dNMAE2POcsVotoKDDy5FdAOnR0qULKl6WI4kQEMxQ1sp84DsSU5iacV7oQUMuPhUBAm/3ywks0HO1QrQ==",
+    "Xamarin.Essentials/1.2.0": {
+      "sha512": "o3i5uAchUpAvAlJX0onYFFiDo6jpKl9vgvrdDtXEuEfum0UDrSx8oGGBUjlFyUoRpvWVumXwo0VS3AbzuwEofg==",
       "type": "package",
-      "path": "xamarin.essentials/1.1.0",
+      "path": "xamarin.essentials/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1015,18 +1124,15 @@
         "lib/monoandroid70/Xamarin.Essentials.pdb",
         "lib/monoandroid70/Xamarin.Essentials.xml",
         "lib/monoandroid71/Xamarin.Essentials.dll",
-        "lib/monoandroid71/Xamarin.Essentials.dll.mdb",
         "lib/monoandroid71/Xamarin.Essentials.pdb",
         "lib/monoandroid71/Xamarin.Essentials.xml",
         "lib/monoandroid80/Xamarin.Essentials.dll",
-        "lib/monoandroid80/Xamarin.Essentials.dll.mdb",
         "lib/monoandroid80/Xamarin.Essentials.pdb",
         "lib/monoandroid80/Xamarin.Essentials.xml",
         "lib/monoandroid81/Xamarin.Essentials.dll",
         "lib/monoandroid81/Xamarin.Essentials.pdb",
         "lib/monoandroid81/Xamarin.Essentials.xml",
         "lib/monoandroid90/Xamarin.Essentials.dll",
-        "lib/monoandroid90/Xamarin.Essentials.dll.mdb",
         "lib/monoandroid90/Xamarin.Essentials.pdb",
         "lib/monoandroid90/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
@@ -1043,7 +1149,7 @@
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.1.0.nupkg.sha512",
+        "xamarin.essentials.1.2.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
@@ -1119,11 +1225,11 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v7.1": [
       "DrivingLicenceAndroidPCL >= 1.0.0",
-      "Refractored.GifImageView >= 2.0.0",
+      "Microcharts >= 0.7.1",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
       "Xamarin.Android.Support.Design >= 28.0.0.1",
-      "Xamarin.Essentials >= 1.1.0",
+      "Xamarin.Essentials >= 1.2.0",
       "Xamarin.FFImageLoading >= 2.4.11.982"
     ]
   },
@@ -1169,9 +1275,9 @@
     "frameworks": {
       "monoandroid71": {
         "dependencies": {
-          "Refractored.GifImageView": {
+          "Microcharts": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "[0.7.1, )"
           },
           "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
@@ -1187,7 +1293,7 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "[1.2.0, )"
           },
           "Xamarin.FFImageLoading": {
             "target": "Package",

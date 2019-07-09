@@ -3,10 +3,13 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\and
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\FFImageLoading.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\FFImageLoading.Platform.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Java.Interop.dll
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Microcharts.dll
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Microcharts.Droid.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Mono.Android.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\mscorlib.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Newtonsoft.Json.dll
-C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Refractored.GifImageView.dll
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SkiaSharp.dll
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SkiaSharp.Views.Android.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SQLite-net.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SQLiteNetExtensions.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\SQLitePCLRaw.batteries_green.dll
@@ -48,6 +51,7 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\and
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\System.Text.Encoding.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\System.Text.RegularExpressions.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\System.Linq.dll
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\System.ValueTuple.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\System.Runtime.Serialization.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\System.ServiceModel.Internals.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\netstandard.dll

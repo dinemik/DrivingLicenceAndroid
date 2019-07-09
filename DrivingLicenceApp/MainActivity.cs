@@ -48,7 +48,8 @@ namespace DrivingLicenceApp
 
         private void Statistic(object sender, EventArgs args)
         {
-
+            Intent statistic = new Intent(this, typeof(StatisticActivity));
+            StartActivity(statistic);
         }
     }
 }

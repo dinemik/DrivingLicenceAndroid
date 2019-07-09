@@ -8,12 +8,7 @@ using Android.Widget;
 using System.Linq;
 using Android.App;
 using Android.OS;
-using System.Threading.Tasks;
-using Felipecsl.GifImageViewLibrary;
-using System.Net.Http;
 using System;
-using Android.Graphics;
-using System.Threading;
 
 namespace DrivingLicenceApp
 {
@@ -44,7 +39,10 @@ namespace DrivingLicenceApp
 
             Recycler.SetLayoutManager(manager);
 
+
             /*
+             * Loading Animation StackOverflow....
+             * 
              ProgressBar.StartAnimation(ViewAnimator.);
              ProgressBar.Max = 100;
              ProgressBar.Progress = 100;
@@ -66,7 +64,7 @@ namespace DrivingLicenceApp
             {
                 Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
             }
-            catch
+            catch(Java.Net.UnknownHostException)
             {
                 Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
                 alert.SetTitle("ინტერნეტის კავშირი");

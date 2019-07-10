@@ -91,5 +91,19 @@ namespace DrivingLicenceAndroidPCL.Class
                 }
             });
         }
+
+        public async Task<bool> DeleteStatistic()
+        {
+            return await Task.Run(() => {
+                using (SQLiteConnection db = new SQLiteConnection(ConStr))
+                {
+                    db.DropTable<AnswerIncorrectDb>();
+                    db.DropTable<TicketIncorrectDb>();
+
+                    db.Commit();
+                    return true;
+                }
+            });
+        }
     }
 }

@@ -13,8 +13,6 @@ using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
 using System.Timers;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
-using DrivingLicenceAndroidPCL.Enums;
-using DrivingLicenceApp.Class;
 
 namespace DrivingLicenceApp
 {

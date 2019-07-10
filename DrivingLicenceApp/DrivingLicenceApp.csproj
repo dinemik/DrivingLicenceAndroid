@@ -64,7 +64,6 @@
     <Compile Include="Adapter\CategoryAdapter.cs" />
     <Compile Include="Adapter\EndUiAdapter.cs" />
     <Compile Include="CategoryActivity.cs" />
-    <Compile Include="Class\GetStatistics.cs" />
     <Compile Include="EndActivity.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Holder\AnswerEndHolder.cs" />
@@ -72,9 +71,7 @@
     <Compile Include="Holder\CategoryHolder.cs" />
     <Compile Include="Holder\EndUiHolder.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Models\Class\TicketAnsweredStatistic.cs" />
     <Compile Include="Models\Class\TopicAndroid.cs" />
-    <Compile Include="Models\Interface\ITicketAnsweredStatistic.cs" />
     <Compile Include="Models\Interface\ITopicAndroid.cs" />
     <Compile Include="ResizeImageActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

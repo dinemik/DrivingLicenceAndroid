@@ -47,8 +47,10 @@
   <ItemGroup>
     <Compile Include="Class\DeserializeJson.cs" />
     <Compile Include="Class\AnsweredService.cs" />
+    <Compile Include="Class\GetStatisticsService.cs" />
     <Compile Include="Class\OfflineSaveService.cs" />
     <Compile Include="Class\TopicService.cs" />
+    <Compile Include="Enums\GetStatisticsBy.cs" />
     <Compile Include="Enums\GetTicketBy.cs" />
     <Compile Include="Interface\IAnsweredService.cs" />
     <Compile Include="Interface\ITopicService.cs" />
@@ -59,6 +61,7 @@
     <Compile Include="Model\Class\DataBase\TopicDb.cs" />
     <Compile Include="Model\Class\Json\TicketJson.cs" />
     <Compile Include="Model\Class\Json\TopicJson.cs" />
+    <Compile Include="Model\Class\Statistic\TicketAnsweredStatistic.cs" />
     <Compile Include="Model\Interface\All\ITicket.cs" />
     <Compile Include="Model\Interface\All\ITopic.cs" />
     <Compile Include="Model\Class\DataBaseIncorrect\AnswerIncorrectDb.cs" />
@@ -69,6 +72,7 @@
     <Compile Include="Model\Interface\DataBase\ITopicDb.cs" />
     <Compile Include="Model\Interface\Json\ITicketJson.cs" />
     <Compile Include="Model\Interface\Json\ITopicJson.cs" />
+    <Compile Include="Model\Interface\Statistic\ITicketAnsweredStatistic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

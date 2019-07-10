@@ -32,16 +32,21 @@ namespace DrivingLicenceApp
             AgainBtn = FindViewById<Button>(Resource.Id.AgainBtn);
             MainMenu = FindViewById<Button>(Resource.Id.MainMenuBtn);
 
-            AgainBtn.Click += (s, e) => {
+            AgainBtn.Click += (s, e) =>
+            {
                 Finish();
             };
 
-            MainMenu.Click += (s, e) => {
+            MainMenu.Click += (s, e) =>
+            {
                 StartActivity(typeof(MainActivity));
                 Finish();
             };
 
-            Load();
+            if (Intent.Extras.Get("Statistic") == null)
+                Load();
+            else
+                LoadAll();
         }
 
         private async void Load()
@@ -56,6 +61,29 @@ namespace DrivingLicenceApp
             Recycler.SetLayoutManager(meneger);
 
             Recycler.SetAdapter(new EndUiAdapter(Tickets));
+        }
+
+        private async void LoadAll()
+        {
+            try
+            {
+                Tickets = await new AnsweredService().GetIncorrectTicketAsync(GetTicketBy.All);
+
+                var meneger = new LinearLayoutManager(this)
+                { Orientation = LinearLayoutManager.Vertical };
+                Recycler.SetLayoutManager(meneger);
+
+                Recycler.SetAdapter(new EndUiAdapter(Tickets));
+            }
+            catch (SQLite.SQLiteException)
+            {
+                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                alert.SetTitle("სტატისტიკა");
+                alert.SetMessage("ჯერ გაიარე ტესტი");
+
+                Dialog dialog = alert.Create();
+                dialog.Show();
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ background;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher_round.xml
 Button;obj\Debug\71\res\layout\activity_end.xml
 Button;obj\Debug\71\res\layout\activity_main.xml
+Button;obj\Debug\71\res\layout\activity_statistic.xml
 cache-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\29\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 CheckBox;obj\Debug\71\res\layout\category_item.xml
 color;obj\Debug\71\res\values\colors.xml

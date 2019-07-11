@@ -8,7 +8,6 @@ using Android.OS;
 using System.Linq;
 using Android.Graphics;
 using System;
-using FFImageLoading.Views;
 using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
 using System.Timers;
@@ -26,9 +25,7 @@ namespace DrivingLicenceApp
         #region UI
         private TextView TimerTxt { get; set; }
         private ImageView HelpImg { get; set; }
-#pragma warning disable CS0618 // Type or member is obsolete
-        private ImageViewAsync QuestionPic { get; set; }
-#pragma warning restore CS0618 // Type or member is obsolete
+        private ImageView QuestionPic { get; set; }
 
         private TextView QuestionTxt { get; set; }
 
@@ -104,9 +101,7 @@ namespace DrivingLicenceApp
             //UI.
             TimerTxt = FindViewById<TextView>(Resource.Id.TimeTxt);
             HelpImg = FindViewById<ImageView>(Resource.Id.HelpImg);
-#pragma warning disable CS0618 // Type or member is obsolete
-            QuestionPic = FindViewById<ImageViewAsync>(Resource.Id.QuestionImg);
-#pragma warning restore CS0618 // Type or member is obsolete
+            QuestionPic = FindViewById<ImageView>(Resource.Id.QuestionImg);
 
             QuestionTxt = FindViewById<TextView>(Resource.Id.QuestionTxt);
             QuestionsRecView = FindViewById<RecyclerView>(Resource.Id.QuestionsRecView);
@@ -189,15 +184,13 @@ namespace DrivingLicenceApp
             //save answers.
             if (Position == TicketsCount)
             {
-                Position = 0;
-                CorrectAns = 0;
-                FailedAns = 0;
-
                 await new AnsweredService().SaveUserAnswersAsync(Tickets, AnswerIds);
 
                 var endUi = new Intent(this, typeof(EndActivity));
                 endUi.PutExtra("TicketsCount", TicketsCount);
                 StartActivity(endUi);
+                
+                ClearUi();
             }
 
             //question count.
@@ -217,7 +210,7 @@ namespace DrivingLicenceApp
             QuestionPic.SetImageBitmap(null);
 
             //set picture
-            QuestionPic.LoadImage(elem.Filename, false);
+            QuestionPic.SetImageBitmap(BitmapFactory.DecodeFile(elem.Filename));
             //picture desing
             int padding = elem.Filename != null ? 20 : 0;
             QuestionPic.SetPadding(padding, padding, padding, padding);
@@ -271,6 +264,20 @@ namespace DrivingLicenceApp
             RunOnUiThread(() => {
                 Toast.MakeText(Application.Context, "დრო გავიდა", ToastLength.Long).Show();
             });
+        }
+
+        private void ClearUi()
+        {
+            Position = 0;
+            CorrectAns = 0;
+            FailedAns = 0;
+
+            //cor ans
+            CorAns.Text = "0";
+            //incor ans
+            FilAns.Text = "0";
+
+            AnswerIds.Clear();
         }
     }
 }

@@ -2,9 +2,9 @@
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Widget;
-using Android.Support.Design.Widget;
 using System;
 using Android.Content;
+using FFImageLoading.Views;
 
 namespace DrivingLicenceApp
 {

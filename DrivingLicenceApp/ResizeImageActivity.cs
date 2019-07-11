@@ -1,25 +1,22 @@
 ﻿using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
-using FFImageLoading.Views;
+using Android.Widget;
 
 namespace DrivingLicenceApp
 {
     [Activity(Label = "ResizeImageActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class ResizeImageActivity : Activity
     {
-        private ImageViewAsync ImageImg { get; set; }
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_resizeImage);
 
-            ImageImg = FindViewById<ImageViewAsync>(Resource.Id.ImageImg);
+            ImageView ImageImg = FindViewById<ImageView>(Resource.Id.ImageImg);
 
-            var ImgUrl = Intent.Extras.Get("TicketImage").ToString();
-            ImageImg.LoadImage(ImgUrl);
-
+            ImageImg.SetImageBitmap(BitmapFactory.DecodeFile(Intent.Extras.Get("TicketImage").ToString()));
             ImageImg.Click += (s, e) => Finish();
         }
     }

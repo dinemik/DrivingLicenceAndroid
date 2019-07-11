@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using DrivingLicenceAndroidPCL.Linq;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
+using System;
 
 namespace DrivingLicenceAndroidPCL.Class
 {
@@ -16,23 +17,23 @@ namespace DrivingLicenceAndroidPCL.Class
         * 3. Shuffle
         * 4. Taking --int count-- questions
         */
-        public async Task<IEnumerable<ITicketDb>> GetTicketsByTopicNamesAsync(IEnumerable<string> Names, int count)
+        public async Task<IEnumerable<ITicketDb>> GetTicketsByTopicNamesAsync(IEnumerable<string> Names, int count, Action<int> load = null)
         {
-            var topics = await OfflineSaveService.DownloadTicketsAsync();
+            var topics = await OfflineSaveService.DownloadTicketsAsync(load);
             var tickets = topics.Where(o => Names.Any(i => i == o.Name)).SelectMany(o => o.TicketsDb).ToList().Shuffle();
             return tickets.Count() >= count ? tickets.Take(count) : tickets;
         }
 
-        public async Task<IEnumerable<ITicketDb>> GetTicketsByCount(int count)
+        public async Task<IEnumerable<ITicketDb>> GetTicketsByCount(int count, Action<int> load = null)
         {
-            var topics = await OfflineSaveService.DownloadTicketsAsync();
+            var topics = await OfflineSaveService.DownloadTicketsAsync(load);
             return topics.SelectMany(o => o.TicketsDb).ToList().Shuffle().Take(count);
         }
 
         /*
          * Get All Topics
          */
-        public async Task<IEnumerable<ITopicDb>> GetAllTopicAsync() =>
-             await OfflineSaveService.DownloadTicketsAsync();
+        public async Task<IEnumerable<ITopicDb>> GetAllTopicAsync(Action<int> load = null) =>
+             await OfflineSaveService.DownloadTicketsAsync(load);
     }
 }

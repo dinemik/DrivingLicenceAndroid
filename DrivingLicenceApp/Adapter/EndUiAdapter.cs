@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
+using Android.Graphics;
 using Android.Support.V7.Widget;
 using Android.Views;
-using Android.Widget;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBaseIncorrect;
 using DrivingLicenceApp.Holder;
-using FFImageLoading.Views;
 
 namespace DrivingLicenceApp.Adapter
 {
@@ -30,7 +23,7 @@ namespace DrivingLicenceApp.Adapter
             var vh = holder as EndUiHolder;
 
             vh.QuestionTxt.Text = Tickets.ElementAt(position).Question;
-            vh.ImageImg.LoadImage(Tickets.ElementAt(position).Filename);
+            vh.ImageImg.SetImageBitmap(BitmapFactory.DecodeFile(Tickets.ElementAt(position).Filename));
             vh.HelpText.Text = Tickets.ElementAt(position).Desc;
 
             var meneger = new LinearLayoutManager(Context)

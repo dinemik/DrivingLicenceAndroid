@@ -21,9 +21,10 @@ namespace DrivingLicenceApp
         private ProgressBar ProgressBar { get; set; }
         #endregion
 
+        private ProgressDialog Progress { get; set; }
         private List<string> Category { get; set; } = new List<string>(); 
         private bool Checked { get; set; } = false;
-
+        private int ImageCount { get; set; }
 
         protected override async void OnCreate(Bundle savedInstanceState)
         {
@@ -36,33 +37,11 @@ namespace DrivingLicenceApp
 
             var manager = new LinearLayoutManager(this)
             { Orientation = (int)Orientation.Vertical };
-
             Recycler.SetLayoutManager(manager);
-
-
-            /*
-             * Loading Animation StackOverflow....
-             * 
-             ProgressBar.StartAnimation(ViewAnimator.);
-             ProgressBar.Max = 100;
-             ProgressBar.Progress = 100;
-             ProgressBar.SecondaryProgress = 100;
-             
-             int progressStatus = 0, progressStatus1 = 100;
-             new System.Threading.Thread(new ThreadStart(delegate {
-                 while (progressStatus < 100)
-                 {
-                     progressStatus += 1;
-                     progressStatus1 -= 1;
-                     ProgressBar.Progress = progressStatus1;
-                     System.Threading.Thread.Sleep(100);
-                 }
-             })).Start();
-            */
 
             try
             {
-                Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync(), CategoryChecked, Checked));
+                Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync((count) => RunOnUiThread(() => ProgressBarLoad(count))), CategoryChecked, Checked));
             }
             catch(Java.Net.UnknownHostException)
             {
@@ -76,7 +55,6 @@ namespace DrivingLicenceApp
 
             // hide Loaging Animation
             ProgressBar.Visibility = Android.Views.ViewStates.Gone;
-
             Confirm.Click += StartTesting;
         }
 
@@ -101,6 +79,30 @@ namespace DrivingLicenceApp
             Intent testingUI = new Intent(this, typeof(TestingActivity));
             testingUI.PutStringArrayListExtra("Tickets", Category);
             StartActivity(testingUI);
+        }
+
+
+        private void Progressbar(int picCount)
+        {
+            Progress = new ProgressDialog(this);
+            Progress.SetCancelable(false);
+            Progress.SetMessage("სურათების გადმოწერა !!!");
+            Progress.SetProgressStyle(ProgressDialogStyle.Horizontal);
+            Progress.Max = picCount;
+            Progress.Show();
+            ImageCount = 0;
+        }
+
+        private void ProgressBarLoad(int picCount)
+        {
+            if(Progress == null)
+                Progressbar(picCount);
+
+            ImageCount++;
+            Progress.Progress = ImageCount;
+
+            if (ImageCount == picCount)
+                Progress.Cancel();
         }
     }
 }

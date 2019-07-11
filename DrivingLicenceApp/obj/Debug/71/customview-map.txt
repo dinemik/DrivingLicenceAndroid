@@ -13,12 +13,10 @@ cache-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\D
 CheckBox;obj\Debug\71\res\layout\category_item.xml
 color;obj\Debug\71\res\values\colors.xml
 color;obj\Debug\71\res\values\ic_launcher_background.xml
-com.felipecsl.gifimageview.library.GifImageView;obj\Debug\71\res\layout\activity_category.xml
 corners;obj\Debug\71\res\drawable\categorycard.xml
 external-cache-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\29\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\lp\29\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\activity_resizeimage.xml
-FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\activity_testing.xml
 FFImageLoading.Views.ImageViewAsync;obj\Debug\71\res\layout\endui_item.xml
 foreground;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\71\res\mipmap-anydpi-v26\ic_launcher_round.xml
@@ -27,7 +25,9 @@ FrameLayout;obj\Debug\71\res\layout\activity_main.xml
 FrameLayout;obj\Debug\71\res\layout\activity_testing.xml
 FrameLayout;obj\Debug\71\res\layout\answer_item.xml
 ImageView;obj\Debug\71\res\layout\activity_category.xml
+ImageView;obj\Debug\71\res\layout\activity_resizeimage.xml
 ImageView;obj\Debug\71\res\layout\activity_testing.xml
+ImageView;obj\Debug\71\res\layout\endui_item.xml
 item;obj\Debug\71\res\values\styles.xml
 LinearLayout;obj\Debug\71\res\layout\activity_category.xml
 LinearLayout;obj\Debug\71\res\layout\activity_end.xml
@@ -52,7 +52,7 @@ string;C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug
 string;obj\Debug\71\res\values\strings.xml
 stroke;obj\Debug\71\res\drawable\categorycard.xml
 style;obj\Debug\71\res\values\styles.xml
-TextView;obj\Debug\71\res\layout\activity_statistic.xml
+TextView;obj\Debug\71\res\layout\activity_category.xml
 TextView;obj\Debug\71\res\layout\activity_testing.xml
 TextView;obj\Debug\71\res\layout\answer_item.xml
 TextView;obj\Debug\71\res\layout\category_item.xml

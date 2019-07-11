@@ -7,9 +7,9 @@
               android:layout_height="match_parent" 
               android:background="#000">
 
-    <FFImageLoading.Views.ImageViewAsync android:layout_width="match_parent"
-                                         android:layout_height="match_parent" 
-                                         android:src="#8080" 
-                                         android:id="@+id/ImageImg"/>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent" 
+               android:src="#8080" 
+               android:id="@+id/ImageImg"/>
 
 </LinearLayout>

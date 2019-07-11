@@ -14,11 +14,11 @@
                   android:background="@drawable/categorycard" 
                   android:id="@+id/QuestionEndTxt"/>
 
-        <FFImageLoading.Views.ImageViewAsync android:layout_width="match_parent"
-                                             android:layout_height="wrap_content"
-                                             android:minWidth="200dp"
-                                             android:layout_marginTop="10dp"
-                                             android:id="@+id/ImageEndImg"/>
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:minWidth="200dp"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/ImageEndImg"/>
 
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content" 

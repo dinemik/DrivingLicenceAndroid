@@ -10,7 +10,7 @@ namespace DrivingLicenceAndroidPCL.Model.Class.DataBase
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         [NotNull]
-        public string Answ { get; set; }
+        public string Ans { get; set; }
         [NotNull]
         public bool Correct { get; set; }
         [ForeignKey(typeof(TicketDb))]

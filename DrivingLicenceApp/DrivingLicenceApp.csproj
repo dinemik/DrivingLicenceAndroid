@@ -60,24 +60,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter\AnswerAdapter.cs" />
-    <Compile Include="Adapter\AnswerEndAdapter.cs" />
     <Compile Include="Adapter\CategoryAdapter.cs" />
-    <Compile Include="Adapter\EndUiAdapter.cs" />
+    <Compile Include="Adapter\CategoryDownloadinAdapter.cs" />
+    <Compile Include="Adapter\TopicAdapter.cs" />
     <Compile Include="CategoryActivity.cs" />
-    <Compile Include="EndActivity.cs" />
+    <Compile Include="DownloadActivity.cs" />
+    <Compile Include="Enums\StartTesting.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="Holder\AnswerEndHolder.cs" />
     <Compile Include="Holder\AnswerHolder.cs" />
+    <Compile Include="Holder\CategoryDownloadinHolder.cs" />
     <Compile Include="Holder\CategoryHolder.cs" />
-    <Compile Include="Holder\EndUiHolder.cs" />
+    <Compile Include="Holder\TopicHolder.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Models\Class\CategoryAndroid.cs" />
     <Compile Include="Models\Class\TopicAndroid.cs" />
+    <Compile Include="Models\Interface\ICategoryAndroid.cs" />
     <Compile Include="Models\Interface\ITopicAndroid.cs" />
     <Compile Include="ResizeImageActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StatisticActivity.cs" />
     <Compile Include="TestingActivity.cs" />
+    <Compile Include="TopicActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -126,12 +129,6 @@
     <AndroidResource Include="Resources\drawable\DrivingApplicationBackGround.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\activity_category.axml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\category_Item.axml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\categorycard.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -144,24 +141,23 @@
     <AndroidResource Include="Resources\drawable\NextDrivingApp.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\activity_testing.axml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Question40X40.png" />
     <Content Include="Resources\drawable\textviewIntestingact.xml">
       <SubType>Designer</SubType>
     </Content>
-    <AndroidResource Include="Resources\layout\answer_Item.axml">
+    <AndroidResource Include="Resources\layout\categorydownloading_Item.axml" />
+    <AndroidResource Include="Resources\layout\activity_download.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\activity_end.axml">
+    <AndroidResource Include="Resources\layout\activity_category.axml" />
+    <AndroidResource Include="Resources\layout\category_item.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\EndUI_Item.axml" />
+    <AndroidResource Include="Resources\layout\topic_Item.axml" />
+    <AndroidResource Include="Resources\layout\activity_topic.axml" />
+    <AndroidResource Include="Resources\layout\activity_testing.axml" />
+    <AndroidResource Include="Resources\layout\answer_Item.axml" />
     <AndroidResource Include="Resources\layout\activity_resizeImage.axml" />
-    <AndroidResource Include="Resources\layout\activity_statistic.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

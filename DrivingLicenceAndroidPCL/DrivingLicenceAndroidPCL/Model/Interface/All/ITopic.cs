@@ -14,7 +14,6 @@ namespace DrivingLicenceAndroidPCL.Model.Interface.All
 {
     public interface ITopic
     {
-        int Id { get; set; }
         string Name { get; set; }
     }
 }

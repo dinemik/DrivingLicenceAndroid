@@ -23,7 +23,7 @@ namespace DrivingLicenceApp.Adapter
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             var hold = holder as AnswerHolder;
-            hold.AnswerTxt.Text = Answers[position].Answ;
+            hold.AnswerTxt.Text = Answers[position].Ans;
             hold.AnswerTxt.Click += (s, e) => Click(s, e);
         }
 

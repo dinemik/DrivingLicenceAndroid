@@ -11,7 +11,10 @@ using System;
 using Android.Support.V7.Widget;
 using DrivingLicenceApp.Adapter;
 using System.Timers;
-using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
+using DrivingLicenceAndroidPCL.Model.Class.DataBase;
+using DrivingLicenceAndroidPCL.Class.PublicServices;
+using DrivingLicenceAndroidPCL.Linq;
+using FFImageLoading.Views;
 
 namespace DrivingLicenceApp
 {
@@ -19,13 +22,13 @@ namespace DrivingLicenceApp
     public class TestingActivity : AppCompatActivity
     {
         //tickets for testing.
-        private IEnumerable<ITicketDb> Tickets { get; set; }
+        private IEnumerable<TicketDb> Tickets { get; set; }
         private List<int> AnswerIds { get; set; }
 
         #region UI
         private TextView TimerTxt { get; set; }
         private ImageView HelpImg { get; set; }
-        private ImageView QuestionPic { get; set; }
+        private ImageViewAsync QuestionPic { get; set; }
 
         private TextView QuestionTxt { get; set; }
 
@@ -49,7 +52,7 @@ namespace DrivingLicenceApp
         //correct answers count.
         private int CorrectAns { get; set; }
         //filed answers count.
-        private int FailedAns { get; set; } 
+        private int FailedAns { get; set; }
         //max incorrect answers count
         private int MaxIncorrectCount { get; set; }
         //timer obj...
@@ -79,10 +82,25 @@ namespace DrivingLicenceApp
             try
             {
                 //getting tickets.
-                if (Intent.GetStringArrayListExtra("Tickets") != null)
-                    Tickets = await new TopicService().GetTicketsByTopicNamesAsync(Intent.GetStringArrayListExtra("Tickets"), TicketsCount);
+
+                if(Intent.GetBooleanExtra("Online", false))
+                {
+                    var tmp = await new GetTopicService().GetAllOnlineCategoryAsync(null, null);
+                    if (Intent.GetStringArrayListExtra("Topics") != null)
+                        Tickets = tmp.First(o => o.Name == Intent.GetStringExtra("Category")).Topics.Where(o => Intent.GetStringArrayListExtra("Topics").Any(i => i == o.Name)).SelectMany(o => o.TicketsDb).ToList().Shuffle().Take(TicketsCount);
+                    else
+                        Tickets = tmp.First(o => o.Name == Intent.GetStringExtra("Category")).Topics.SelectMany(o => o.TicketsDb).ToList().Shuffle().Take(TicketsCount);
+                }
                 else
-                    Tickets = await new TopicService().GetTicketsByCount(TicketsCount);
+                {
+                    var tmp = await new GetTopicService().GetAllOfflineCategoryAsync();
+                    if (Intent.GetStringArrayListExtra("Topics") != null)
+                        Tickets = tmp.First(o => o.Name == Intent.GetStringExtra("Category")).Topics.Where(o => Intent.GetStringArrayListExtra("Topics").Any(i => i == o.Name)).SelectMany(o => o.TicketsDb).ToList().Shuffle().Take(TicketsCount);
+                    else
+                        Tickets = tmp.First(o => o.Name == Intent.GetStringExtra("Category")).Topics.SelectMany(o => o.TicketsDb).ToList().Shuffle().Take(TicketsCount);
+                }
+
+                TicketsCount = Tickets.Count();
             }
             catch (Java.Net.UnknownHostException)
             {
@@ -101,7 +119,7 @@ namespace DrivingLicenceApp
             //UI.
             TimerTxt = FindViewById<TextView>(Resource.Id.TimeTxt);
             HelpImg = FindViewById<ImageView>(Resource.Id.HelpImg);
-            QuestionPic = FindViewById<ImageView>(Resource.Id.QuestionImg);
+            QuestionPic = FindViewById<ImageViewAsync>(Resource.Id.QuestionImg);
 
             QuestionTxt = FindViewById<TextView>(Resource.Id.QuestionTxt);
             QuestionsRecView = FindViewById<RecyclerView>(Resource.Id.QuestionsRecView);
@@ -112,7 +130,7 @@ namespace DrivingLicenceApp
             QuestionCount = FindViewById<TextView>(Resource.Id.AllQuestions);
             NextQuestion = FindViewById<TextView>(Resource.Id.NextQuest);
 
-            NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg); 
+            NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg);
             NextImg.Click += NextBtn;
 
             //_________
@@ -124,15 +142,16 @@ namespace DrivingLicenceApp
             { Orientation = OrientationHelper.Vertical };
 
             QuestionsRecView.SetLayoutManager(manager);
-             
+
             NextImg.Enabled = false;
             Next();
 
             HelpImg.Click += HelpForAns;
 
-            QuestionPic.Click += (s, e) => {
+            QuestionPic.Click += (s, e) =>
+            {
                 var resiz = new Intent(this, typeof(ResizeImageActivity));
-                resiz.PutExtra("TicketImage", Tickets.ElementAt(Position).Filename);
+                resiz.PutExtra("TicketImage", Tickets.ElementAt(Position).Image);
                 StartActivity(resiz);
             };
 
@@ -143,7 +162,7 @@ namespace DrivingLicenceApp
         private void Answer(object sender, EventArgs args)
         {
             //if correct
-            var userAns = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text);
+            var userAns = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Ans == (sender as TextView).Text);
             (sender as TextView).SetBackgroundColor(userAns.Correct ? Color.Green : Color.Red);
             //add user answer
             AnswerIds.Add(userAns.Id);
@@ -151,7 +170,7 @@ namespace DrivingLicenceApp
             //if not correct
             QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
             //correct or incorect count detect
-            _ = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Answ == (sender as TextView).Text).Correct ? CorrectAns++ : FailedAns++;
+            _ = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Ans == (sender as TextView).Text).Correct ? CorrectAns++ : FailedAns++;
 
             //disable all answers
             for (int i = 0; i < QuestionsRecView.ChildCount; i++)
@@ -175,7 +194,7 @@ namespace DrivingLicenceApp
 
             NextImg.Enabled = true;
         }
-        
+
         private async void NextBtn(object sender, EventArgs args)
         {
             //new ticket id.
@@ -184,12 +203,12 @@ namespace DrivingLicenceApp
             //save answers.
             if (Position == TicketsCount)
             {
-                await new AnsweredService().SaveUserAnswersAsync(Tickets, AnswerIds);
+                //await new AnsweredService().SaveUserAnswersAsync(Tickets, AnswerIds);
 
-                var endUi = new Intent(this, typeof(EndActivity));
-                endUi.PutExtra("TicketsCount", TicketsCount);
-                StartActivity(endUi);
-                
+                //var endUi = new Intent(this, typeof(EndActivity));
+                //endUi.PutExtra("TicketsCount", TicketsCount);
+                //StartActivity(endUi);
+
                 ClearUi();
             }
 
@@ -210,14 +229,18 @@ namespace DrivingLicenceApp
             QuestionPic.SetImageBitmap(null);
 
             //set picture
-            QuestionPic.SetImageBitmap(BitmapFactory.DecodeFile(elem.Filename));
+            if (BitmapFactory.DecodeFile(elem.Image) != null)
+                QuestionPic.SetImageBitmap(BitmapFactory.DecodeFile(elem.Image));
+            else
+                QuestionPic.LoadImage(elem.Image);
+
             //picture desing
-            int padding = elem.Filename != null ? 20 : 0;
+            int padding = elem.Image != null ? 20 : 0;
             QuestionPic.SetPadding(padding, padding, padding, padding);
 
             //set question.
             QuestionTxt.Text = elem.Question;
-            
+
             //recycler view adapter
             QuestionsRecView.SetAdapter(new AnswerAdapter(elem.Answers, Answer));
         }
@@ -227,7 +250,7 @@ namespace DrivingLicenceApp
         {
             Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
             alert.SetTitle("დახმარება");
-            alert.SetMessage(Tickets.ElementAt(Position).Desc);
+            alert.SetMessage(Tickets.ElementAt(Position).Help);
 
             Dialog dialog = alert.Create();
             dialog.Show();
@@ -246,7 +269,7 @@ namespace DrivingLicenceApp
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             //seconds to minutes and seconds mm:ss
-            string formato = $"{Sec/60}:{Sec%60}";
+            string formato = $"{Sec / 60}:{Sec % 60}";
             RunOnUiThread(() => { TimerTxt.Text = formato; });
 
             if (Sec == 0)
@@ -261,7 +284,8 @@ namespace DrivingLicenceApp
             Timer.Enabled = false;
             Timer.Dispose();
 
-            RunOnUiThread(() => {
+            RunOnUiThread(() =>
+            {
                 Toast.MakeText(Application.Context, "დრო გავიდა", ToastLength.Long).Show();
             });
         }

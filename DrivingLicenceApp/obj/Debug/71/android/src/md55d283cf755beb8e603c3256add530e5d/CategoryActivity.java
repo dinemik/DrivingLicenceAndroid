@@ -2,7 +2,7 @@ package md55d283cf755beb8e603c3256add530e5d;
 
 
 public class CategoryActivity
-	extends android.support.v7.app.AppCompatActivity
+	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
 {

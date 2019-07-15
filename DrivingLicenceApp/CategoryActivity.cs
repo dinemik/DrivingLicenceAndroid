@@ -1,108 +1,83 @@
-﻿using DrivingLicenceAndroidPCL.Class;
-using System.Collections.Generic;
-using DrivingLicenceApp.Adapter;
-using Android.Support.V7.Widget;
-using Android.Support.V7.App;
+﻿using Android.App;
 using Android.Content;
-using Android.Widget;
-using System.Linq;
-using Android.App;
 using Android.OS;
+using Android.Support.V7.Widget;
+using DrivingLicenceAndroidPCL.Class;
+using DrivingLicenceAndroidPCL.Class.PublicServices;
+using DrivingLicenceAndroidPCL.Model.Interface.All;
+using DrivingLicenceAndroidPCL.Model.Interface.Json;
+using DrivingLicenceApp.Adapter;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DrivingLicenceApp
 {
-    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
-    public class CategoryActivity : AppCompatActivity
+    [Activity(Label = "CategoryActivity")]
+    public class CategoryActivity : Activity
     {
         #region UI
         private RecyclerView Recycler { get; set; }
-        private ImageView Confirm { get; set; }
-        private ProgressBar ProgressBar { get; set; }
+        private ProgressDialog Progress { get; set; }
         #endregion
 
-        private ProgressDialog Progress { get; set; }
-        private List<string> Category { get; set; } = new List<string>(); 
-        private bool Checked { get; set; } = false;
-        private int ImageCount { get; set; }
+        #region Other
+        private bool Online { get; set; }
+        #endregion
 
-        protected override async void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_category);
 
-            Recycler = FindViewById<RecyclerView>(Resource.Id.CategoryRecycler);
-            Confirm = FindViewById<ImageView>(Resource.Id.StartTestImg);
-            ProgressBar = FindViewById<ProgressBar>(Resource.Id.DownloadingProgress);
+            Online = Intent.GetBooleanExtra("Online", false);
 
-            var manager = new LinearLayoutManager(this)
-            { Orientation = (int)Orientation.Vertical };
-            Recycler.SetLayoutManager(manager);
+            Recycler = FindViewById<RecyclerView>(Resource.Id.categoryRecycler);
 
-            try
-            {
-                Recycler.SetAdapter(new CategoryAdapter(await new TopicService().GetAllTopicAsync((count) => RunOnUiThread(() => ProgressBarLoad(count))), CategoryChecked, Checked));
-            }
-            catch(Java.Net.UnknownHostException)
-            {
-                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
-                alert.SetTitle("ინტერნეტის კავშირი");
-                alert.SetMessage("ეს აპლიკაცია ირთვება პირვლად იმისთვის რომ ჩაირთოს საჭიროა ინტერნეტთან კავშირი შეკითხვების გადმოსაწერათ ერთჯერადი კავშირია.");
+            Recycler.SetLayoutManager(new GridLayoutManager(this, 3));
 
-                Dialog dialog = alert.Create();
-                dialog.Show();
-            }
-
-            // hide Loaging Animation
-            ProgressBar.Visibility = Android.Views.ViewStates.Gone;
-            Confirm.Click += StartTesting;
+            Load();
         }
 
-        private void CategoryChecked(object sender, EventArgs args)
-        {
-            var txt = (sender as CheckBox).Text;
-
-            if (Category.Any(o => o == txt)) 
-                Category.Remove(txt);
-            else
-                Category.Add(txt);
-        }
-         
-        private void StartTesting(object sender, EventArgs args)
-        {
-            if(Category.Count == 0)
-            {
-                Toast.MakeText(Application.Context, "ერთერთ კატეგორია აირჩიე", ToastLength.Short).Show();
-                return;
-            }
-           
-            Intent testingUI = new Intent(this, typeof(TestingActivity));
-            testingUI.PutStringArrayListExtra("Tickets", Category);
-            StartActivity(testingUI);
-        }
-
-
-        private void Progressbar(int picCount)
+        private void Progressbar()
         {
             Progress = new ProgressDialog(this);
             Progress.SetCancelable(false);
-            Progress.SetMessage("სურათების გადმოწერა !!!");
-            Progress.SetProgressStyle(ProgressDialogStyle.Horizontal);
-            Progress.Max = picCount;
+            Progress.SetMessage("ფაილების გადმოწერა !!!");
+            Progress.SetProgressStyle(ProgressDialogStyle.Spinner);
             Progress.Show();
-            ImageCount = 0;
         }
 
-        private void ProgressBarLoad(int picCount)
+        private void PogressbarRingload()
         {
-            if(Progress == null)
-                Progressbar(picCount);
+            if (Progress == null)
+                Progressbar();
+        }
 
-            ImageCount++;
-            Progress.Progress = ImageCount;
-
-            if (ImageCount == picCount)
+        private void EndProgresBar()
+        {
+            if (Progress != null)
                 Progress.Cancel();
+        }
+
+        private async void Load()
+        {
+            IEnumerable<ICategory> categories = null;
+
+            if (Online)
+                categories = await new GetTopicService().GetAllOnlineCategoryAsync(() => RunOnUiThread(() => PogressbarRingload()), EndProgresBar);
+            else
+                categories = await new GetTopicService().GetAllOfflineCategoryAsync();
+
+            Recycler.SetAdapter(new CategoryAdapter(categories, Click));
+        }
+
+        private void Click(object sender, EventArgs args, string category)
+        {
+            Intent topicUi = new Intent(this, typeof(TopicActivity));
+            topicUi.PutExtra("Online", Online);
+            topicUi.PutExtra("Category", category);
+            StartActivity(topicUi);
         }
     }
 }

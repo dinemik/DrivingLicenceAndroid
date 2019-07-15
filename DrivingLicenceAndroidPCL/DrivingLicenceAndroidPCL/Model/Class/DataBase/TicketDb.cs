@@ -12,10 +12,12 @@ namespace DrivingLicenceAndroidPCL.Model.Class.DataBase
         public int Id { get; set; }
         [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<AnswerDb> Answers { get; set; }
-        public string Coeficient { get; set; }
-        public string Desc { get; set; }
-        public string Filename { get; set; }
+
+        [NotNull]
         public string Question { get; set; }
+        public string Image { get; set; }
+        public string Help { get; set; }
+
         [ManyToOne]
         public TopicDb Topic { get; set; }
         [ForeignKey(typeof(TopicDb))]

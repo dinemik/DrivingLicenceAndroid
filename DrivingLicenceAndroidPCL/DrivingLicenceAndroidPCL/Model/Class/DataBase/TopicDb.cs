@@ -14,5 +14,7 @@ namespace DrivingLicenceAndroidPCL.Model.Class.DataBase
         public string Name { get; set; }
         [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<TicketDb> TicketsDb { get; set; }
+        [ForeignKey(typeof(CategoryDb))]
+        public int CategoryId { get; set; }
     }
 }

@@ -1,45 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    android:background="@drawable/drivingapplicationbackground">
-
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" 
+             android:background="#000">
 
      <LinearLayout android:layout_width="match_parent"
                    android:layout_height="match_parent"
-                   android:orientation="vertical"
                    android:gravity="center"
+                   android:orientation="vertical"
                    android:layout_margin="30dp">
-    
-            <Button android:id="@+id/StatisticBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:textColor="#fff"
-                    android:background="#A4F72323"
-                    android:padding="10dp"
-                    android:text="სტატისტიკა"/>
 
-            <Button android:id="@+id/CategoryStartBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#fff"
-                    android:background="#A4F72323"
-                    android:padding="10dp"
-                    android:text="კატეგორიებით დაწყება"/>
-    
-            <Button android:id="@+id/RandomStartBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:background="#A4F72323"
-                    android:textColor="#fff"
-                    android:layout_marginTop="10dp"
-                    android:text="შემთხვევითი შეკითხვებით დაწყება"/>
-    
+        <Button android:id="@+id/DownloadOtherCategoryesBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:background="#A4F72323"
+                android:padding="10dp"
+                android:layout_gravity="center|top"
+                android:text="გადმოწერა"/>
+
+        <Button android:id="@+id/OnlineTestsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:background="#A4F72323"
+                android:padding="10dp"
+                android:layout_gravity="center|top"
+                android:text="ონლაინ ტესტირება"/>
+
+        <Button android:id="@+id/DowloadedTestsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:background="#A4F72323"
+                android:padding="10dp"
+                android:layout_gravity="center|top"
+                android:text="გადმოწერილი ტესტები"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="bottom|center" 
+        android:layout_marginBottom="10dp">
+
+         <Button android:id="@+id/StatisticBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:background="#A4F72323"
+                android:padding="10dp"
+                android:layout_gravity="center|top"
+                android:text="სტატისტიკა"/>
+
     </LinearLayout>
 
 </FrameLayout>

@@ -14,10 +14,8 @@ namespace DrivingLicenceAndroidPCL.Model.Interface.All
 {
     public interface ITicket
     {
-        int Id { get; set; }
-        string Coeficient { get; set; }
-        string Desc { get; set; }
-        string Filename { get; set; }
         string Question { get; set; }
+        string Image { get; set; }
+        string Help { get; set; }
     }
 }

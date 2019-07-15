@@ -13,12 +13,12 @@ namespace DrivingLicenceAndroidPCL.Class
          * 1. Download string 'json'
          * 2. Deserialize 
          */
-        public static async Task<IEnumerable<ITopicJson>> GetTopicsAsync()
+        public static async Task<IEnumerable<ICategoryJson>> GetTopicsAsync()
         {
             using (HttpClient web = new HttpClient())
             {
-                var json = await web.GetStringAsync("https://drivinglicens-93fe9.firebaseio.com/.json");
-                return await Task.Run<IEnumerable<ITopicJson>>(() => JsonConvert.DeserializeObject<List<TopicJson>>(json));
+                var json = await web.GetStringAsync("https://drivinglicencenew.firebaseio.com/.json");
+                return await Task.Run<IEnumerable<ICategoryJson>>(() => JsonConvert.DeserializeObject<List<CategoryJson>>(json));
             }
         }
     }

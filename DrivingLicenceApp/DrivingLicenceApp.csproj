@@ -60,16 +60,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter\AnswerAdapter.cs" />
+    <Compile Include="Adapter\AnswerEndAdapter.cs" />
     <Compile Include="Adapter\CategoryAdapter.cs" />
     <Compile Include="Adapter\CategoryDownloadinAdapter.cs" />
+    <Compile Include="Adapter\EndUiAdapter.cs" />
     <Compile Include="Adapter\TopicAdapter.cs" />
     <Compile Include="CategoryActivity.cs" />
     <Compile Include="DownloadActivity.cs" />
+    <Compile Include="EndActivity.cs" />
     <Compile Include="Enums\StartTesting.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Holder\AnswerEndHolder.cs" />
     <Compile Include="Holder\AnswerHolder.cs" />
     <Compile Include="Holder\CategoryDownloadinHolder.cs" />
     <Compile Include="Holder\CategoryHolder.cs" />
+    <Compile Include="Holder\EndUiHolder.cs" />
     <Compile Include="Holder\TopicHolder.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Models\Class\CategoryAndroid.cs" />
@@ -158,6 +163,8 @@
     <AndroidResource Include="Resources\layout\activity_testing.axml" />
     <AndroidResource Include="Resources\layout\answer_Item.axml" />
     <AndroidResource Include="Resources\layout\activity_resizeImage.axml" />
+    <AndroidResource Include="Resources\layout\activity_end.axml" />
+    <AndroidResource Include="Resources\layout\EndUI_Item.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

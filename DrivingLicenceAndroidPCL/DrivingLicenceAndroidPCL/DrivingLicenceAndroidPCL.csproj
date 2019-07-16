@@ -45,11 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\AnsweredService.cs" />
     <Compile Include="Class\DeserializeJson.cs" />
     <Compile Include="Class\PrivateServices\DownloadService.cs" />
     <Compile Include="Class\PrivateServices\SaveService.cs" />
     <Compile Include="Class\PublicServices\GetTopicService.cs" />
+    <Compile Include="Enums\GetTicketBy.cs" />
     <Compile Include="Linq\MyMethods.cs" />
+    <Compile Include="Model\Class\DataBaseIncorrect\AnswerIncorrectDb.cs" />
+    <Compile Include="Model\Class\DataBaseIncorrect\TicketIncorrectDb.cs" />
     <Compile Include="Model\Class\DataBase\AnswerDb.cs" />
     <Compile Include="Model\Class\DataBase\CategoryDb.cs" />
     <Compile Include="Model\Class\DataBase\TicketDb.cs" />
@@ -62,6 +66,8 @@
     <Compile Include="Model\Interface\All\ICategory.cs" />
     <Compile Include="Model\Interface\All\ITicket.cs" />
     <Compile Include="Model\Interface\All\ITopic.cs" />
+    <Compile Include="Model\Interface\DataBaseIncorrect\IAnswerIncorrectDb.cs" />
+    <Compile Include="Model\Interface\DataBaseIncorrect\ITicketIncorrectDb.cs" />
     <Compile Include="Model\Interface\DataBase\IAnsewerDb.cs" />
     <Compile Include="Model\Interface\DataBase\ICategoryDb.cs" />
     <Compile Include="Model\Interface\DataBase\ITicketDb.cs" />

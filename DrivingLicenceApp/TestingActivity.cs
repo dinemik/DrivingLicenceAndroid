@@ -23,7 +23,7 @@ namespace DrivingLicenceApp
     {
         //tickets for testing.
         private IEnumerable<TicketDb> Tickets { get; set; }
-        private List<int> AnswerIds { get; set; }
+        private List<string> Answers { get; set; }
 
         #region UI
         private TextView TimerTxt { get; set; }
@@ -71,7 +71,7 @@ namespace DrivingLicenceApp
             FailedAns = 0;
             MaxIncorrectCount = 3;
             Timer = new Timer();
-            AnswerIds = new List<int>();
+            Answers = new List<string>();
         }
 
         protected override async void OnCreate(Bundle savedInstanceState)
@@ -165,7 +165,7 @@ namespace DrivingLicenceApp
             var userAns = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Ans == (sender as TextView).Text);
             (sender as TextView).SetBackgroundColor(userAns.Correct ? Color.Green : Color.Red);
             //add user answer
-            AnswerIds.Add(userAns.Id);
+            Answers.Add(userAns.Ans);
 
             //if not correct
             QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
@@ -203,11 +203,11 @@ namespace DrivingLicenceApp
             //save answers.
             if (Position == TicketsCount)
             {
-                //await new AnsweredService().SaveUserAnswersAsync(Tickets, AnswerIds);
+                await new AnsweredService().SaveUserAnswersAsync(Tickets, Answers);
 
-                //var endUi = new Intent(this, typeof(EndActivity));
-                //endUi.PutExtra("TicketsCount", TicketsCount);
-                //StartActivity(endUi);
+                var endUi = new Intent(this, typeof(EndActivity));
+                endUi.PutExtra("TicketsCount", TicketsCount);
+                StartActivity(endUi);
 
                 ClearUi();
             }
@@ -301,7 +301,7 @@ namespace DrivingLicenceApp
             //incor ans
             FilAns.Text = "0";
 
-            AnswerIds.Clear();
+            Answers.Clear();
         }
     }
 }

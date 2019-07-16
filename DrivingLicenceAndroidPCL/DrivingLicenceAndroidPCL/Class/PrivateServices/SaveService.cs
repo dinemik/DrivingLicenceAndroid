@@ -119,7 +119,7 @@ namespace DrivingLicenceAndroidPCL.Class.PrivateServices
                 }
                 catch (SQLiteException)
                 {
-                    return null;
+                    return new List<CategoryDb> { /**/ };
                 }
             });
         }

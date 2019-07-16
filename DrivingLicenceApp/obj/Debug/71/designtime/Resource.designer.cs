@@ -2296,8 +2296,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C0085
 			public const int cancel_action = 2131492997;
 			
-			// aapt resource value: 0x7F020032
-			public const int CategoryCard = 2130837554;
+			// aapt resource value: 0x7F020036
+			public const int CategoryCard = 2130837558;
 			
 			// aapt resource value: 0x7F020005
 			public const int CategoryesDownload = 2130837509;
@@ -2431,6 +2431,9 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C003F
 			public const int @fixed = 2131492927;
 			
+			// aapt resource value: 0x7F020034
+			public const int HelpEndTxt = 2130837556;
+			
 			// aapt resource value: 0x7F020018
 			public const int HelpImg = 2130837528;
 			
@@ -2451,6 +2454,9 @@ namespace DrivingLicenceApp
 			
 			// aapt resource value: 0x7F0C0046
 			public const int image = 2131492934;
+			
+			// aapt resource value: 0x7F020032
+			public const int ImageEndImg = 2130837554;
 			
 			// aapt resource value: 0x7F020013
 			public const int ImageImg = 2130837523;
@@ -2542,14 +2548,20 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F0C0007
 			public const int progress_horizontal = 2131492871;
 			
+			// aapt resource value: 0x7F020031
+			public const int QuestionEndTxt = 2130837553;
+			
 			// aapt resource value: 0x7F020021
 			public const int QuestionImg = 2130837537;
 			
-			// aapt resource value: 0x7F020031
-			public const int QuestionsCountTxt = 2130837553;
+			// aapt resource value: 0x7F020035
+			public const int QuestionsCountTxt = 2130837557;
 			
 			// aapt resource value: 0x7F020023
 			public const int QuestionsRecView = 2130837539;
+			
+			// aapt resource value: 0x7F020033
+			public const int QuestionsRV = 2130837555;
 			
 			// aapt resource value: 0x7F020020
 			public const int QuestionTxt = 2130837536;
@@ -2905,19 +2917,22 @@ namespace DrivingLicenceApp
 			public const int activity_resizeImage = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int activity_testing = 2130903047;
+			public const int activity_statistic = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int activity_topic = 2130903048;
+			public const int activity_testing = 2130903048;
 			
 			// aapt resource value: 0x7F030009
-			public const int answer_Item = 2130903049;
+			public const int activity_topic = 2130903049;
 			
 			// aapt resource value: 0x7F030010
-			public const int categorydownloading_Item = 2130903056;
+			public const int answer_Item = 2130903056;
 			
 			// aapt resource value: 0x7F030011
-			public const int category_item = 2130903057;
+			public const int categorydownloading_Item = 2130903057;
+			
+			// aapt resource value: 0x7F030012
+			public const int category_item = 2130903058;
 			
 			// aapt resource value: 0x7F03001B
 			public const int design_bottom_navigation_item = 2130903067;
@@ -2961,8 +2976,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F030028
 			public const int design_text_input_password_icon = 2130903080;
 			
-			// aapt resource value: 0x7F030012
-			public const int EndUI_Item = 2130903058;
+			// aapt resource value: 0x7F030013
+			public const int EndUI_Item = 2130903059;
 			
 			// aapt resource value: 0x7F030029
 			public const int notification_action = 2130903081;
@@ -3021,8 +3036,8 @@ namespace DrivingLicenceApp
 			// aapt resource value: 0x7F03003B
 			public const int support_simple_spinner_dropdown_item = 2130903099;
 			
-			// aapt resource value: 0x7F030013
-			public const int topic_Item = 2130903059;
+			// aapt resource value: 0x7F030014
+			public const int topic_Item = 2130903060;
 			
 			static Layout()
 			{

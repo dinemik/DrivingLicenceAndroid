@@ -16,6 +16,7 @@
       </intent-filter>
     </activity>
     <activity android:label="ResizeImageActivity" android:screenOrientation="portrait" android:name="md55d283cf755beb8e603c3256add530e5d.ResizeImageActivity" />
+    <activity android:label="StatisticActivity" android:name="md55d283cf755beb8e603c3256add530e5d.StatisticActivity" />
     <activity android:screenOrientation="portrait" android:name="md55d283cf755beb8e603c3256add530e5d.TestingActivity" />
     <activity android:screenOrientation="portrait" android:name="md55d283cf755beb8e603c3256add530e5d.TopicActivity" />
     <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />

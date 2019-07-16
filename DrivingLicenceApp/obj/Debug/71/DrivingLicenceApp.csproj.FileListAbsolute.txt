@@ -373,3 +373,5 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\and
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\src\md55d283cf755beb8e603c3256add530e5d\EndActivity.java
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\src\md541b73d7972fceac6d3b291d044e81a89\AnswerEndHolder.java
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\src\md541b73d7972fceac6d3b291d044e81a89\EndUiHolder.java
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\res\layout\activity_statistic.xml
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\src\md55d283cf755beb8e603c3256add530e5d\StatisticActivity.java

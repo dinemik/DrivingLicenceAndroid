@@ -7,6 +7,7 @@ android.support.v7.widget.RecyclerView;obj\Debug\71\res\layout\endui_item.xml
 Button;obj\Debug\71\res\layout\activity_download.xml
 Button;obj\Debug\71\res\layout\activity_end.xml
 Button;obj\Debug\71\res\layout\activity_main.xml
+Button;obj\Debug\71\res\layout\activity_statistic.xml
 CheckBox;obj\Debug\71\res\layout\activity_download.xml
 CheckBox;obj\Debug\71\res\layout\category_item.xml
 CheckBox;obj\Debug\71\res\layout\categorydownloading_item.xml
@@ -30,6 +31,7 @@ LinearLayout;obj\Debug\71\res\layout\activity_download.xml
 LinearLayout;obj\Debug\71\res\layout\activity_end.xml
 LinearLayout;obj\Debug\71\res\layout\activity_main.xml
 LinearLayout;obj\Debug\71\res\layout\activity_resizeimage.xml
+LinearLayout;obj\Debug\71\res\layout\activity_statistic.xml
 LinearLayout;obj\Debug\71\res\layout\activity_testing.xml
 LinearLayout;obj\Debug\71\res\layout\activity_topic.xml
 LinearLayout;obj\Debug\71\res\layout\answer_item.xml
@@ -37,6 +39,7 @@ LinearLayout;obj\Debug\71\res\layout\category_item.xml
 LinearLayout;obj\Debug\71\res\layout\categorydownloading_item.xml
 LinearLayout;obj\Debug\71\res\layout\endui_item.xml
 LinearLayout;obj\Debug\71\res\layout\topic_item.xml
+microcharts.droid.ChartView;obj\Debug\71\res\layout\activity_statistic.xml
 ProgressBar;obj\Debug\71\res\layout\activity_topic.xml
 TextView;obj\Debug\71\res\layout\activity_testing.xml
 TextView;obj\Debug\71\res\layout\answer_item.xml

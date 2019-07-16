@@ -84,6 +84,7 @@
     <Compile Include="ResizeImageActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatisticActivity.cs" />
     <Compile Include="TestingActivity.cs" />
     <Compile Include="TopicActivity.cs" />
   </ItemGroup>
@@ -165,6 +166,7 @@
     <AndroidResource Include="Resources\layout\activity_resizeImage.axml" />
     <AndroidResource Include="Resources\layout\activity_end.axml" />
     <AndroidResource Include="Resources\layout\EndUI_Item.axml" />
+    <AndroidResource Include="Resources\layout\activity_statistic.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

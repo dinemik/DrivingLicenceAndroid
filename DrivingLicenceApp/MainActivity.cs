@@ -50,8 +50,8 @@ namespace DrivingLicenceApp
             };
 
             Statistic.Click += (s, e) => {
-
-
+                Intent Statistic = new Intent(this, typeof(StatisticActivity));
+                StartActivity(Statistic);
             };
         }
     }

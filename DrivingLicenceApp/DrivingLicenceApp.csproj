@@ -66,6 +66,7 @@
     <Compile Include="Adapter\EndUiAdapter.cs" />
     <Compile Include="Adapter\TopicAdapter.cs" />
     <Compile Include="CategoryActivity.cs" />
+    <Compile Include="Class\AndroidAnimations.cs" />
     <Compile Include="DownloadActivity.cs" />
     <Compile Include="EndActivity.cs" />
     <Compile Include="Enums\StartTesting.cs" />

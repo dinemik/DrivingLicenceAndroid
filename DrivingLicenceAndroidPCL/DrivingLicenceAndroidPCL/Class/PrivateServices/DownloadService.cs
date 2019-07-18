@@ -1,13 +1,13 @@
-﻿using DrivingLicenceAndroidPCL.Model.Class.DataBase;
+﻿using DrivingLicenceAndroidPCL.Interface.PrivateServices;
+using DrivingLicenceAndroidPCL.Model.Class.DataBase;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace DrivingLicenceAndroidPCL.Class.PrivateServices
 {
-    internal class DownloadService
+    internal class DownloadService : IDownloadService
     {
         private static IEnumerable<ICategoryDb> Categories { get; set; }
 
@@ -23,17 +23,16 @@ namespace DrivingLicenceAndroidPCL.Class.PrivateServices
                 return instance;
             }
         }
-
         private DownloadService()
         {
             Categories = null;
         }
 
-        public async Task<IEnumerable<ICategoryDb>> AllDownloadCategoryesAsync(Action Start, Action End)
+
+        public async Task<IEnumerable<ICategoryDb>> AllDownloadCategoryesAsync()
         {
             if (Categories == null)
             {
-                await Task.Run(() => Start?.Invoke());
                 Categories = (await DeserializeJson.GetTopicsAsync()).Select(categoryes => new CategoryDb
                 {
 
@@ -55,7 +54,6 @@ namespace DrivingLicenceAndroidPCL.Class.PrivateServices
                         }).ToList()
                     }).ToList()
                 });
-                await Task.Run(() => End?.Invoke());
             }
             return Categories;
         }

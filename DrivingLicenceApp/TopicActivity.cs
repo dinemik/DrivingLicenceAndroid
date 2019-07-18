@@ -11,6 +11,7 @@ using Android.OS;
 using System;
 using DrivingLicenceAndroidPCL.Class.PublicServices;
 using DrivingLicenceApp.Models.Class;
+using DrivingLicenceApp.Class;
 
 namespace DrivingLicenceApp
 {
@@ -23,10 +24,9 @@ namespace DrivingLicenceApp
         private ProgressBar ProgressBar { get; set; }
         #endregion
 
-        private ProgressDialog Progress { get; set; }
         private List<string> Topics { get; set; } = new List<string>();
         private bool Checked { get; set; } = false;
-        private int ImageCount { get; set; }
+        private AndroidAnimations Animations { get; set; }
 
         private bool Online { get; set; }
         private string Category { get; set; }
@@ -46,7 +46,8 @@ namespace DrivingLicenceApp
 
             Online = Intent.GetBooleanExtra("Online", false);
             Category = Intent.GetStringExtra("Category");
-           
+
+            Animations = new AndroidAnimations(this);
             try
             {
                 Load();
@@ -69,9 +70,9 @@ namespace DrivingLicenceApp
         private async void Load()
         {
             if (Online)
-                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService().GetAllOnlineCategoryAsync(null, null)).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, isChecked = false, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
+                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService(Animations).GetAllOnlineCategoryAsync()).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, isChecked = false, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
             else
-                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService().GetAllOfflineCategoryAsync()).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, isChecked = false, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
+                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService(Animations).GetAllOfflineCategoryAsync()).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, isChecked = false, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
         }
 
         private void CategoryChecked(object sender, EventArgs args)

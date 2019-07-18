@@ -2,14 +2,12 @@
 using Android.Content;
 using Android.OS;
 using Android.Support.V7.Widget;
-using DrivingLicenceAndroidPCL.Class;
 using DrivingLicenceAndroidPCL.Class.PublicServices;
 using DrivingLicenceAndroidPCL.Model.Interface.All;
-using DrivingLicenceAndroidPCL.Model.Interface.Json;
 using DrivingLicenceApp.Adapter;
+using DrivingLicenceApp.Class;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DrivingLicenceApp
 {
@@ -18,11 +16,11 @@ namespace DrivingLicenceApp
     {
         #region UI
         private RecyclerView Recycler { get; set; }
-        private ProgressDialog Progress { get; set; }
         #endregion
 
         #region Other
         private bool Online { get; set; }
+        private AndroidAnimations Animations { get; set; }
         #endregion
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -35,29 +33,9 @@ namespace DrivingLicenceApp
             Recycler = FindViewById<RecyclerView>(Resource.Id.categoryRecycler);
 
             Recycler.SetLayoutManager(new GridLayoutManager(this, 3));
+            Animations = new AndroidAnimations(this);
 
             Load();
-        }
-
-        private void Progressbar()
-        {
-            Progress = new ProgressDialog(this);
-            Progress.SetCancelable(false);
-            Progress.SetMessage("ფაილების გადმოწერა !!!");
-            Progress.SetProgressStyle(ProgressDialogStyle.Spinner);
-            Progress.Show();
-        }
-
-        private void PogressbarRingload()
-        {
-            if (Progress == null)
-                Progressbar();
-        }
-
-        private void EndProgresBar()
-        {
-            if (Progress != null)
-                Progress.Cancel();
         }
 
         private async void Load()
@@ -65,9 +43,9 @@ namespace DrivingLicenceApp
             IEnumerable<ICategory> categories = null;
 
             if (Online)
-                categories = await new GetTopicService().GetAllOnlineCategoryAsync(() => RunOnUiThread(() => PogressbarRingload()), EndProgresBar);
+                categories = await new GetTopicService(Animations).GetAllOnlineCategoryAsync();
             else
-                categories = await new GetTopicService().GetAllOfflineCategoryAsync();
+                categories = await new GetTopicService(Animations).GetAllOfflineCategoryAsync();
 
             Recycler.SetAdapter(new CategoryAdapter(categories, Click));
         }

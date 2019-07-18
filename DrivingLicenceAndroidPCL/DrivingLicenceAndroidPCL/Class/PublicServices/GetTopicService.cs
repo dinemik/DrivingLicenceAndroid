@@ -1,40 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DrivingLicenceAndroidPCL.Class.PrivateServices;
+using DrivingLicenceAndroidPCL.Interface;
 using DrivingLicenceAndroidPCL.Model.Interface.DataBase;
 
 namespace DrivingLicenceAndroidPCL.Class.PublicServices
 {
     public class GetTopicService
     {
-        public async Task<IEnumerable<ICategoryDb>> GetAllOfflineCategoryAsync()
+        private IAnimationService Animation { get; set; }
+
+        public GetTopicService() { }
+
+        public GetTopicService(IAnimationService animation) =>
+            Animation = animation;
+
+
+        public async Task<IEnumerable<ICategoryDb>> GetAllOfflineCategoryAsync() =>
+            await Task.Run(async () => await GetOfflineCategoryesService.Instance.GetAllOfflineCategoryesAsync());
+
+        public async Task<IEnumerable<ICategoryDb>> GetAllOnlineCategoryAsync()
         {
-            return await Task.Run(async () =>await new SaveService().GetAllOfflineCategoryesAsync());
+            Animation?.StartJsonDownloadAnimation();
+            var downloadedJson = await Task.Run(async () => await DownloadService.Instance.AllDownloadCategoryesAsync());
+            Animation?.EndJsonDownloadAnimation();
+            return downloadedJson;
         }
 
-        public async Task<IEnumerable<ICategoryDb>> GetAllOnlineCategoryAsync(Action Start, Action End)
+        public async Task<IEnumerable<ICategoryDb>> DownloadCategoryesAsync(bool downloadWithImages = false)
         {
-            return await Task.Run(async () => await DownloadService.Instance.AllDownloadCategoryesAsync(Start, End));
+            Animation?.StartJsonDownloadAnimation();
+            var down = await DownloadService.Instance.AllDownloadCategoryesAsync();
+            Animation?.EndJsonDownloadAnimation();
+            await new SaveService(Animation).SaveCategoryesIntoDatabaseAsync(down, downloadWithImages);
+            return await GetOfflineCategoryesService.Instance.GetAllOfflineCategoryesAsync();
         }
 
-        public async Task<IEnumerable<ICategoryDb>> DownloadCategoryesAsync(Action Start = null, Action End = null, Action<int> ImageLoaging = null, bool downloadWithImages = false)
+        public async void DownloadByCategoryes(IEnumerable<string> categories, bool downloadWithImages = false)
         {
-            return await Task.Run(async () => {
-                var down = await DownloadService.Instance.AllDownloadCategoryesAsync(Start, End);
-                await new SaveService().SaveCategoryesIntoDatabaseAsync(down, ImageLoaging, downloadWithImages);
-                return await new SaveService().GetAllOfflineCategoryesAsync();
-            });
-        }
-
-        public async Task<IEnumerable<ICategoryDb>> DownloadByCategoryesAsync(IEnumerable<string> categories, Action Start = null, Action End = null, Action<int> ImageLoaging = null, bool downloadWithImages = false)
-        {
-            return await Task.Run(async () => {
-                var down = (await DownloadService.Instance.AllDownloadCategoryesAsync(Start, End)).Where(o => categories.Any(i => o.Name == i));
-                await new SaveService().SaveCategoryesIntoDatabaseAsync(down, ImageLoaging, downloadWithImages);
-                return await new SaveService().GetAllOfflineCategoryesAsync();
-            });
+            Animation?.StartJsonDownloadAnimation();
+            var down = (await DownloadService.Instance.AllDownloadCategoryesAsync()).Where(o => categories.Any(i => o.Name == i));
+            Animation?.EndJsonDownloadAnimation();
+            await new SaveService(Animation).SaveCategoryesIntoDatabaseAsync(down, downloadWithImages);
         }
     }
 }

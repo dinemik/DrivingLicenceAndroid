@@ -15,6 +15,7 @@ using DrivingLicenceAndroidPCL.Model.Class.DataBase;
 using DrivingLicenceAndroidPCL.Class.PublicServices;
 using DrivingLicenceAndroidPCL.Linq;
 using FFImageLoading.Views;
+using DrivingLicenceApp.Class;
 
 namespace DrivingLicenceApp
 {
@@ -60,6 +61,8 @@ namespace DrivingLicenceApp
         //max time...
         private int Sec { get; set; }
 
+        private AndroidAnimations Animations { get; set; }
+
 
         public TestingActivity()
         {
@@ -72,6 +75,7 @@ namespace DrivingLicenceApp
             MaxIncorrectCount = 3;
             Timer = new Timer();
             Answers = new List<string>();
+            Animations = new AndroidAnimations(this);
         }
 
         protected override async void OnCreate(Bundle savedInstanceState)
@@ -85,7 +89,7 @@ namespace DrivingLicenceApp
 
                 if(Intent.GetBooleanExtra("Online", false))
                 {
-                    var tmp = await new GetTopicService().GetAllOnlineCategoryAsync(null, null);
+                    var tmp = await new GetTopicService(Animations).GetAllOnlineCategoryAsync();
                     if (Intent.GetStringArrayListExtra("Topics") != null)
                         Tickets = tmp.First(o => o.Name == Intent.GetStringExtra("Category")).Topics.Where(o => Intent.GetStringArrayListExtra("Topics").Any(i => i == o.Name)).SelectMany(o => o.TicketsDb).ToList().Shuffle().Take(TicketsCount);
                     else

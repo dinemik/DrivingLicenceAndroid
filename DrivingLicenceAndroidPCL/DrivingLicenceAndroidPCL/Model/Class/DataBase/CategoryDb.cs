@@ -6,7 +6,7 @@ using SQLiteNetExtensions.Attributes;
 
 namespace DrivingLicenceAndroidPCL.Model.Class.DataBase
 {
-
+    [Table("Category")]
     public class CategoryDb : ICategoryDb
     {
         [PrimaryKey, AutoIncrement]

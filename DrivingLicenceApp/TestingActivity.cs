@@ -16,6 +16,7 @@ using DrivingLicenceAndroidPCL.Class.PublicServices;
 using DrivingLicenceAndroidPCL.Linq;
 using FFImageLoading.Views;
 using DrivingLicenceApp.Class;
+using DrivingLicenceApp.ViewPager;
 
 namespace DrivingLicenceApp
 {
@@ -29,20 +30,14 @@ namespace DrivingLicenceApp
         #region UI
         private TextView TimerTxt { get; set; }
         private ImageView HelpImg { get; set; }
-        private ImageViewAsync QuestionPic { get; set; }
-
-        private TextView QuestionTxt { get; set; }
-
-
         private TextView CorAns { get; set; }
         private TextView FilAns { get; set; }
-
         private TextView QuestionCount { get; set; }
         private TextView NextQuestion { get; set; }
+        private CheckBox AutoChange { get; set; }
 
-        private RecyclerView QuestionsRecView { get; set; }
 
-        private ImageView NextImg { get; set; }
+        private Android.Support.V4.View.ViewPager TicketPager { get; set; }
         #endregion
 
         //tickets count
@@ -116,6 +111,7 @@ namespace DrivingLicenceApp
                 dialog.Show();
             }
 
+
             //getting taked tickets count.
             TicketsCount = Tickets.Count();
             //tst.Dispose();
@@ -123,56 +119,44 @@ namespace DrivingLicenceApp
             //UI.
             TimerTxt = FindViewById<TextView>(Resource.Id.TimeTxt);
             HelpImg = FindViewById<ImageView>(Resource.Id.HelpImg);
-            QuestionPic = FindViewById<ImageViewAsync>(Resource.Id.QuestionImg);
-
-            QuestionTxt = FindViewById<TextView>(Resource.Id.QuestionTxt);
-            QuestionsRecView = FindViewById<RecyclerView>(Resource.Id.QuestionsRecView);
-
+          
             CorAns = FindViewById<TextView>(Resource.Id.CorrectAnswers);
             FilAns = FindViewById<TextView>(Resource.Id.FiledAnswers);
 
             QuestionCount = FindViewById<TextView>(Resource.Id.AllQuestions);
             NextQuestion = FindViewById<TextView>(Resource.Id.NextQuest);
-
-            NextImg = FindViewById<ImageView>(Resource.Id.NextQuestImg);
-            NextImg.Click += NextBtn;
+            AutoChange = FindViewById<CheckBox>(Resource.Id.AutoChange);
 
             //_________
             QuestionCount.Text = Tickets.Count().ToString();
             NextQuestion.Text = (Position + 1).ToString();
 
-            //Recycler View Config.
-            var manager = new LinearLayoutManager(this)
-            { Orientation = OrientationHelper.Vertical };
+            TicketPager = FindViewById<Android.Support.V4.View.ViewPager>(Resource.Id.TicketsPager);
+            TicketPager.Adapter = new TicketFragmentAdapter(Tickets.ToList(), Answer, SupportFragmentManager);
 
-            QuestionsRecView.SetLayoutManager(manager);
-
-            NextImg.Enabled = false;
-            Next();
+            //Next();
 
             HelpImg.Click += HelpForAns;
 
-            QuestionPic.Click += (s, e) =>
-            {
-                var resiz = new Intent(this, typeof(ResizeImageActivity));
-                resiz.PutExtra("TicketImage", Tickets.ElementAt(Position).Image);
-                StartActivity(resiz);
-            };
+
 
             //start timer.
             TimerStart();
         }
 
-        private void Answer(object sender, EventArgs args)
+        private async void Answer(object sender, EventArgs args, RecyclerView QuestionsRecView)
         {
             //if correct
             var userAns = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Ans == (sender as TextView).Text);
-            (sender as TextView).SetBackgroundColor(userAns.Correct ? Color.Green : Color.Red);
+                (sender as TextView).SetBackgroundColor(userAns.Correct ? Color.Green : Color.Red);
+
+            //if not correct
+            QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
+
             //add user answer
             Answers.Add(userAns.Ans);
 
             //if not correct
-            QuestionsRecView.GetChildAt(Tickets.ElementAt(Position).Answers.IndexOf(Tickets.ElementAt(Position).Answers.First(o => o.Correct))).FindViewById<TextView>(Resource.Id.AnsTxt).SetBackgroundColor(Color.Green);
             //correct or incorect count detect
             _ = Tickets.ElementAt(Position).Answers.FirstOrDefault(o => o.Ans == (sender as TextView).Text).Correct ? CorrectAns++ : FailedAns++;
 
@@ -196,15 +180,14 @@ namespace DrivingLicenceApp
                 dialog.Show();
             }
 
-            NextImg.Enabled = true;
-        }
-
-        private async void NextBtn(object sender, EventArgs args)
-        {
-            //new ticket id.
             Position++;
+            NextQuestion.Text = (Position + 1).ToString();
 
-            //save answers.
+            if(AutoChange.Checked)
+            {
+                TicketPager.SetCurrentItem(Position, true);
+            }
+
             if (Position == TicketsCount)
             {
                 await new AnsweredService().SaveUserAnswersAsync(Tickets, Answers);
@@ -215,38 +198,6 @@ namespace DrivingLicenceApp
 
                 ClearUi();
             }
-
-            //question count.
-            NextQuestion.Text = (Position + 1).ToString();
-            //disable this btn.
-            NextImg.Enabled = false;
-            //next question.
-            Next();
-        }
-
-        private void Next()
-        {
-            //current ticket
-            var elem = Tickets.ElementAt(Position);
-
-            //unload image
-            QuestionPic.SetImageBitmap(null);
-
-            //set picture
-            if (BitmapFactory.DecodeFile(elem.Image) != null)
-                QuestionPic.SetImageBitmap(BitmapFactory.DecodeFile(elem.Image));
-            else
-                QuestionPic.LoadImage(elem.Image);
-
-            //picture desing
-            int padding = elem.Image != null ? 20 : 0;
-            QuestionPic.SetPadding(padding, padding, padding, padding);
-
-            //set question.
-            QuestionTxt.Text = elem.Question;
-
-            //recycler view adapter
-            QuestionsRecView.SetAdapter(new AnswerAdapter(elem.Answers, Answer));
         }
 
         //help method
@@ -300,10 +251,9 @@ namespace DrivingLicenceApp
             CorrectAns = 0;
             FailedAns = 0;
 
-            //cor ans
             CorAns.Text = "0";
-            //incor ans
             FilAns.Text = "0";
+            NextQuestion.Text = "0";
 
             Answers.Clear();
         }

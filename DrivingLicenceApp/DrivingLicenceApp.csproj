@@ -88,6 +88,8 @@
     <Compile Include="StatisticActivity.cs" />
     <Compile Include="TestingActivity.cs" />
     <Compile Include="TopicActivity.cs" />
+    <Compile Include="ViewPager\TicketFragment.cs" />
+    <Compile Include="ViewPager\TicketFragmentAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -127,6 +129,9 @@
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>28.0.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
     <PackageReference Include="Xamarin.FFImageLoading">
       <Version>2.4.11.982</Version>
@@ -168,6 +173,9 @@
     <AndroidResource Include="Resources\layout\activity_end.axml" />
     <AndroidResource Include="Resources\layout\EndUI_Item.axml" />
     <AndroidResource Include="Resources\layout\activity_statistic.axml" />
+    <AndroidResource Include="Resources\layout\ticketFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

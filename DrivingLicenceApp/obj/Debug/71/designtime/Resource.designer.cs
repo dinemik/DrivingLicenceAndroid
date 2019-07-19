@@ -3058,7 +3058,10 @@ namespace DrivingLicenceApp
 			public const int support_simple_spinner_dropdown_item = 2130903099;
 			
 			// aapt resource value: 0x7F030014
-			public const int topic_Item = 2130903060;
+			public const int ticketFragment = 2130903060;
+			
+			// aapt resource value: 0x7F030015
+			public const int topic_Item = 2130903061;
 			
 			static Layout()
 			{

@@ -1,0 +1,13 @@
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000" xmlns:android="http://schemas.android.com/apk/res/android"><FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/categorycard" android:layout_margin="5dp">&gt;
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#fff" android:text="შეკითხვების შერჩევა........" android:layout_margin="10dp" android:id="@+id/QuestionTxt" /></FrameLayout><ffimageloading.views.ImageViewAsync android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:id="@+id/QuestionImg" android:layout_gravity="center" android:background="@drawable/categorycard" /><!-- <FrameLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" 
+                 android:layout_gravity="right">
+    
+          <ImageView android:layout_width="40dp"
+                     android:layout_height="40dp" 
+                     android:id="@+id/NextQuestImg"
+                     android:src="@drawable/NextDrivingApp" 
+                     android:layout_marginRight="10dp"/>
+
+    </FrameLayout>--><android.support.v7.widget.RecyclerView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/AnswRecView" /></LinearLayout>

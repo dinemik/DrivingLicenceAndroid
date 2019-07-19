@@ -15,6 +15,14 @@
                       android:orientation="horizontal" 
                       android:gravity="right">
 
+            <CheckBox android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" 
+                      android:text="შემდეგზე გადასვლა" 
+                      android:buttonTint="#fff"
+                      android:textColor="#fff" 
+                      android:layout_marginRight="2dp" 
+                      android:id="@+id/AutoChange"/>
+
             <FrameLayout android:layout_width="wrap_content"
                          android:layout_height="wrap_content" 
                          android:layout_gravity="center" 
@@ -83,6 +91,11 @@
 
     </FrameLayout>
 
+    <android.support.v4.view.ViewPager android:layout_width="match_parent"
+                                       android:layout_height="match_parent" 
+                                       android:id="@+id/TicketsPager"/>
+
+<!--
     <FrameLayout android:layout_width="match_parent"
                  android:layout_height="wrap_content" 
                  android:background="@drawable/categorycard"                      
@@ -119,5 +132,5 @@
     <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
                                             android:layout_height="wrap_content" 
                                             android:id="@+id/QuestionsRecView"/>
-
+-->
 </LinearLayout>

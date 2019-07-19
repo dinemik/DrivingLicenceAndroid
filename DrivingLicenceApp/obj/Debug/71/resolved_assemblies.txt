@@ -33,6 +33,7 @@ C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\and
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Xamarin.Android.Support.Fragment.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Xamarin.Android.Support.Media.Compat.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Xamarin.Android.Support.Transition.dll
+C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Xamarin.Android.Support.v4.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\Users\davit\source\repos\DrivingLicenceApp\DrivingLicenceApp\obj\Debug\71\android\assets\Xamarin.Android.Support.Vector.Drawable.dll

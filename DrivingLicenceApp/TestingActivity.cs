@@ -9,12 +9,10 @@ using System.Linq;
 using Android.Graphics;
 using System;
 using Android.Support.V7.Widget;
-using DrivingLicenceApp.Adapter;
 using System.Timers;
 using DrivingLicenceAndroidPCL.Model.Class.DataBase;
 using DrivingLicenceAndroidPCL.Class.PublicServices;
 using DrivingLicenceAndroidPCL.Linq;
-using FFImageLoading.Views;
 using DrivingLicenceApp.Class;
 using DrivingLicenceApp.ViewPager;
 

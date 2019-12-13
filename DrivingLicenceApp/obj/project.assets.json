@@ -369,6 +369,21 @@
           "build/monoandroid71/Xamarin.Android.Support.v7.AppCompat.targets": {}
         }
       },
+      "Xamarin.Android.Support.v7.CardView/28.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Annotations": "[28.0.0.1]"
+        },
+        "compile": {
+          "lib/monoandroid71/Xamarin.Android.Support.v7.CardView.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/Xamarin.Android.Support.v7.CardView.dll": {}
+        },
+        "build": {
+          "build/monoandroid71/Xamarin.Android.Support.v7.CardView.targets": {}
+        }
+      },
       "Xamarin.Android.Support.v7.RecyclerView/28.0.0.1": {
         "type": "package",
         "dependencies": {
@@ -1097,6 +1112,27 @@
         "xamarin.android.support.v7.appcompat.nuspec"
       ]
     },
+    "Xamarin.Android.Support.v7.CardView/28.0.0.1": {
+      "sha512": "TpR/hIJiEhjdQCoessaitAKXnHI4p3J0uWfk9XqZhtvmOv7WobQQV7Di+MaYlsg+FHSipbl/d3GoocGtQaMIrA==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.cardview/28.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/monoandroid71/Xamarin.Android.Support.v7.CardView.targets",
+        "build/monoandroid80/Xamarin.Android.Support.v7.CardView.targets",
+        "build/monoandroid81/Xamarin.Android.Support.v7.CardView.targets",
+        "build/monoandroid90/Xamarin.Android.Support.v7.CardView.targets",
+        "lib/monoandroid60/Xamarin.Android.Support.v7.CardView.dll",
+        "lib/monoandroid70/Xamarin.Android.Support.v7.CardView.dll",
+        "lib/monoandroid71/Xamarin.Android.Support.v7.CardView.dll",
+        "lib/monoandroid80/Xamarin.Android.Support.v7.CardView.dll",
+        "lib/monoandroid81/Xamarin.Android.Support.v7.CardView.dll",
+        "lib/monoandroid90/Xamarin.Android.Support.v7.CardView.dll",
+        "xamarin.android.support.v7.cardview.28.0.0.1.nupkg.sha512",
+        "xamarin.android.support.v7.cardview.nuspec"
+      ]
+    },
     "Xamarin.Android.Support.v7.RecyclerView/28.0.0.1": {
       "sha512": "JdZStP71IBHVcFBzjyNa9CMQA09Dqkab5ZfmsZ0YU7I9YEIbDexCd4oFVDbe1ajoKLkwdU81cywDCGI3AdkC7A==",
       "type": "package",
@@ -1270,6 +1306,7 @@
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
       "Xamarin.Android.Support.Design >= 28.0.0.1",
       "Xamarin.Android.Support.v4 >= 28.0.0.1",
+      "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Essentials >= 1.2.0",
       "Xamarin.FFImageLoading >= 2.4.11.982"
     ]
@@ -1281,11 +1318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+      "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
       "projectName": "DrivingLicenceApp",
-      "projectPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+      "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
       "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\obj\\",
+      "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1306,8 +1343,8 @@
       "frameworks": {
         "monoandroid71": {
           "projectReferences": {
-            "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
-              "projectPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
+            "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
+              "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
             }
           }
         }
@@ -1333,6 +1370,10 @@
             "version": "[28.0.0.1, )"
           },
           "Xamarin.Android.Support.v4": {
+            "target": "Package",
+            "version": "[28.0.0.1, )"
+          },
+          "Xamarin.Android.Support.v7.CardView": {
             "target": "Package",
             "version": "[28.0.0.1, )"
           },

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {}
+    "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
+    "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+        "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
         "projectName": "DrivingLicenceAndroidPCL",
-        "projectPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+        "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
         "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\obj\\",
+        "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

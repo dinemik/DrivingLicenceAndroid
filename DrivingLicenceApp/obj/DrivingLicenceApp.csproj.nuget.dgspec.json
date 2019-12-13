@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\DrivingLicenceApp.csproj": {}
+    "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
+    "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+        "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
         "projectName": "DrivingLicenceAndroidPCL",
-        "projectPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+        "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
         "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\obj\\",
+        "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\DrivingLicenceApp.csproj": {
+    "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+        "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
         "projectName": "DrivingLicenceApp",
-        "projectPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+        "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
         "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceApp\\obj\\",
+        "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -94,8 +94,8 @@
         "frameworks": {
           "monoandroid71": {
             "projectReferences": {
-              "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
-                "projectPath": "C:\\Users\\davit\\source\\repos\\DrivingLicenceApp\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
+              "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
+                "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
               }
             }
           }
@@ -121,6 +121,10 @@
               "version": "[28.0.0.1, )"
             },
             "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
               "target": "Package",
               "version": "[28.0.0.1, )"
             },

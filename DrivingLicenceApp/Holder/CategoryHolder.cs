@@ -13,7 +13,7 @@ namespace DrivingLicenceApp.Holder
         public CategoryHolder(View view) : base(view)
         {
             CategoryImg = view.FindViewById<ImageViewAsync>(Resource.Id.CategoryImg);
-            Box = view.FindViewById<CheckBox>(Resource.Id.categoryText);
+            Box = view.FindViewById<CheckBox>(Resource.Id.CategoryNameCb);
         }
     }
 }

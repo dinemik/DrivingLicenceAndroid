@@ -9,7 +9,7 @@ using Android.Content;
 
 namespace DrivingLicenceApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait, Icon = "@drawable/carmainicon1")]
     public class MainActivity : AppCompatActivity
     {
         #region UI

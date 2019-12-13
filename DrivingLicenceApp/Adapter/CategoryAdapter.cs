@@ -39,7 +39,7 @@ namespace DrivingLicenceApp.Adapter
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
-            var vh = new CategoryHolder(LayoutInflater.From(parent.Context).Inflate(Resource.Layout.category_item, parent, false));
+            var vh = new CategoryHolder(LayoutInflater.From(parent.Context).Inflate(Resource.Layout.categorydownloading_Item, parent, false));
             vh.Box.Click += (s, e) => Action.Invoke(s, e, (s as CheckBox).Text);
             return vh;
         }

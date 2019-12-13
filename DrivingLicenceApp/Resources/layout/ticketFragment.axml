@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent" 
-              android:background="#000">
+              android:background="@drawable/roadway2">
 
     <FrameLayout android:layout_width="match_parent"
                  android:layout_height="wrap_content" 
                  android:background="@drawable/categorycard"                      
-                 android:layout_margin="5dp" >>
+                 android:layout_margin="5dp" 
+        
+        >
 
-        <TextView android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:textColor="#fff"
-                  android:text="შეკითხვების შერჩევა........" 
-                  android:layout_margin="10dp" 
-                  android:id="@+id/QuestionTxt"/>
+          <android.support.v7.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#000649"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        
+        android:alpha="0.7"
+                >
+
+             <TextView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                       android:text="შეკითხვების შერჩევა........" 
+                       android:layout_margin="10dp" 
+                       android:id="@+id/QuestionTxt"/>
+
+        </android.support.v7.widget.CardView>
 
     </FrameLayout>
 
@@ -23,8 +43,9 @@
                                          android:layout_height="wrap_content"
                                          android:layout_margin="10dp"
                                          android:id="@+id/QuestionImg"
+                                         
                                          android:layout_gravity="center"
-                                         android:background="@drawable/categorycard" />
+                                         android:background="@android:color/transparent" />
 
    <!-- <FrameLayout android:layout_width="wrap_content"
                  android:layout_height="wrap_content" 

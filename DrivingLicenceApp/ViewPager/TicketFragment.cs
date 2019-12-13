@@ -41,7 +41,7 @@ namespace DrivingLicenceApp.ViewPager
             if (BitmapFactory.DecodeFile(Elem.Image) != null)
                 img.SetImageBitmap(BitmapFactory.DecodeFile(Elem.Image));
             else
-                img.LoadImage(Elem.Image);
+                img.LoadImage($"https://firebasestorage.googleapis.com/v0/b/drivinglicencenew.appspot.com/o/Ticket_ImagesOne%2F{Elem.Image}?alt=media");
 
             //picture desing
             int padding = Elem.Image != null ? 20 : 0;

@@ -34,7 +34,7 @@ namespace DrivingLicenceApp.Adapter
             if (Bitmap != null)
                 vh.CategoryImg.SetImageBitmap(Bitmap);
             else
-                vh.CategoryImg.LoadImage(Categories.ElementAt(position).Img);
+                vh.CategoryImg.LoadImage($"https://firebasestorage.googleapis.com/v0/b/drivinglicencenew.appspot.com/o/Categories%2F{Categories.ElementAt(position).Img}?alt=media");
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)

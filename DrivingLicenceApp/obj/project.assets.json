@@ -1312,24 +1312,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\davit\\.nuget\\packages\\": {},
+    "C:\\Users\\TecService\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+      "projectUniqueName": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
       "projectName": "DrivingLicenceApp",
-      "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
-      "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceApp\\obj\\",
+      "projectPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+      "packagesPath": "C:\\Users\\TecService\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\davit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TecService\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1343,8 +1343,8 @@
       "frameworks": {
         "monoandroid71": {
           "projectReferences": {
-            "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
-              "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\DrivingLicenceAndroid-master\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
+            "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
+              "projectPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
             }
           }
         }

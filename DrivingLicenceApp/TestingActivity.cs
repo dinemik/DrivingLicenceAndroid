@@ -61,7 +61,7 @@ namespace DrivingLicenceApp
         {
             Sec = 1800;
 
-            TicketsCount = 4;
+            TicketsCount = 30;
             Position = 0;
             CorrectAns = 0;
             FailedAns = 0;
@@ -171,7 +171,7 @@ namespace DrivingLicenceApp
             if (FailedAns == MaxIncorrectCount)
             {
                 Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
-                alert.SetTitle("არადა კაი იყო 😁");
+               // alert.SetTitle("არადა კაი იყო 😁");
                 alert.SetMessage($"შენ ვერ ჩააბარე გამოცდა იმითომ რომ {MaxIncorrectCount} შეკითხვას გაეცი არასწორი პასუხი");
 
                 Dialog dialog = alert.Create();

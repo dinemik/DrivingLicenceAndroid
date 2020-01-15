@@ -1,2 +1,2 @@
-AdbTarget=-s R58M56CWC4V
+AdbTarget=-s 192.168.111.109:5555
 AdbOptions=

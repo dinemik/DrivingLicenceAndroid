@@ -1,4 +1,4 @@
-AndroidUseAapt2=True
+AndroidUseAapt2=False
 UseSharedRuntime=True
 UseFastDeployment=false
 EnableMultidex=False
@@ -18,8 +18,5 @@ FastDeploymentType=Assemblies
 TargetFramework=v7.1
 ClassParser=
 CodegenTarget=
-AndroidDexTool=dx
-AndroidLinkTool=
-AndroidEnableProfiledAot=
 BuildConfiguration=Debug
 TemplateName={122416d6-6b49-4ee2-a1e8-b825f31c79fe}

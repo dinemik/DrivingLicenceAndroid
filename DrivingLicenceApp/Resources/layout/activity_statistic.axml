@@ -85,7 +85,7 @@
                             android:layout_height="wrap_content" 
                             android:background="@android:color/transparent" 
                         android:textColor="@android:color/white"
-                            android:text="თვე" 
+                            android:text="კვირა" 
                         android:textSize="15sp"
                      android:id="@+id/ByMonthBtn"/>
         

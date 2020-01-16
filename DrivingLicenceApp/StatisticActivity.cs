@@ -111,6 +111,7 @@ namespace DrivingLicenceApp
         private async void DeleteStat(object sender, EventArgs args)
         {
             await GetStatisticsService.DeleteStatistic();
+            Finish();
         }
     }
 }

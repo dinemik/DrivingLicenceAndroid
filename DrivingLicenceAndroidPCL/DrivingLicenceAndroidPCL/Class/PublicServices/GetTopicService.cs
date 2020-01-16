@@ -37,7 +37,7 @@ namespace DrivingLicenceAndroidPCL.Class.PublicServices
             return await GetOfflineCategoryesService.Instance.GetAllOfflineCategoryesAsync();
         }
 
-        public async void DownloadByCategoryes(IEnumerable<string> categories, bool downloadWithImages = false)
+        public async Task DownloadByCategoryesAsync(IEnumerable<string> categories, bool downloadWithImages = false)
         {
             Animation?.StartJsonDownloadAnimation();
             var down = (await DownloadService.Instance.AllDownloadCategoryesAsync()).Where(o => categories.Any(i => o.Name == i));

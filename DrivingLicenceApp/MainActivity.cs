@@ -6,6 +6,10 @@ using System;
 using Android.Support.V7.Widget;
 using Android.Graphics;
 using Android.Content;
+using System.Threading.Tasks;
+using DrivingLicenceAndroidPCL.Class.PublicServices;
+using System.Linq;
+using DrivingLicenceAndroidPCL.Class;
 
 namespace DrivingLicenceApp
 {
@@ -21,7 +25,7 @@ namespace DrivingLicenceApp
 
         #endregion
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
@@ -53,6 +57,26 @@ namespace DrivingLicenceApp
                 Intent Statistic = new Intent(this, typeof(StatisticActivity));
                 StartActivity(Statistic);
             };
+
+            await OnButtonVisibleCheck();
+        }
+
+        public async Task OnButtonVisibleCheck()
+        {
+            try
+            {
+                await GetStatisticsService.GetStatisticAsync(DrivingLicenceAndroidPCL.Enums.GetStatisticsBy.ByMin);
+            }
+            catch (Exception)
+            {
+                FindViewById<CardView>(Resource.Id.StatisticCardView).Visibility = Android.Views.ViewStates.Gone;
+            }
+
+            var offline = await new GetTopicService(null).GetAllOfflineCategoryAsync();
+            if (offline == null || offline.Count() == 0)
+            {
+                FindViewById<CardView>(Resource.Id.DownloadedCardView).Visibility = Android.Views.ViewStates.Gone;
+            }
         }
     }
 }

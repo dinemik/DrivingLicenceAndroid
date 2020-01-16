@@ -45,7 +45,7 @@ namespace DrivingLicenceAndroidPCL.Class.PrivateServices
                     /*TODO*/
                     //tmp code.....
                     category.ForEach(o => o.Topics = o.Topics.Take(1).ToList());
-                    category.ForEach(o => o.Topics.ForEach(i => i.TicketsDb = i.TicketsDb.Take(10).ToList()));
+                    category.ForEach(o => o.Topics.ForEach(i => i.TicketsDb = i.TicketsDb.Take(20).ToList()));
                     //....
 
                     var download = new DownloadImageService(Animation);
@@ -55,7 +55,14 @@ namespace DrivingLicenceAndroidPCL.Class.PrivateServices
                     Animation?.StartImageDownloadAnimation(ImgCount);
                     foreach (var item in category)
                     {
-                        item.Img = await download.DownloadImagesAsync(item.Img);
+                        try
+                        {
+                            item.Img = await download.DownloadImagesAsync($"https://firebasestorage.googleapis.com/v0/b/drivinglicencenew.appspot.com/o/Categories%2F{item.Img}?alt=media");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                     }
                     /*animation ended*/
                     Animation?.EndImageDownloadAnimation();
@@ -72,7 +79,14 @@ namespace DrivingLicenceAndroidPCL.Class.PrivateServices
                             {
                                 foreach (var ticket in topic.TicketsDb)
                                 {
-                                    ticket.Image = await download.DownloadImagesAsync(ticket.Image);
+                                    try
+                                    {
+                                        ticket.Image = await download.DownloadImagesAsync($"https://firebasestorage.googleapis.com/v0/b/drivinglicencenew.appspot.com/o/Ticket_ImagesOne%2F{ticket.Image}?alt=media");
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine(ex.Message);
+                                    }
                                 }
                             }
                         }
@@ -99,6 +113,6 @@ namespace DrivingLicenceAndroidPCL.Class.PrivateServices
             }
 
             return true;
-        }                                               
+        }
     }
 }

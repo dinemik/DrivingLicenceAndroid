@@ -70,9 +70,9 @@ namespace DrivingLicenceApp
         private async void Load()
         {
             if (Online)
-                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService(Animations).GetAllOnlineCategoryAsync()).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, isChecked = false, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
+                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService(Animations).GetAllOnlineCategoryAsync()).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
             else
-                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService(Animations).GetAllOfflineCategoryAsync()).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, isChecked = false, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
+                Recycler.SetAdapter(new TopicAdapter((await new GetTopicService(Animations).GetAllOfflineCategoryAsync()).FirstOrDefault(o => o.Name == Category).Topics.Select(i => new TopicAndroid { Name = i.Name, TicketsCount = i.TicketsDb.Count() }), CategoryChecked, Checked));
         }
 
         private void CategoryChecked(object sender, EventArgs args)
@@ -89,7 +89,7 @@ namespace DrivingLicenceApp
         {
             if (Topics.Count == 0)
             {
-                Toast.MakeText(Application.Context, "ერთერთ კატეგორია აირჩიე", ToastLength.Short).Show();
+                Toast.MakeText(Application.Context, "ერთ კატეგორია მაინც უნდა გქონდეს არჩეული", ToastLength.Short).Show();
                 return;
             }
 

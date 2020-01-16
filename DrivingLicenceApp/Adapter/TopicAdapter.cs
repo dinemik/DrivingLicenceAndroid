@@ -11,7 +11,7 @@ namespace DrivingLicenceApp.Adapter
 {
     public class TopicAdapter : RecyclerView.Adapter
     {
-        private IEnumerable<ITopicAndroid> CategoriesAll { get; set; }
+        private List<ITopicAndroid> CategoriesAll { get; set; }
 
         private Action<object, EventArgs> UnChecked { get; set; } = null;
 
@@ -21,7 +21,7 @@ namespace DrivingLicenceApp.Adapter
         {
             UnChecked = unChecked;
 
-            CategoriesAll = categories;
+            CategoriesAll = categories.ToList();
         }
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)

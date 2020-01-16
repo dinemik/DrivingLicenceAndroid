@@ -30,7 +30,6 @@
                          android:text="შემდეგზე გადასვლა" 
                          android:buttonTint="#fff"
                          android:textColor="#fff" 
-                         
                          android:id="@+id/AutoChange"/>
 
         </android.support.v7.widget.CardView>
@@ -135,7 +134,7 @@
            <ImageView android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:scaleType="fitXY"
-                      android:src="@drawable/Lampicon" 
+                      android:src="@drawable/lampicon" 
                       android:id="@+id/HelpImg" 
                       />
 

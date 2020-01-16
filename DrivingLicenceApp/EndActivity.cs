@@ -18,7 +18,7 @@ namespace DrivingLicenceApp
     {
         private RecyclerView Recycler { get; set; }
         private IEnumerable<ITicketIncorrectDb> Tickets { get; set; }
-        private Button AgainBtn { get; set; }
+        //private Button AgainBtn { get; set; }
         private Button MainMenu { get; set; }
 
 
@@ -28,13 +28,8 @@ namespace DrivingLicenceApp
             SetContentView(Resource.Layout.activity_end);
 
             Recycler = FindViewById<RecyclerView>(Resource.Id.TicketsEndRV);
-            AgainBtn = FindViewById<Button>(Resource.Id.AgainBtn);
+            //AgainBtn = FindViewById<Button>(Resource.Id.AgainBtn);
             MainMenu = FindViewById<Button>(Resource.Id.MainMenuBtn);
-
-            AgainBtn.Click += (s, e) =>
-            {
-                Finish();
-            };
 
             MainMenu.Click += (s, e) =>
             {
@@ -67,6 +62,7 @@ namespace DrivingLicenceApp
         {
             try
             {
+                //FindViewById<CardView>(Resource.Id.ReloadTest).Visibility = Android.Views.ViewStates.Gone;
                 Tickets = await new AnsweredService().GetIncorrectTicketAsync(GetTicketBy.All);
 
                 var meneger = new LinearLayoutManager(this)

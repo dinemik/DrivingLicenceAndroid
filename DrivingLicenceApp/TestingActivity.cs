@@ -15,6 +15,7 @@ using DrivingLicenceAndroidPCL.Class.PublicServices;
 using DrivingLicenceAndroidPCL.Linq;
 using DrivingLicenceApp.Class;
 using DrivingLicenceApp.ViewPager;
+using Android.Views;
 
 namespace DrivingLicenceApp
 {
@@ -132,11 +133,13 @@ namespace DrivingLicenceApp
             TicketPager = FindViewById<Android.Support.V4.View.ViewPager>(Resource.Id.TicketsPager);
             TicketPager.Adapter = new TicketFragmentAdapter(Tickets.ToList(), Answer, SupportFragmentManager);
 
-            //Next();
-
             HelpImg.Click += HelpForAns;
 
+            TicketPager.Touch += (object sender, View.TouchEventArgs e) => {
 
+                TicketPager.SetCurrentItem((Position + 1), true);
+                TicketPager.SetCurrentItem((Position), true);
+            };
 
             //start timer.
             TimerStart();

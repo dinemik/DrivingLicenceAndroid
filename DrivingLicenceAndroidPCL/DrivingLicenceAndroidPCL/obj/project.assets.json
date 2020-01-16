@@ -730,11 +730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+      "projectUniqueName": "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
       "projectName": "DrivingLicenceAndroidPCL",
-      "projectPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
+      "projectPath": "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj",
       "packagesPath": "C:\\Users\\TecService\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\obj\\",
+      "outputPath": "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

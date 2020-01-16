@@ -25,7 +25,7 @@ namespace DrivingLicenceApp.Adapter
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             var vh = (holder as CategoryDownloadinHolder);
-            vh.CategoryImg.LoadImage(Categories.ElementAt(position).Img);
+            vh.CategoryImg.LoadImage($"https://firebasestorage.googleapis.com/v0/b/drivinglicencenew.appspot.com/o/Categories%2F{Categories.ElementAt(position).Img}?alt=media");
             vh.CategoryCb.Text = Categories.ElementAt(position).Name;
         }
 
@@ -34,7 +34,7 @@ namespace DrivingLicenceApp.Adapter
             var vh = new CategoryDownloadinHolder(LayoutInflater.From(parent.Context).Inflate(Resource.Layout.categorydownloading_Item, parent, false));
 
             vh.CategoryCb.Click += (s, e) => Action.Invoke(s, e, Categories.First(o => o.Name == (s as CheckBox).Text).Name);
-            vh.CategoryCb.Click += (s, e) => Categories.First(o => o.Name == (s as CheckBox).Text).Selected = !Categories.First(o => o.Name == (s as CheckBox).Text).Selected;
+            vh.CategoryImg.Click += (s, e) => Categories.First(o => o.Name == (s as TextView).Text).Selected = !Categories.First(o => o.Name == (s as TextView).Text).Selected;
 
             return vh;
         }

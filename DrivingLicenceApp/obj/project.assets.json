@@ -1318,11 +1318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+      "projectUniqueName": "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
       "projectName": "DrivingLicenceApp",
-      "projectPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
+      "projectPath": "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceApp\\DrivingLicenceApp.csproj",
       "packagesPath": "C:\\Users\\TecService\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceApp\\obj\\",
+      "outputPath": "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1343,8 +1343,8 @@
       "frameworks": {
         "monoandroid71": {
           "projectReferences": {
-            "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
-              "projectPath": "C:\\Users\\TecService\\Source\\Repos\\DrivingLicenceAndroid4\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
+            "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj": {
+              "projectPath": "C:\\Users\\TecService\\Desktop\\DrivingLicenceAndroid\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL\\DrivingLicenceAndroidPCL.csproj"
             }
           }
         }

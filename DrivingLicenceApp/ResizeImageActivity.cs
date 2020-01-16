@@ -16,10 +16,12 @@ namespace DrivingLicenceApp
             SetContentView(Resource.Layout.activity_resizeImage);
             ImageViewAsync ImageImg = FindViewById<ImageViewAsync>(Resource.Id.ImageImg);
 
-            if (BitmapFactory.DecodeFile(Intent.Extras.Get("TicketImage").ToString()) != null)
+            var imagePath = Intent.Extras.Get("TicketImage").ToString();
+
+            if (BitmapFactory.DecodeFile(imagePath) != null)
                 ImageImg.SetImageBitmap(BitmapFactory.DecodeFile(Intent.Extras.Get("TicketImage").ToString()));
             else
-                ImageImg.LoadImage(Intent.Extras.Get("TicketImage").ToString());
+                ImageImg.LoadImage($"https://firebasestorage.googleapis.com/v0/b/drivinglicencenew.appspot.com/o/Ticket_ImagesOne%2F{imagePath}?alt=media");
 
             ImageImg.Click += (s, e) => Finish();
         }

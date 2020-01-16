@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Android.App;
 using Android.OS;
 using Android.Support.V7.Widget;
@@ -58,9 +59,9 @@ namespace DrivingLicenceApp
                 Categoryes.Add(category);
         }
 
-        private void Download(object sender, EventArgs args)
+        private async void Download(object sender, EventArgs args)
         {
-            new GetTopicService(Animations).DownloadByCategoryes(Categoryes, WithImage.Checked);
+            await new GetTopicService(Animations).DownloadByCategoryesAsync(Categoryes, WithImage.Checked);
         }
     }
 }
